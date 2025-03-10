@@ -1315,7 +1315,7 @@ void CHud::RenderSpectatorCount()
 
 	if(g_Config.m_ClShowhudDummyActions && !(m_pClient->m_Snap.m_pGameInfoObj->m_GameStateFlags & GAMESTATEFLAG_GAMEOVER) && Client()->DummyConnected())
 	{
-		StartY = StartY - 29.0f - 4; // dummy actions height and padding
+		StartY = StartY - 43.5f - 4; // dummy actions height and padding
 	}
 
 	Graphics()->DrawRect(StartX, StartY, BoxWidth, BoxHeight, ColorRGBA(0.0f, 0.0f, 0.0f, 0.4f), IGraphics::CORNER_L, 5.0f);

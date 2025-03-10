@@ -11,6 +11,9 @@
 #endif
 
 // client
+// dummy dorection commands
+MACRO_CONFIG_INT(ClDummyDirection, cl_dummy_direction, 0, -1, 1, CFGFLAG_CLIENT | CFGFLAG_INSENSITIVE, "Dummy direction (-1 - left|1 - right)")
+
 MACRO_CONFIG_INT(ClPredict, cl_predict, 1, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Predict client movements")
 MACRO_CONFIG_INT(ClPredictDummy, cl_predict_dummy, 1, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Predict dummy movements")
 MACRO_CONFIG_INT(ClAntiPingLimit, cl_antiping_limit, 0, 0, 500, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Adds delay to antiping (0 to disable)")

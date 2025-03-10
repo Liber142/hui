@@ -832,6 +832,7 @@ void CHud::PreparePlayerStateQuads()
 	// Quads for displaying dummy actions
 	m_DummyHammerOffset = RenderTools()->QuadContainerAddSprite(m_HudQuadContainerIndex, 0.f, 0.f, 12.f, 12.f);
 	m_DummyCopyOffset = RenderTools()->QuadContainerAddSprite(m_HudQuadContainerIndex, 0.f, 0.f, 12.f, 12.f);
+	m_DummyControlOffset = RenderTools()->QuadContainerAddSprite(m_HudQuadContainerIndex, 0.f, 0.f, 12.f, 12.f);
 
 	// Quads for displaying team modes
 	m_PracticeModeOffset = RenderTools()->QuadContainerAddSprite(m_HudQuadContainerIndex, 0.f, 0.f, 12.f, 12.f);
@@ -1336,7 +1337,7 @@ void CHud::RenderDummyActions()
 		return;
 	}
 	// render small dummy actions hud
-	const float BoxHeight = 29.0f;
+	const float BoxHeight = 43.5f;
 	const float BoxWidth = 16.0f;
 
 	float StartX = m_Width - BoxWidth;
@@ -1371,6 +1372,14 @@ void CHud::RenderDummyActions()
 	}
 	Graphics()->TextureSet(m_pClient->m_HudSkin.m_SpriteHudDummyCopy);
 	Graphics()->RenderQuadContainerAsSprite(m_HudQuadContainerIndex, m_DummyCopyOffset, x, y);
+	y += 13;
+	Graphics()->SetColor(1.0f, 1.0f, 1.0f, 0.4f);
+	if(g_Config.m_ClDummyControl)
+	{
+	 Graphics()->SetColor(1.0f, 1.0f, 1.0f, 1.0f);
+ }
+	Graphics()->TextureSet(m_pClient->m_HudSkin.m_SpriteHudDummyControl);
+	Graphics()->RenderQuadContainerAsSprite(m_HudQuadContainerIndex, m_DummyControlOffset, x, y);
 }
 
 inline int CHud::GetDigitsIndex(int Value, int Max)

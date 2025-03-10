@@ -822,6 +822,7 @@ public:
 		IGraphics::CTextureHandle m_SpriteHudTeam0Mode;
 		IGraphics::CTextureHandle m_SpriteHudDummyHammer;
 		IGraphics::CTextureHandle m_SpriteHudDummyCopy;
+		IGraphics::CTextureHandle m_SpriteHudDummyControl;
 	};
 
 	SClientHudSkin m_HudSkin;
@@ -848,6 +849,9 @@ public:
 	void ResetMultiView();
 	int FindFirstMultiViewId();
 	void CleanMultiViewId(int ClientId);
+
+	bool DummySwap;
+	bool DummyReset;
 
 private:
 	std::vector<CSnapEntities> m_vSnapEntities;

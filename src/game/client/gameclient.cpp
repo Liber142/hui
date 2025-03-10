@@ -498,6 +498,10 @@ void CGameClient::OnDummySwap()
 	int tmp = m_DummyInput.m_Fire;
 	m_DummyInput = m_Controls.m_aInputData[!g_Config.m_ClDummy];
 	m_Controls.m_aInputData[g_Config.m_ClDummy].m_Fire = tmp;
+	if (DummySwap)
+	DummySwap = 0;
+	else
+	DummySwap = 1;
 	m_IsDummySwapping = 1;
 }
 
@@ -4002,6 +4006,7 @@ void CGameClient::LoadHudSkin(const char *pPath, bool AsDir)
 		Graphics()->UnloadTexture(&m_HudSkin.m_SpriteHudTeam0Mode);
 		Graphics()->UnloadTexture(&m_HudSkin.m_SpriteHudDummyHammer);
 		Graphics()->UnloadTexture(&m_HudSkin.m_SpriteHudDummyCopy);
+		Graphics()->UnloadTexture(&m_HudSkin.m_SpriteHudDummyControl);
 		m_HudSkinLoaded = false;
 	}
 
@@ -4062,6 +4067,7 @@ void CGameClient::LoadHudSkin(const char *pPath, bool AsDir)
 		m_HudSkin.m_SpriteHudTeam0Mode = Graphics()->LoadSpriteTexture(ImgInfo, &g_pData->m_aSprites[SPRITE_HUD_TEAM0_MODE]);
 		m_HudSkin.m_SpriteHudDummyHammer = Graphics()->LoadSpriteTexture(ImgInfo, &g_pData->m_aSprites[SPRITE_HUD_DUMMY_HAMMER]);
 		m_HudSkin.m_SpriteHudDummyCopy = Graphics()->LoadSpriteTexture(ImgInfo, &g_pData->m_aSprites[SPRITE_HUD_DUMMY_COPY]);
+		m_HudSkin.m_SpriteHudDummyControl = Graphics()->LoadSpriteTexture(ImgInfo, &g_pData->m_aSprites[SPRITE_HUD_DUMMY_CONTROL]);
 
 		m_HudSkinLoaded = true;
 	}
@@ -4366,6 +4372,7 @@ void CGameClient::DummyResetInput()
 	m_Controls.m_aInputData[!g_Config.m_ClDummy].m_Fire = m_DummyInput.m_Fire;
 
 	m_DummyInput = m_Controls.m_aInputData[!g_Config.m_ClDummy];
+	 DummyReset = 1;
 }
 
 bool CGameClient::CanDisplayWarning() const

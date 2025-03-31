@@ -1157,6 +1157,9 @@ Position:
 Speed:
 == Скорость
 
+Dummy Speed:
+== Скорость Дамми
+
 Angle:
 == Угол
 

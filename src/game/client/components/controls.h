@@ -1,14 +1,14 @@
 /* (c) Magnus Auvinen. See licence.txt in the root of the distribution for more information. */
 /* If you are missing that file, acquire a complete release at teeworlds.com.                */
 #ifndef GAME_CLIENT_COMPONENTS_CONTROLS_H
-# define GAME_CLIENT_COMPONENTS_CONTROLS_H
+#define GAME_CLIENT_COMPONENTS_CONTROLS_H
 
-# include <base/vmath.h>
+#include <base/vmath.h>
 
-# include <engine/client.h>
+#include <engine/client.h>
 
-# include <game/client/component.h>
-# include <game/generated/protocol.h>
+#include <game/client/component.h>
+#include <game/generated/protocol.h>
 
 class CControls : public CComponent
 {

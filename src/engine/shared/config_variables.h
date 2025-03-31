@@ -13,7 +13,6 @@
 // client
 //Hud dummy moventer
 MACRO_CONFIG_INT(ClShowhudDummyPosition, cl_showhud_dummy_position, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Dummy position x|y)")
-MACRO_CONFIG_INT(ClShowhudDummySpeed, cl_showhud_dummy_speed, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Dummy speed")
 //Hud dummy status
 MACRO_CONFIG_INT(ClShowhudDummyStatus, cl_showhud_dummy_status, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Dummy status for example freeze or no")
 

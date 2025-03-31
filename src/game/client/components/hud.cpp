@@ -1501,6 +1501,10 @@ inline float CHud::GetMovementInformationBoxHeight()
 	{
 		BoxHeight += 3 * MOVEMENT_INFORMATION_LINE_HEIGHT;
 	}
+	if (g_Config.m_ClShowhudDummySpeed && Client()->DummyConnected())
+	{
+		BoxHeight += 3 * MOVEMENT_INFORMATION_LINE_HEIGHT;
+	}
 	if(g_Config.m_ClShowhudPlayerPosition || g_Config.m_ClShowhudPlayerSpeed || g_Config.m_ClShowhudPlayerAngle || g_Config.m_ClShowhudDummyPosition)
 	{
 		BoxHeight += 2;
@@ -1565,7 +1569,7 @@ void CHud::RenderMovementInformation()
 
 	vec2 Pos;
 	vec2 DummyPos;
-	float DisplaySpeedX{}, DisplaySpeedY{}, DisplayAngle{};
+	float DisplaySpeedX{}, DisplaySpeedY{},DummyDisplaySpeedX{}, DummyDisplaySpeedY{}, DisplayAngle{};
 
 	if(ClientId == SPEC_FREEVIEW)
 	{
@@ -1607,6 +1611,28 @@ void CHud::RenderMovementInformation()
 		float Ramp = VelocityRamp(VelspeedLength, m_pClient->m_aTuning[g_Config.m_ClDummy].m_VelrampStart, m_pClient->m_aTuning[g_Config.m_ClDummy].m_VelrampRange, m_pClient->m_aTuning[g_Config.m_ClDummy].m_VelrampCurvature);
 		DisplaySpeedX *= Ramp;
 		DisplaySpeedY = VelspeedY / 32;
+
+		// dummy speed
+		const vec2 DummyVel = mix(vec2(pDummyPrevChar->m_VelX, pDummyPrevChar->m_VelY), vec2(pDummyCurChar->m_VelX, pDummyCurChar->m_VelY), IntraTick);
+
+		float DummyVelspeedX = DummyVel.x / 256.0f * Client()->GameTickSpeed();
+		if(DummyVel.x >= -1 && DummyVel.x <= 1)
+		{
+			DummyVelspeedX = 0;
+		}
+		float DummyVelspeedY = DummyVel.y / 256.0f * Client()->GameTickSpeed();
+		if(DummyVel.y >= -128 && DummyVel.y <= 128)
+		{
+			DummyVelspeedY = 0;
+		}
+		// We show the speed in Blocks per Second (Bps) and therefore have to divide by the block size
+		DummyDisplaySpeedX = DummyVelspeedX / 32;
+		float DummyVelspeedLength = length(vec2(DummyVel.x, DummyVel.y) / 256.0f) * Client()->GameTickSpeed();
+		// Todo: Use Velramp tuning of each individual player
+		// Since these tuning parameters are almost never changed, the default values are sufficient in most cases
+		float DummyRamp = VelocityRamp(DummyVelspeedLength, m_pClient->m_aTuning[!g_Config.m_ClDummy].m_VelrampStart, m_pClient->m_aTuning[!g_Config.m_ClDummy].m_VelrampRange, m_pClient->m_aTuning[!g_Config.m_ClDummy].m_VelrampCurvature);
+		DummyDisplaySpeedX *= DummyRamp;
+		DummyDisplaySpeedY = DummyVelspeedY / 32;
 
 		float Angle = m_pClient->m_Players.GetPlayerTargetAngle(pPrevChar, pCurChar, ClientId, IntraTick);
 		if(Angle < 0)
@@ -1674,6 +1700,23 @@ void CHud::RenderMovementInformation()
 				Color = ColorRGBA(1, 0.5f, 0.5f, 1);
 			TextRender()->Text(xl, y, Fontsize, aaCoordinates[i], -1.0f);
 			UpdateMovementInformationTextContainer(m_aPlayerSpeedTextContainers[i], Fontsize, i == 0 ? DisplaySpeedX : DisplaySpeedY, m_aaPlayerSpeedText[i], sizeof(m_aaPlayerSpeedText[i]));
+			RenderMovementInformationTextContainer(m_aPlayerSpeedTextContainers[i], Color, xr, y);
+			y += MOVEMENT_INFORMATION_LINE_HEIGHT;
+		}
+
+		TextRender()->TextColor(1, 1, 1, 1);
+	}
+	if(g_Config.m_ClShowhudDummySpeed && Client()->DummyConnected())
+	{
+		TextRender()->Text(xl, y, Fontsize, Localize("Dummy Speed:"), -1.0f);
+		y += MOVEMENT_INFORMATION_LINE_HEIGHT;
+
+		const char aaCoordinates[][4] = {"X:", "Y:"};
+		for(int i = 0; i < 2; i++)
+		{
+			ColorRGBA Color(1, 1, 1, 1);
+			TextRender()->Text(xl, y, Fontsize, aaCoordinates[i], -1.0f);
+			UpdateMovementInformationTextContainer(m_aPlayerSpeedTextContainers[i], Fontsize, i == 0 ? DummyDisplaySpeedX : DummyDisplaySpeedY, m_aaPlayerSpeedText[i], sizeof(m_aaPlayerSpeedText[i]));
 			RenderMovementInformationTextContainer(m_aPlayerSpeedTextContainers[i], Color, xr, y);
 			y += MOVEMENT_INFORMATION_LINE_HEIGHT;
 		}

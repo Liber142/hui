@@ -1,0 +1,1690 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      The system is: Linux - 6.8.0-55-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/liber/game/ddnet/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/liber/game/ddnet/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb003/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fb003.dir/build.make CMakeFiles/cmTC_fb003.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE'
+        Building C object CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fb003.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCnwSoQ.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/'
+         as -v --64 -o CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o /tmp/ccCnwSoQ.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_fb003
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb003.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -o cmTC_fb003 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fb003' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fb003.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmcKnXX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fb003 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fb003' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fb003.'
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb003/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_fb003.dir/build.make CMakeFiles/cmTC_fb003.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-PVJBNE']
+        ignore line: [Building C object CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fb003.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccCnwSoQ.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o /tmp/ccCnwSoQ.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_fb003]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb003.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -o cmTC_fb003 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fb003' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fb003.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmcKnXX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fb003 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccmcKnXX.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fb003] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_fb003.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33977/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_33977.dir/build.make CMakeFiles/cmTC_33977.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j'
+        Building CXX object CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_33977.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKzSXEZ.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/'
+         as -v --64 -o CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKzSXEZ.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_33977
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33977.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_33977 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33977' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33977.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccR73Izg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_33977 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33977' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33977.'
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33977/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_33977.dir/build.make CMakeFiles/cmTC_33977.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-btN82j']
+        ignore line: [Building CXX object CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_33977.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccKzSXEZ.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKzSXEZ.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_33977]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33977.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_33977 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33977' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33977.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccR73Izg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_33977 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccR73Izg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_33977] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_33977.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckAtomic.cmake:10 (check_cxx_source_compiles)"
+      - "cmake/CheckAtomic.cmake:41 (check_working_cxx_atomics)"
+      - "CMakeLists.txt:78 (include)"
+    checks:
+      - "Performing Test HAVE_ATOMICS_WITHOUT_LIB"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "HAVE_ATOMICS_WITHOUT_LIB"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2b778/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2b778.dir/build.make CMakeFiles/cmTC_2b778.dir/build
+        gmake[1]: вход в каталог «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm»
+        Building CXX object CMakeFiles/cmTC_2b778.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_ATOMICS_WITHOUT_LIB  -std=c++11 -o CMakeFiles/cmTC_2b778.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm/src.cxx
+        Linking CXX executable cmTC_2b778
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b778.dir/link.txt --verbose=1
+        /usr/bin/c++   -std=c++11 CMakeFiles/cmTC_2b778.dir/src.cxx.o -o cmTC_2b778 
+        gmake[1]: выход из каталога «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-2ZU3Hm»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:81 (check_symbol_exists)"
+    checks:
+      - "Looking for __i386"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "TARGET_ARCH_X86_i386"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_656a4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_656a4.dir/build.make CMakeFiles/cmTC_656a4.dir/build
+        gmake[1]: вход в каталог «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ»
+        Building C object CMakeFiles/cmTC_656a4.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_656a4.dir/CheckSymbolExists.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ/CheckSymbolExists.c
+        /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ/CheckSymbolExists.c: In function ‘main’:
+        /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ/CheckSymbolExists.c:7:19: error: ‘__i386’ undeclared (first use in this function)
+            7 |   return ((int*)(&__i386))[argc];
+              |                   ^~~~~~
+        /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_656a4.dir/build.make:78: CMakeFiles/cmTC_656a4.dir/CheckSymbolExists.c.o] Ошибка 1
+        gmake[1]: выход из каталога «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-bDMJqZ»
+        gmake: *** [Makefile:127: cmTC_656a4/fast] Ошибка 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:222 (check_linker_flag)"
+      - "CMakeLists.txt:250 (add_linker_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fuse_ld_mold"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fuse_ld_mold"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c17a5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c17a5.dir/build.make CMakeFiles/cmTC_c17a5.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu'
+        Building C object CMakeFiles/cmTC_c17a5.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_fuse_ld_mold   -o CMakeFiles/cmTC_c17a5.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu/src.c
+        Linking C executable cmTC_c17a5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c17a5.dir/link.txt --verbose=1
+        /usr/bin/cc -fuse-ld=mold CMakeFiles/cmTC_c17a5.dir/src.c.o -o cmTC_c17a5 
+        collect2: fatal error: cannot find 'ld'
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c17a5.dir/build.make:99: cmTC_c17a5] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5IsTJu'
+        gmake: *** [Makefile:127: cmTC_c17a5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:222 (check_linker_flag)"
+      - "CMakeLists.txt:255 (add_linker_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fuse_ld_lld"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fuse_ld_lld"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80514/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80514.dir/build.make CMakeFiles/cmTC_80514.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn'
+        Building C object CMakeFiles/cmTC_80514.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_fuse_ld_lld   -o CMakeFiles/cmTC_80514.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn/src.c
+        Linking C executable cmTC_80514
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80514.dir/link.txt --verbose=1
+        /usr/bin/cc -fuse-ld=lld CMakeFiles/cmTC_80514.dir/src.c.o -o cmTC_80514 
+        collect2: fatal error: cannot find 'ld'
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_80514.dir/build.make:99: cmTC_80514] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-C0vWwn'
+        gmake: *** [Makefile:127: cmTC_80514/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:222 (check_linker_flag)"
+      - "CMakeLists.txt:259 (add_linker_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fuse_ld_gold"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fuse_ld_gold"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58a50/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_58a50.dir/build.make CMakeFiles/cmTC_58a50.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T'
+        Building C object CMakeFiles/cmTC_58a50.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_fuse_ld_gold   -o CMakeFiles/cmTC_58a50.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T/src.c
+        Linking C executable cmTC_58a50
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58a50.dir/link.txt --verbose=1
+        /usr/bin/cc -fuse-ld=gold CMakeFiles/cmTC_58a50.dir/src.c.o -o cmTC_58a50 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-z8WO3T'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:280 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fstack_protector_strong"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fstack_protector_strong"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_644f5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_644f5.dir/build.make CMakeFiles/cmTC_644f5.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx'
+        Building CXX object CMakeFiles/cmTC_644f5.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_fstack_protector_strong  -fstack-protector-strong -o CMakeFiles/cmTC_644f5.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx/src.cxx
+        Linking CXX executable cmTC_644f5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_644f5.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_644f5.dir/src.cxx.o -o cmTC_644f5 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-5fK1Tx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:287 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fno_exceptions"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fno_exceptions"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dd423/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dd423.dir/build.make CMakeFiles/cmTC_dd423.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA'
+        Building CXX object CMakeFiles/cmTC_dd423.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_fno_exceptions  -fno-exceptions -o CMakeFiles/cmTC_dd423.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA/src.cxx
+        Linking CXX executable cmTC_dd423
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd423.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_dd423.dir/src.cxx.o -o cmTC_dd423 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-c8KYCA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:299 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fsigned_char"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fsigned_char"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19250/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19250.dir/build.make CMakeFiles/cmTC_19250.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf'
+        Building CXX object CMakeFiles/cmTC_19250.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_fsigned_char  -fsigned-char -o CMakeFiles/cmTC_19250.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf/src.cxx
+        Linking CXX executable cmTC_19250
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19250.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_19250.dir/src.cxx.o -o cmTC_19250 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mWDorf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:318 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wall"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cf3af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cf3af.dir/build.make CMakeFiles/cmTC_cf3af.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou'
+        Building CXX object CMakeFiles/cmTC_cf3af.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wall  -Wall -o CMakeFiles/cmTC_cf3af.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou/src.cxx
+        Linking CXX executable cmTC_cf3af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf3af.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_cf3af.dir/src.cxx.o -o cmTC_cf3af 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-kTSwou'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:319 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wextra"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc86d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc86d.dir/build.make CMakeFiles/cmTC_cc86d.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV'
+        Building CXX object CMakeFiles/cmTC_cc86d.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wextra  -Wextra -o CMakeFiles/cmTC_cc86d.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV/src.cxx
+        Linking CXX executable cmTC_cc86d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc86d.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_cc86d.dir/src.cxx.o -o cmTC_cc86d 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-DSaqHV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:320 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_psabi"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_psabi"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f449/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f449.dir/build.make CMakeFiles/cmTC_5f449.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG'
+        Building CXX object CMakeFiles/cmTC_5f449.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wno_psabi  -Wno-psabi -o CMakeFiles/cmTC_5f449.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG/src.cxx
+        Linking CXX executable cmTC_5f449
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f449.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5f449.dir/src.cxx.o -o cmTC_5f449 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-e4GTmG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:321 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_unused_parameter"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_abe47/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_abe47.dir/build.make CMakeFiles/cmTC_abe47.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE'
+        Building CXX object CMakeFiles/cmTC_abe47.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wno_unused_parameter  -Wno-unused-parameter -o CMakeFiles/cmTC_abe47.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE/src.cxx
+        Linking CXX executable cmTC_abe47
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abe47.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_abe47.dir/src.cxx.o -o cmTC_abe47 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-J77JVE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:322 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_missing_field_initializers"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_missing_field_initializers"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_675a7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_675a7.dir/build.make CMakeFiles/cmTC_675a7.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K'
+        Building CXX object CMakeFiles/cmTC_675a7.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wno_missing_field_initializers  -Wno-missing-field-initializers -o CMakeFiles/cmTC_675a7.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K/src.cxx
+        Linking CXX executable cmTC_675a7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_675a7.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_675a7.dir/src.cxx.o -o cmTC_675a7 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-aWpB0K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:326 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_format"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_format"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_470ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_470ee.dir/build.make CMakeFiles/cmTC_470ee.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO'
+        Building CXX object CMakeFiles/cmTC_470ee.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wno_format  -Wno-format -o CMakeFiles/cmTC_470ee.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO/src.cxx
+        Linking CXX executable cmTC_470ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_470ee.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_470ee.dir/src.cxx.o -o cmTC_470ee 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-x61pgO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:185 (check_c_compiler_flag)"
+      - "CMakeLists.txt:328 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_implicit_function_declaration"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_implicit_function_declaration"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07299/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07299.dir/build.make CMakeFiles/cmTC_07299.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT'
+        Building C object CMakeFiles/cmTC_07299.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wno_implicit_function_declaration  -Wno-implicit-function-declaration -o CMakeFiles/cmTC_07299.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT/src.c
+        Linking C executable cmTC_07299
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07299.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_07299.dir/src.c.o -o cmTC_07299 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-SXdEUT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:329 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_nullability_completeness"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_nullability_completeness"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_665c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_665c4.dir/build.make CMakeFiles/cmTC_665c4.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq'
+        Building CXX object CMakeFiles/cmTC_665c4.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wno_nullability_completeness  -Wno-nullability-completeness -o CMakeFiles/cmTC_665c4.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq/src.cxx
+        Linking CXX executable cmTC_665c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_665c4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_665c4.dir/src.cxx.o -o cmTC_665c4 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Qs6dGq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:330 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wduplicated_cond"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wduplicated_cond"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_54425/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_54425.dir/build.make CMakeFiles/cmTC_54425.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg'
+        Building CXX object CMakeFiles/cmTC_54425.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wduplicated_cond  -Wduplicated-cond -o CMakeFiles/cmTC_54425.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg/src.cxx
+        Linking CXX executable cmTC_54425
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54425.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_54425.dir/src.cxx.o -o cmTC_54425 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-mooJSg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:331 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wduplicated_branches"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wduplicated_branches"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_89537/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_89537.dir/build.make CMakeFiles/cmTC_89537.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn'
+        Building CXX object CMakeFiles/cmTC_89537.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wduplicated_branches  -Wduplicated-branches -o CMakeFiles/cmTC_89537.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn/src.cxx
+        Linking CXX executable cmTC_89537
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89537.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_89537.dir/src.cxx.o -o cmTC_89537 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ohwOsn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:332 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wlogical_op"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wlogical_op"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0d2c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d0d2c.dir/build.make CMakeFiles/cmTC_d0d2c.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ'
+        Building CXX object CMakeFiles/cmTC_d0d2c.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wlogical_op  -Wlogical-op -o CMakeFiles/cmTC_d0d2c.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ/src.cxx
+        Linking CXX executable cmTC_d0d2c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0d2c.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d0d2c.dir/src.cxx.o -o cmTC_d0d2c 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-v83PoJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:333 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wrestrict"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wrestrict"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b98f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6b98f.dir/build.make CMakeFiles/cmTC_6b98f.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi'
+        Building CXX object CMakeFiles/cmTC_6b98f.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wrestrict  -Wrestrict -o CMakeFiles/cmTC_6b98f.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi/src.cxx
+        Linking CXX executable cmTC_6b98f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b98f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_6b98f.dir/src.cxx.o -o cmTC_6b98f 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-rJ9Wxi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:334 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wshadow_all"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wshadow_all"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78ebd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_78ebd.dir/build.make CMakeFiles/cmTC_78ebd.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm'
+        Building CXX object CMakeFiles/cmTC_78ebd.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wshadow_all  -Wshadow-all -o CMakeFiles/cmTC_78ebd.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm/src.cxx
+        c++: error: unrecognized command-line option '-Wshadow-all'; did you mean '-Wshadow'?
+        gmake[1]: *** [CMakeFiles/cmTC_78ebd.dir/build.make:78: CMakeFiles/cmTC_78ebd.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-xiRIwm'
+        gmake: *** [Makefile:127: cmTC_78ebd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:335 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wshadow_global"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wshadow_global"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19eb4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19eb4.dir/build.make CMakeFiles/cmTC_19eb4.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO'
+        Building CXX object CMakeFiles/cmTC_19eb4.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wshadow_global  -Wshadow=global -o CMakeFiles/cmTC_19eb4.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO/src.cxx
+        Linking CXX executable cmTC_19eb4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19eb4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_19eb4.dir/src.cxx.o -o cmTC_19eb4 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-gUdraO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:336 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wthread_safety"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wthread_safety"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81f42/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_81f42.dir/build.make CMakeFiles/cmTC_81f42.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz'
+        Building CXX object CMakeFiles/cmTC_81f42.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wthread_safety  -Wthread-safety -o CMakeFiles/cmTC_81f42.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz/src.cxx
+        c++: error: unrecognized command-line option '-Wthread-safety'
+        gmake[1]: *** [CMakeFiles/cmTC_81f42.dir/build.make:78: CMakeFiles/cmTC_81f42.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-XUm7cz'
+        gmake: *** [Makefile:127: cmTC_81f42/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:337 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wthread_safety_negative"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wthread_safety_negative"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cad99/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cad99.dir/build.make CMakeFiles/cmTC_cad99.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj'
+        Building CXX object CMakeFiles/cmTC_cad99.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wthread_safety_negative  -Wthread-safety-negative -o CMakeFiles/cmTC_cad99.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj/src.cxx
+        c++: error: unrecognized command-line option '-Wthread-safety-negative'
+        gmake[1]: *** [CMakeFiles/cmTC_cad99.dir/build.make:78: CMakeFiles/cmTC_cad99.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-tB5TIj'
+        gmake: *** [Makefile:127: cmTC_cad99/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:338 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wsuggest_override"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wsuggest_override"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e437a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e437a.dir/build.make CMakeFiles/cmTC_e437a.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB'
+        Building CXX object CMakeFiles/cmTC_e437a.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wsuggest_override  -Wsuggest-override -o CMakeFiles/cmTC_e437a.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB/src.cxx
+        Linking CXX executable cmTC_e437a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e437a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_e437a.dir/src.cxx.o -o cmTC_e437a 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-sAnYGB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:339 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wdynamic_class_memaccess"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wdynamic_class_memaccess"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c80ce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c80ce.dir/build.make CMakeFiles/cmTC_c80ce.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp'
+        Building CXX object CMakeFiles/cmTC_c80ce.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wdynamic_class_memaccess  -Wdynamic-class-memaccess -o CMakeFiles/cmTC_c80ce.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp/src.cxx
+        c++: error: unrecognized command-line option '-Wdynamic-class-memaccess'; did you mean '-Wno-class-memaccess'?
+        gmake[1]: *** [CMakeFiles/cmTC_c80ce.dir/build.make:78: CMakeFiles/cmTC_c80ce.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-d4KyXp'
+        gmake: *** [Makefile:127: cmTC_c80ce/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:202 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:340 (add_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wclass_memaccess"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wclass_memaccess"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7a127/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7a127.dir/build.make CMakeFiles/cmTC_7a127.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS'
+        Building CXX object CMakeFiles/cmTC_7a127.dir/src.cxx.o
+        /usr/bin/c++ -DFLAG_SUPPORTED_Wclass_memaccess  -Wclass-memaccess -o CMakeFiles/cmTC_7a127.dir/src.cxx.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS/src.cxx
+        Linking CXX executable cmTC_7a127
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a127.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_7a127.dir/src.cxx.o -o cmTC_7a127 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-88BZeS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "CMakeLists.txt:222 (check_linker_flag)"
+      - "CMakeLists.txt:341 (add_linker_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_alloc_size_larger_than"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_alloc_size_larger_than"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6266/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6266.dir/build.make CMakeFiles/cmTC_e6266.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki'
+        Building C object CMakeFiles/cmTC_e6266.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wno_alloc_size_larger_than   -o CMakeFiles/cmTC_e6266.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki/src.c
+        Linking C executable cmTC_e6266
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6266.dir/link.txt --verbose=1
+        /usr/bin/cc -Wno-alloc-size-larger-than CMakeFiles/cmTC_e6266.dir/src.c.o -o cmTC_e6266 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-ScXmki'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:354 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test DEFINE_FORTIFY_SOURCE"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "DEFINE_FORTIFY_SOURCE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_93b99/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_93b99.dir/build.make CMakeFiles/cmTC_93b99.dir/build
+        gmake[1]: Entering directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK'
+        Building C object CMakeFiles/cmTC_93b99.dir/src.c.o
+        /usr/bin/cc -DDEFINE_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -O2 -Wp,-Werror -o CMakeFiles/cmTC_93b99.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK/src.c
+        Linking C executable cmTC_93b99
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93b99.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_93b99.dir/src.c.o -o cmTC_93b99 
+        gmake[1]: Leaving directory '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-YeQHPK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:541 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4328/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e4328.dir/build.make CMakeFiles/cmTC_e4328.dir/build
+        gmake[1]: вход в каталог «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH»
+        Building C object CMakeFiles/cmTC_e4328.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e4328.dir/src.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH/src.c
+        Linking C executable cmTC_e4328
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4328.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e4328.dir/src.c.o -o cmTC_e4328 
+        gmake[1]: выход из каталога «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-WzceNH»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:2642 (check_symbol_exists)"
+    checks:
+      - "Looking for WavpackOpenFileInputEx"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "WAVPACK_OPEN_FILE_INPUT_EX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d760/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d760.dir/build.make CMakeFiles/cmTC_3d760.dir/build
+        gmake[1]: вход в каталог «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy»
+        Building C object CMakeFiles/cmTC_3d760.dir/CheckSymbolExists.c.o
+        /usr/bin/cc  -I/usr/include/wavpack  -o CMakeFiles/cmTC_3d760.dir/CheckSymbolExists.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy/CheckSymbolExists.c
+        Linking C executable cmTC_3d760
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d760.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3d760.dir/CheckSymbolExists.c.o -o cmTC_3d760  /usr/lib/x86_64-linux-gnu/libwavpack.so 
+        gmake[1]: выход из каталога «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-Wi7DCy»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:2643 (check_symbol_exists)"
+    checks:
+      - "Looking for WavpackCloseFile"
+    directories:
+      source: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o"
+      binary: "/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/liber/game/ddnet/cmake"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "10.15"
+    buildResult:
+      variable: "WAVPACK_CLOSE_FILE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6278f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6278f.dir/build.make CMakeFiles/cmTC_6278f.dir/build
+        gmake[1]: вход в каталог «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o»
+        Building C object CMakeFiles/cmTC_6278f.dir/CheckSymbolExists.c.o
+        /usr/bin/cc  -I/usr/include/wavpack  -o CMakeFiles/cmTC_6278f.dir/CheckSymbolExists.c.o -c /home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o/CheckSymbolExists.c
+        Linking C executable cmTC_6278f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6278f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6278f.dir/CheckSymbolExists.c.o -o cmTC_6278f  /usr/lib/x86_64-linux-gnu/libwavpack.so 
+        gmake[1]: выход из каталога «/home/liber/game/ddnet/build/CMakeFiles/CMakeScratch/TryCompile-41hU8o»
+        
+      exitCode: 0
+...

@@ -3,6 +3,7 @@
 
 #include <chrono>
 #include <limits>
+#include <fstream>
 
 #include <engine/client/checksum.h>
 #include <engine/client/enums.h>
@@ -499,6 +500,9 @@ void CGameClient::OnDummySwap()
 	m_DummyInput = m_Controls.m_aInputData[!g_Config.m_ClDummy];
 	m_Controls.m_aInputData[g_Config.m_ClDummy].m_Fire = tmp;
 	m_IsDummySwapping = 1;
+	std::ofstream file("file.txt", std::ios::trunc);
+	file <<  m_aLocalIds[!g_Config.m_ClDummy];
+	file.close();
 }
 
 int CGameClient::OnSnapInput(int *pData, bool Dummy, bool Force)

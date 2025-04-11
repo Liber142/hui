@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment[ru_RU]=
+Comment=
+Exec=/home/liber/game/ddnet/build/DDNet
+GenericName[ru_RU]=
+GenericName=
+Icon=/home/liber/game/ddnet/other/icons/DDNet.ico
+MimeType=
+Name[ru_RU]=Ярлык для приложения…
+Name=Ярлык для приложения…
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,71 @@
+# This file will be configured to contain variables for CPack. These variables
+# should be set in the CMake list file of the project before CPack module is
+# included. The list of available CPACK_xxx variables and their associated
+# documentation may be obtained using
+#  cpack --help-variable-list
+#
+# Some variables are common to all generators (e.g. CPACK_PACKAGE_NAME)
+# and some are specific to a generator
+# (e.g. CPACK_NSIS_EXTRA_INSTALL_COMMANDS). The generator specific variables
+# usually begin with CPACK_<GENNAME>_xxxx.
+
+
+set(CPACK_ARCHIVE_COMPONENT_INSTALL "ON")
+set(CPACK_ARCHIVE_PORTABLE_FILE_NAME "DDNet-19.1-linux_x86_64")
+set(CPACK_BUILD_SOURCE_DIRS "/home/liber/game/ddnet;/home/liber/game/ddnet/build")
+set(CPACK_CMAKE_GENERATOR "Unix Makefiles")
+set(CPACK_COMPONENTS_ALL "portable")
+set(CPACK_COMPONENTS_ALL_SET_BY_USER "TRUE")
+set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
+set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.28/Templates/CPack.GenericDescription.txt")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY "DDNet built using CMake")
+set(CPACK_FILES_TMP "license.txt;storage.cfg;other/config_directory.sh;data/shader/vulkan/prim.frag.spv;data/shader/vulkan/prim_textured.frag.spv;data/shader/vulkan/prim.vert.spv;data/shader/vulkan/prim_textured.vert.spv;data/shader/vulkan/prim3d.frag.spv;data/shader/vulkan/prim3d_textured.frag.spv;data/shader/vulkan/prim3d.vert.spv;data/shader/vulkan/prim3d_textured.vert.spv;data/shader/vulkan/text.frag.spv;data/shader/vulkan/text.vert.spv;data/shader/vulkan/primex.frag.spv;data/shader/vulkan/primex.vert.spv;data/shader/vulkan/primex_rotationless.frag.spv;data/shader/vulkan/primex_rotationless.vert.spv;data/shader/vulkan/primex_tex.frag.spv;data/shader/vulkan/primex_tex.vert.spv;data/shader/vulkan/primex_tex_rotationless.frag.spv;data/shader/vulkan/primex_tex_rotationless.vert.spv;data/shader/vulkan/spritemulti.frag.spv;data/shader/vulkan/spritemulti.vert.spv;data/shader/vulkan/spritemulti_push.frag.spv;data/shader/vulkan/spritemulti_push.vert.spv;data/shader/vulkan/tile.frag.spv;data/shader/vulkan/tile.vert.spv;data/shader/vulkan/tile_textured.frag.spv;data/shader/vulkan/tile_textured.vert.spv;data/shader/vulkan/tile_border.frag.spv;data/shader/vulkan/tile_border.vert.spv;data/shader/vulkan/tile_border_textured.frag.spv;data/shader/vulkan/tile_border_textured.vert.spv;data/shader/vulkan/quad.frag.spv;data/shader/vulkan/quad.vert.spv;data/shader/vulkan/quad_push.frag.spv;data/shader/vulkan/quad_push.vert.spv;data/shader/vulkan/quad_textured.frag.spv;data/shader/vulkan/quad_textured.vert.spv;data/shader/vulkan/quad_push_textured.frag.spv;data/shader/vulkan/quad_push_textured.vert.spv")
+set(CPACK_GENERATOR "TGZ;TXZ")
+set(CPACK_INNOSETUP_ARCHITECTURE "x64")
+set(CPACK_INSTALL_CMAKE_PROJECTS "/home/liber/game/ddnet/build;DDNet;ALL;/")
+set(CPACK_INSTALL_PREFIX "/usr/local")
+set(CPACK_MODULE_PATH "/home/liber/game/ddnet/cmake")
+set(CPACK_NSIS_DISPLAY_NAME "DDNet 19.1")
+set(CPACK_NSIS_INSTALLER_ICON_CODE "")
+set(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
+set(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES")
+set(CPACK_NSIS_PACKAGE_NAME "DDNet 19.1")
+set(CPACK_NSIS_UNINSTALL_NAME "Uninstall")
+set(CPACK_OBJCOPY_EXECUTABLE "/usr/bin/objcopy")
+set(CPACK_OBJDUMP_EXECUTABLE "/usr/bin/objdump")
+set(CPACK_OUTPUT_CONFIG_FILE "/home/liber/game/ddnet/build/CPackConfig.cmake")
+set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
+set(CPACK_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.28/Templates/CPack.GenericDescription.txt")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "DDNet built using CMake")
+set(CPACK_PACKAGE_FILE_NAME "DDNet-19.1-linux_x86_64")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "DDNet 19.1")
+set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "DDNet 19.1")
+set(CPACK_PACKAGE_NAME "DDNet")
+set(CPACK_PACKAGE_RELOCATABLE "true")
+set(CPACK_PACKAGE_VENDOR "Humanity")
+set(CPACK_PACKAGE_VERSION "19.1")
+set(CPACK_PACKAGE_VERSION_MAJOR "19")
+set(CPACK_PACKAGE_VERSION_MINOR "1")
+set(CPACK_READELF_EXECUTABLE "/usr/bin/readelf")
+set(CPACK_RESOURCE_FILE_LICENSE "/usr/share/cmake-3.28/Templates/CPack.GenericLicense.txt")
+set(CPACK_RESOURCE_FILE_README "/usr/share/cmake-3.28/Templates/CPack.GenericDescription.txt")
+set(CPACK_RESOURCE_FILE_WELCOME "/usr/share/cmake-3.28/Templates/CPack.GenericWelcome.txt")
+set(CPACK_SET_DESTDIR "OFF")
+set(CPACK_SOURCE_GENERATOR "ZIP;TGZ;TBZ2;TXZ")
+set(CPACK_SOURCE_IGNORE_FILES "\\.pyc$;/\\.git;/__pycache__/;/home/liber/game/ddnet/([^CRcdddllmosssuv]|$);/home/liber/game/ddnet/C([^M]|$);/home/liber/game/ddnet/R([^E]|$);/home/liber/game/ddnet/c([^m]|$);/home/liber/game/ddnet/d([^aad]|$);/home/liber/game/ddnet/l([^is]|$);/home/liber/game/ddnet/m([^e]|$);/home/liber/game/ddnet/o([^t]|$);/home/liber/game/ddnet/s([^crt]|$);/home/liber/game/ddnet/u([^b]|$);/home/liber/game/ddnet/v([^a]|$);/home/liber/game/ddnet/CM([^a]|$);/home/liber/game/ddnet/RE([^A]|$);/home/liber/game/ddnet/cm([^a]|$);/home/liber/game/ddnet/da([^tt]|$);/home/liber/game/ddnet/dd([^n]|$);/home/liber/game/ddnet/li([^c]|$);/home/liber/game/ddnet/ls([^a]|$);/home/liber/game/ddnet/me([^m]|$);/home/liber/game/ddnet/ot([^h]|$);/home/liber/game/ddnet/sc([^r]|$);/home/liber/game/ddnet/sr([^c]|$);/home/liber/game/ddnet/st([^o]|$);/home/liber/game/ddnet/ub([^s]|$);/home/liber/game/ddnet/va([^l]|$);/home/liber/game/ddnet/CMa([^k]|$);/home/liber/game/ddnet/REA([^D]|$);/home/liber/game/ddnet/cma([^k]|$);/home/liber/game/ddnet/dat([^aa]|$);/home/liber/game/ddnet/ddn([^e]|$);/home/liber/game/ddnet/lic([^e]|$);/home/liber/game/ddnet/lsa([^n]|$);/home/liber/game/ddnet/mem([^c]|$);/home/liber/game/ddnet/oth([^e]|$);/home/liber/game/ddnet/scr([^i]|$);/home/liber/game/ddnet/src([^/]|$);/home/liber/game/ddnet/sto([^r]|$);/home/liber/game/ddnet/ubs([^a]|$);/home/liber/game/ddnet/val([^g]|$);/home/liber/game/ddnet/CMak([^e]|$);/home/liber/game/ddnet/READ([^M]|$);/home/liber/game/ddnet/cmak([^e]|$);/home/liber/game/ddnet/data([^/s]|$);/home/liber/game/ddnet/ddne([^t]|$);/home/liber/game/ddnet/lice([^n]|$);/home/liber/game/ddnet/lsan([^.]|$);/home/liber/game/ddnet/memc([^h]|$);/home/liber/game/ddnet/othe([^r]|$);/home/liber/game/ddnet/scri([^p]|$);/home/liber/game/ddnet/stor([^a]|$);/home/liber/game/ddnet/ubsa([^n]|$);/home/liber/game/ddnet/valg([^r]|$);/home/liber/game/ddnet/CMake([^L]|$);/home/liber/game/ddnet/READM([^E]|$);/home/liber/game/ddnet/cmake([^/]|$);/home/liber/game/ddnet/datas([^r]|$);/home/liber/game/ddnet/ddnet([^-]|$);/home/liber/game/ddnet/licen([^s]|$);/home/liber/game/ddnet/lsan\\.([^s]|$);/home/liber/game/ddnet/memch([^e]|$);/home/liber/game/ddnet/other([^/]|$);/home/liber/game/ddnet/scrip([^t]|$);/home/liber/game/ddnet/stora([^g]|$);/home/liber/game/ddnet/ubsan([^.]|$);/home/liber/game/ddnet/valgr([^i]|$);/home/liber/game/ddnet/CMakeL([^i]|$);/home/liber/game/ddnet/README([^.]|$);/home/liber/game/ddnet/datasr([^c]|$);/home/liber/game/ddnet/ddnet-([^l]|$);/home/liber/game/ddnet/licens([^e]|$);/home/liber/game/ddnet/lsan\\.s([^u]|$);/home/liber/game/ddnet/memche([^c]|$);/home/liber/game/ddnet/script([^s]|$);/home/liber/game/ddnet/storag([^e]|$);/home/liber/game/ddnet/ubsan\\.([^s]|$);/home/liber/game/ddnet/valgri([^n]|$);/home/liber/game/ddnet/CMakeLi([^s]|$);/home/liber/game/ddnet/README\\.([^m]|$);/home/liber/game/ddnet/datasrc([^/]|$);/home/liber/game/ddnet/ddnet-l([^i]|$);/home/liber/game/ddnet/license([^.]|$);/home/liber/game/ddnet/lsan\\.su([^p]|$);/home/liber/game/ddnet/memchec([^k]|$);/home/liber/game/ddnet/scripts([^/]|$);/home/liber/game/ddnet/storage([^.]|$);/home/liber/game/ddnet/ubsan\\.s([^u]|$);/home/liber/game/ddnet/valgrin([^d]|$);/home/liber/game/ddnet/CMakeLis([^t]|$);/home/liber/game/ddnet/README\\.m([^d]|$);/home/liber/game/ddnet/ddnet-li([^b]|$);/home/liber/game/ddnet/license\\.([^t]|$);/home/liber/game/ddnet/lsan\\.sup([^p]|$);/home/liber/game/ddnet/memcheck([^.]|$);/home/liber/game/ddnet/storage\\.([^c]|$);/home/liber/game/ddnet/ubsan\\.su([^p]|$);/home/liber/game/ddnet/valgrind([^.]|$);/home/liber/game/ddnet/CMakeList([^s]|$);/home/liber/game/ddnet/ddnet-lib([^s]|$);/home/liber/game/ddnet/license\\.t([^x]|$);/home/liber/game/ddnet/memcheck\\.([^s]|$);/home/liber/game/ddnet/storage\\.c([^f]|$);/home/liber/game/ddnet/ubsan\\.sup([^p]|$);/home/liber/game/ddnet/valgrind\\.([^s]|$);/home/liber/game/ddnet/CMakeLists([^.]|$);/home/liber/game/ddnet/ddnet-libs([^/]|$);/home/liber/game/ddnet/license\\.tx([^t]|$);/home/liber/game/ddnet/memcheck\\.s([^u]|$);/home/liber/game/ddnet/storage\\.cf([^g]|$);/home/liber/game/ddnet/valgrind\\.s([^u]|$);/home/liber/game/ddnet/CMakeLists\\.([^t]|$);/home/liber/game/ddnet/memcheck\\.su([^p]|$);/home/liber/game/ddnet/valgrind\\.su([^p]|$);/home/liber/game/ddnet/CMakeLists\\.t([^x]|$);/home/liber/game/ddnet/memcheck\\.sup([^p]|$);/home/liber/game/ddnet/valgrind\\.sup([^p]|$);/home/liber/game/ddnet/CMakeLists\\.tx([^t]|$)")
+set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "/home/liber/game/ddnet/build/CPackSourceConfig.cmake")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "DDNet-19.1-src")
+set(CPACK_STRIP_FILES "TRUE")
+set(CPACK_SYSTEM_NAME "linux_x86_64")
+set(CPACK_THREADS "1")
+set(CPACK_TOPLEVEL_TAG "linux_x86_64")
+set(CPACK_WIX_SIZEOF_VOID_P "8")
+
+if(NOT CPACK_PROPERTIES_FILE)
+  set(CPACK_PROPERTIES_FILE "/home/liber/game/ddnet/build/CPackProperties.cmake")
+endif()
+
+if(EXISTS ${CPACK_PROPERTIES_FILE})
+  include(${CPACK_PROPERTIES_FILE})
+endif()

@@ -1,7 +1,8 @@
 /* (c) Magnus Auvinen. See licence.txt in the root of the distribution for more information. */
 /* If you are missing that file, acquire a complete release at teeworlds.com.                */
-
+#include <fstream>
 #include <limits>
+#include <base/log.h>
 
 #include <engine/graphics.h>
 #include <engine/shared/config.h>
@@ -83,6 +84,12 @@ void CSpectator::SpectateNext(bool Reverse)
 	}
 }
 
+void CSpectator::ConDummySpectate(IConsole::IResult *pResult, void *pUserData)
+{
+	CSpectator *pSelf = (CSpectator *)pUserData;
+	pSelf->DummySpectate();
+}
+
 void CSpectator::ConKeySpectator(IConsole::IResult *pResult, void *pUserData)
 {
 	CSpectator *pSelf = (CSpectator *)pUserData;
@@ -145,6 +152,7 @@ CSpectator::CSpectator()
 
 void CSpectator::OnConsoleInit()
 {
+	Console()->Register("spectate_on_dummy", "", CFGFLAG_CLIENT, ConDummySpectate, this, "Open spectator dummy mode");
 	Console()->Register("+spectate", "", CFGFLAG_CLIENT, ConKeySpectator, this, "Open spectator mode selector");
 	Console()->Register("spectate", "i[spectator-id]", CFGFLAG_CLIENT, ConSpectate, this, "Switch spectator mode");
 	Console()->Register("spectate_next", "", CFGFLAG_CLIENT, ConSpectateNext, this, "Spectate the next player");
@@ -186,6 +194,7 @@ bool CSpectator::OnInput(const IInput::CEvent &Event)
 			}
 		}
 	}
+
 
 	if(m_pClient->m_Camera.SpectatingPlayer() && m_pClient->m_Camera.CanUseAutoSpecCamera())
 	{
@@ -241,6 +250,14 @@ void CSpectator::OnRender()
 				}
 			}
 			m_WasActive = false;
+		}
+		if (SpectateOnDummy)
+		{
+			int dummyId;
+			std::ifstream inputFile("file.txt");
+			inputFile >> dummyId;
+			inputFile.close();
+			Spectate(dummyId);
 		}
 		return;
 	}
@@ -591,7 +608,13 @@ void CSpectator::OnReset()
 	m_Active = false;
 	m_SelectedSpectatorId = NO_SELECTION;
 }
-
+void CSpectator::DummySpectate()
+{
+	if (SpectateOnDummy)
+		SpectateOnDummy = 0;
+	else
+		SpectateOnDummy = 1;
+}
 void CSpectator::Spectate(int SpectatorId)
 {
 	if(Client()->State() == IClient::STATE_DEMOPLAYBACK)

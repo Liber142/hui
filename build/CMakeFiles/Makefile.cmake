@@ -109,6 +109,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/game-shared.dir/DependInfo.cmake"
   "CMakeFiles/steam_api.dir/DependInfo.cmake"
   "CMakeFiles/game-client.dir/DependInfo.cmake"
+  "CMakeFiles/game-client-monitor.dir/DependInfo.cmake"
   "CMakeFiles/server-without-main.dir/DependInfo.cmake"
   "CMakeFiles/game-server.dir/DependInfo.cmake"
   "CMakeFiles/DDNet.dir/DependInfo.cmake"

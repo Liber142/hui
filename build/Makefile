@@ -299,6 +299,19 @@ game-client/fast:
 .PHONY : game-client/fast
 
 #=============================================================================
+# Target rules for targets named game-client-monitor
+
+# Build rule for target.
+game-client-monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game-client-monitor
+.PHONY : game-client-monitor
+
+# fast build rule for target.
+game-client-monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/build
+.PHONY : game-client-monitor/fast
+
+#=============================================================================
 # Target rules for targets named server-without-main
 
 # Build rule for target.
@@ -986,6 +999,7 @@ src/engine/client/backend/backend_base.o: src/engine/client/backend/backend_base
 # target to build an object file
 src/engine/client/backend/backend_base.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/backend_base.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/backend_base.cpp.o
 .PHONY : src/engine/client/backend/backend_base.cpp.o
 
 src/engine/client/backend/backend_base.i: src/engine/client/backend/backend_base.cpp.i
@@ -994,6 +1008,7 @@ src/engine/client/backend/backend_base.i: src/engine/client/backend/backend_base
 # target to preprocess a source file
 src/engine/client/backend/backend_base.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/backend_base.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/backend_base.cpp.i
 .PHONY : src/engine/client/backend/backend_base.cpp.i
 
 src/engine/client/backend/backend_base.s: src/engine/client/backend/backend_base.cpp.s
@@ -1002,6 +1017,7 @@ src/engine/client/backend/backend_base.s: src/engine/client/backend/backend_base
 # target to generate assembly for a file
 src/engine/client/backend/backend_base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/backend_base.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/backend_base.cpp.s
 .PHONY : src/engine/client/backend/backend_base.cpp.s
 
 src/engine/client/backend/glsl_shader_compiler.o: src/engine/client/backend/glsl_shader_compiler.cpp.o
@@ -1010,6 +1026,7 @@ src/engine/client/backend/glsl_shader_compiler.o: src/engine/client/backend/glsl
 # target to build an object file
 src/engine/client/backend/glsl_shader_compiler.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/glsl_shader_compiler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/glsl_shader_compiler.cpp.o
 .PHONY : src/engine/client/backend/glsl_shader_compiler.cpp.o
 
 src/engine/client/backend/glsl_shader_compiler.i: src/engine/client/backend/glsl_shader_compiler.cpp.i
@@ -1018,6 +1035,7 @@ src/engine/client/backend/glsl_shader_compiler.i: src/engine/client/backend/glsl
 # target to preprocess a source file
 src/engine/client/backend/glsl_shader_compiler.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/glsl_shader_compiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/glsl_shader_compiler.cpp.i
 .PHONY : src/engine/client/backend/glsl_shader_compiler.cpp.i
 
 src/engine/client/backend/glsl_shader_compiler.s: src/engine/client/backend/glsl_shader_compiler.cpp.s
@@ -1026,6 +1044,7 @@ src/engine/client/backend/glsl_shader_compiler.s: src/engine/client/backend/glsl
 # target to generate assembly for a file
 src/engine/client/backend/glsl_shader_compiler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/glsl_shader_compiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/glsl_shader_compiler.cpp.s
 .PHONY : src/engine/client/backend/glsl_shader_compiler.cpp.s
 
 src/engine/client/backend/null/backend_null.o: src/engine/client/backend/null/backend_null.cpp.o
@@ -1034,6 +1053,7 @@ src/engine/client/backend/null/backend_null.o: src/engine/client/backend/null/ba
 # target to build an object file
 src/engine/client/backend/null/backend_null.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/null/backend_null.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/null/backend_null.cpp.o
 .PHONY : src/engine/client/backend/null/backend_null.cpp.o
 
 src/engine/client/backend/null/backend_null.i: src/engine/client/backend/null/backend_null.cpp.i
@@ -1042,6 +1062,7 @@ src/engine/client/backend/null/backend_null.i: src/engine/client/backend/null/ba
 # target to preprocess a source file
 src/engine/client/backend/null/backend_null.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/null/backend_null.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/null/backend_null.cpp.i
 .PHONY : src/engine/client/backend/null/backend_null.cpp.i
 
 src/engine/client/backend/null/backend_null.s: src/engine/client/backend/null/backend_null.cpp.s
@@ -1050,6 +1071,7 @@ src/engine/client/backend/null/backend_null.s: src/engine/client/backend/null/ba
 # target to generate assembly for a file
 src/engine/client/backend/null/backend_null.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/null/backend_null.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/null/backend_null.cpp.s
 .PHONY : src/engine/client/backend/null/backend_null.cpp.s
 
 src/engine/client/backend/opengl/backend_opengl.o: src/engine/client/backend/opengl/backend_opengl.cpp.o
@@ -1058,6 +1080,7 @@ src/engine/client/backend/opengl/backend_opengl.o: src/engine/client/backend/ope
 # target to build an object file
 src/engine/client/backend/opengl/backend_opengl.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl.cpp.o
 .PHONY : src/engine/client/backend/opengl/backend_opengl.cpp.o
 
 src/engine/client/backend/opengl/backend_opengl.i: src/engine/client/backend/opengl/backend_opengl.cpp.i
@@ -1066,6 +1089,7 @@ src/engine/client/backend/opengl/backend_opengl.i: src/engine/client/backend/ope
 # target to preprocess a source file
 src/engine/client/backend/opengl/backend_opengl.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl.cpp.i
 .PHONY : src/engine/client/backend/opengl/backend_opengl.cpp.i
 
 src/engine/client/backend/opengl/backend_opengl.s: src/engine/client/backend/opengl/backend_opengl.cpp.s
@@ -1074,6 +1098,7 @@ src/engine/client/backend/opengl/backend_opengl.s: src/engine/client/backend/ope
 # target to generate assembly for a file
 src/engine/client/backend/opengl/backend_opengl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl.cpp.s
 .PHONY : src/engine/client/backend/opengl/backend_opengl.cpp.s
 
 src/engine/client/backend/opengl/backend_opengl3.o: src/engine/client/backend/opengl/backend_opengl3.cpp.o
@@ -1082,6 +1107,7 @@ src/engine/client/backend/opengl/backend_opengl3.o: src/engine/client/backend/op
 # target to build an object file
 src/engine/client/backend/opengl/backend_opengl3.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.o
 .PHONY : src/engine/client/backend/opengl/backend_opengl3.cpp.o
 
 src/engine/client/backend/opengl/backend_opengl3.i: src/engine/client/backend/opengl/backend_opengl3.cpp.i
@@ -1090,6 +1116,7 @@ src/engine/client/backend/opengl/backend_opengl3.i: src/engine/client/backend/op
 # target to preprocess a source file
 src/engine/client/backend/opengl/backend_opengl3.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.i
 .PHONY : src/engine/client/backend/opengl/backend_opengl3.cpp.i
 
 src/engine/client/backend/opengl/backend_opengl3.s: src/engine/client/backend/opengl/backend_opengl3.cpp.s
@@ -1098,6 +1125,7 @@ src/engine/client/backend/opengl/backend_opengl3.s: src/engine/client/backend/op
 # target to generate assembly for a file
 src/engine/client/backend/opengl/backend_opengl3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/backend_opengl3.cpp.s
 .PHONY : src/engine/client/backend/opengl/backend_opengl3.cpp.s
 
 src/engine/client/backend/opengl/opengl_sl.o: src/engine/client/backend/opengl/opengl_sl.cpp.o
@@ -1106,6 +1134,7 @@ src/engine/client/backend/opengl/opengl_sl.o: src/engine/client/backend/opengl/o
 # target to build an object file
 src/engine/client/backend/opengl/opengl_sl.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl.cpp.o
 .PHONY : src/engine/client/backend/opengl/opengl_sl.cpp.o
 
 src/engine/client/backend/opengl/opengl_sl.i: src/engine/client/backend/opengl/opengl_sl.cpp.i
@@ -1114,6 +1143,7 @@ src/engine/client/backend/opengl/opengl_sl.i: src/engine/client/backend/opengl/o
 # target to preprocess a source file
 src/engine/client/backend/opengl/opengl_sl.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl.cpp.i
 .PHONY : src/engine/client/backend/opengl/opengl_sl.cpp.i
 
 src/engine/client/backend/opengl/opengl_sl.s: src/engine/client/backend/opengl/opengl_sl.cpp.s
@@ -1122,6 +1152,7 @@ src/engine/client/backend/opengl/opengl_sl.s: src/engine/client/backend/opengl/o
 # target to generate assembly for a file
 src/engine/client/backend/opengl/opengl_sl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl.cpp.s
 .PHONY : src/engine/client/backend/opengl/opengl_sl.cpp.s
 
 src/engine/client/backend/opengl/opengl_sl_program.o: src/engine/client/backend/opengl/opengl_sl_program.cpp.o
@@ -1130,6 +1161,7 @@ src/engine/client/backend/opengl/opengl_sl_program.o: src/engine/client/backend/
 # target to build an object file
 src/engine/client/backend/opengl/opengl_sl_program.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.o
 .PHONY : src/engine/client/backend/opengl/opengl_sl_program.cpp.o
 
 src/engine/client/backend/opengl/opengl_sl_program.i: src/engine/client/backend/opengl/opengl_sl_program.cpp.i
@@ -1138,6 +1170,7 @@ src/engine/client/backend/opengl/opengl_sl_program.i: src/engine/client/backend/
 # target to preprocess a source file
 src/engine/client/backend/opengl/opengl_sl_program.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.i
 .PHONY : src/engine/client/backend/opengl/opengl_sl_program.cpp.i
 
 src/engine/client/backend/opengl/opengl_sl_program.s: src/engine/client/backend/opengl/opengl_sl_program.cpp.s
@@ -1146,6 +1179,7 @@ src/engine/client/backend/opengl/opengl_sl_program.s: src/engine/client/backend/
 # target to generate assembly for a file
 src/engine/client/backend/opengl/opengl_sl_program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengl/opengl_sl_program.cpp.s
 .PHONY : src/engine/client/backend/opengl/opengl_sl_program.cpp.s
 
 src/engine/client/backend/opengles/backend_opengles.o: src/engine/client/backend/opengles/backend_opengles.cpp.o
@@ -1154,6 +1188,7 @@ src/engine/client/backend/opengles/backend_opengles.o: src/engine/client/backend
 # target to build an object file
 src/engine/client/backend/opengles/backend_opengles.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles.cpp.o
 .PHONY : src/engine/client/backend/opengles/backend_opengles.cpp.o
 
 src/engine/client/backend/opengles/backend_opengles.i: src/engine/client/backend/opengles/backend_opengles.cpp.i
@@ -1162,6 +1197,7 @@ src/engine/client/backend/opengles/backend_opengles.i: src/engine/client/backend
 # target to preprocess a source file
 src/engine/client/backend/opengles/backend_opengles.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles.cpp.i
 .PHONY : src/engine/client/backend/opengles/backend_opengles.cpp.i
 
 src/engine/client/backend/opengles/backend_opengles.s: src/engine/client/backend/opengles/backend_opengles.cpp.s
@@ -1170,6 +1206,7 @@ src/engine/client/backend/opengles/backend_opengles.s: src/engine/client/backend
 # target to generate assembly for a file
 src/engine/client/backend/opengles/backend_opengles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles.cpp.s
 .PHONY : src/engine/client/backend/opengles/backend_opengles.cpp.s
 
 src/engine/client/backend/opengles/backend_opengles3.o: src/engine/client/backend/opengles/backend_opengles3.cpp.o
@@ -1178,6 +1215,7 @@ src/engine/client/backend/opengles/backend_opengles3.o: src/engine/client/backen
 # target to build an object file
 src/engine/client/backend/opengles/backend_opengles3.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.o
 .PHONY : src/engine/client/backend/opengles/backend_opengles3.cpp.o
 
 src/engine/client/backend/opengles/backend_opengles3.i: src/engine/client/backend/opengles/backend_opengles3.cpp.i
@@ -1186,6 +1224,7 @@ src/engine/client/backend/opengles/backend_opengles3.i: src/engine/client/backen
 # target to preprocess a source file
 src/engine/client/backend/opengles/backend_opengles3.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.i
 .PHONY : src/engine/client/backend/opengles/backend_opengles3.cpp.i
 
 src/engine/client/backend/opengles/backend_opengles3.s: src/engine/client/backend/opengles/backend_opengles3.cpp.s
@@ -1194,6 +1233,7 @@ src/engine/client/backend/opengles/backend_opengles3.s: src/engine/client/backen
 # target to generate assembly for a file
 src/engine/client/backend/opengles/backend_opengles3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/backend_opengles3.cpp.s
 .PHONY : src/engine/client/backend/opengles/backend_opengles3.cpp.s
 
 src/engine/client/backend/opengles/opengles_sl.o: src/engine/client/backend/opengles/opengles_sl.cpp.o
@@ -1202,6 +1242,7 @@ src/engine/client/backend/opengles/opengles_sl.o: src/engine/client/backend/open
 # target to build an object file
 src/engine/client/backend/opengles/opengles_sl.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl.cpp.o
 .PHONY : src/engine/client/backend/opengles/opengles_sl.cpp.o
 
 src/engine/client/backend/opengles/opengles_sl.i: src/engine/client/backend/opengles/opengles_sl.cpp.i
@@ -1210,6 +1251,7 @@ src/engine/client/backend/opengles/opengles_sl.i: src/engine/client/backend/open
 # target to preprocess a source file
 src/engine/client/backend/opengles/opengles_sl.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl.cpp.i
 .PHONY : src/engine/client/backend/opengles/opengles_sl.cpp.i
 
 src/engine/client/backend/opengles/opengles_sl.s: src/engine/client/backend/opengles/opengles_sl.cpp.s
@@ -1218,6 +1260,7 @@ src/engine/client/backend/opengles/opengles_sl.s: src/engine/client/backend/open
 # target to generate assembly for a file
 src/engine/client/backend/opengles/opengles_sl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl.cpp.s
 .PHONY : src/engine/client/backend/opengles/opengles_sl.cpp.s
 
 src/engine/client/backend/opengles/opengles_sl_program.o: src/engine/client/backend/opengles/opengles_sl_program.cpp.o
@@ -1226,6 +1269,7 @@ src/engine/client/backend/opengles/opengles_sl_program.o: src/engine/client/back
 # target to build an object file
 src/engine/client/backend/opengles/opengles_sl_program.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.o
 .PHONY : src/engine/client/backend/opengles/opengles_sl_program.cpp.o
 
 src/engine/client/backend/opengles/opengles_sl_program.i: src/engine/client/backend/opengles/opengles_sl_program.cpp.i
@@ -1234,6 +1278,7 @@ src/engine/client/backend/opengles/opengles_sl_program.i: src/engine/client/back
 # target to preprocess a source file
 src/engine/client/backend/opengles/opengles_sl_program.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.i
 .PHONY : src/engine/client/backend/opengles/opengles_sl_program.cpp.i
 
 src/engine/client/backend/opengles/opengles_sl_program.s: src/engine/client/backend/opengles/opengles_sl_program.cpp.s
@@ -1242,6 +1287,7 @@ src/engine/client/backend/opengles/opengles_sl_program.s: src/engine/client/back
 # target to generate assembly for a file
 src/engine/client/backend/opengles/opengles_sl_program.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/opengles/opengles_sl_program.cpp.s
 .PHONY : src/engine/client/backend/opengles/opengles_sl_program.cpp.s
 
 src/engine/client/backend/vulkan/backend_vulkan.o: src/engine/client/backend/vulkan/backend_vulkan.cpp.o
@@ -1250,6 +1296,7 @@ src/engine/client/backend/vulkan/backend_vulkan.o: src/engine/client/backend/vul
 # target to build an object file
 src/engine/client/backend/vulkan/backend_vulkan.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.o
 .PHONY : src/engine/client/backend/vulkan/backend_vulkan.cpp.o
 
 src/engine/client/backend/vulkan/backend_vulkan.i: src/engine/client/backend/vulkan/backend_vulkan.cpp.i
@@ -1258,6 +1305,7 @@ src/engine/client/backend/vulkan/backend_vulkan.i: src/engine/client/backend/vul
 # target to preprocess a source file
 src/engine/client/backend/vulkan/backend_vulkan.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.i
 .PHONY : src/engine/client/backend/vulkan/backend_vulkan.cpp.i
 
 src/engine/client/backend/vulkan/backend_vulkan.s: src/engine/client/backend/vulkan/backend_vulkan.cpp.s
@@ -1266,6 +1314,7 @@ src/engine/client/backend/vulkan/backend_vulkan.s: src/engine/client/backend/vul
 # target to generate assembly for a file
 src/engine/client/backend/vulkan/backend_vulkan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend/vulkan/backend_vulkan.cpp.s
 .PHONY : src/engine/client/backend/vulkan/backend_vulkan.cpp.s
 
 src/engine/client/backend_sdl.o: src/engine/client/backend_sdl.cpp.o
@@ -1274,6 +1323,7 @@ src/engine/client/backend_sdl.o: src/engine/client/backend_sdl.cpp.o
 # target to build an object file
 src/engine/client/backend_sdl.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend_sdl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend_sdl.cpp.o
 .PHONY : src/engine/client/backend_sdl.cpp.o
 
 src/engine/client/backend_sdl.i: src/engine/client/backend_sdl.cpp.i
@@ -1282,6 +1332,7 @@ src/engine/client/backend_sdl.i: src/engine/client/backend_sdl.cpp.i
 # target to preprocess a source file
 src/engine/client/backend_sdl.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend_sdl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend_sdl.cpp.i
 .PHONY : src/engine/client/backend_sdl.cpp.i
 
 src/engine/client/backend_sdl.s: src/engine/client/backend_sdl.cpp.s
@@ -1290,6 +1341,7 @@ src/engine/client/backend_sdl.s: src/engine/client/backend_sdl.cpp.s
 # target to generate assembly for a file
 src/engine/client/backend_sdl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/backend_sdl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/backend_sdl.cpp.s
 .PHONY : src/engine/client/backend_sdl.cpp.s
 
 src/engine/client/blocklist_driver.o: src/engine/client/blocklist_driver.cpp.o
@@ -1298,6 +1350,7 @@ src/engine/client/blocklist_driver.o: src/engine/client/blocklist_driver.cpp.o
 # target to build an object file
 src/engine/client/blocklist_driver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/blocklist_driver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/blocklist_driver.cpp.o
 .PHONY : src/engine/client/blocklist_driver.cpp.o
 
 src/engine/client/blocklist_driver.i: src/engine/client/blocklist_driver.cpp.i
@@ -1306,6 +1359,7 @@ src/engine/client/blocklist_driver.i: src/engine/client/blocklist_driver.cpp.i
 # target to preprocess a source file
 src/engine/client/blocklist_driver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/blocklist_driver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/blocklist_driver.cpp.i
 .PHONY : src/engine/client/blocklist_driver.cpp.i
 
 src/engine/client/blocklist_driver.s: src/engine/client/blocklist_driver.cpp.s
@@ -1314,6 +1368,7 @@ src/engine/client/blocklist_driver.s: src/engine/client/blocklist_driver.cpp.s
 # target to generate assembly for a file
 src/engine/client/blocklist_driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/blocklist_driver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/blocklist_driver.cpp.s
 .PHONY : src/engine/client/blocklist_driver.cpp.s
 
 src/engine/client/client.o: src/engine/client/client.cpp.o
@@ -1322,6 +1377,7 @@ src/engine/client/client.o: src/engine/client/client.cpp.o
 # target to build an object file
 src/engine/client/client.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/client.cpp.o
 .PHONY : src/engine/client/client.cpp.o
 
 src/engine/client/client.i: src/engine/client/client.cpp.i
@@ -1330,6 +1386,7 @@ src/engine/client/client.i: src/engine/client/client.cpp.i
 # target to preprocess a source file
 src/engine/client/client.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/client.cpp.i
 .PHONY : src/engine/client/client.cpp.i
 
 src/engine/client/client.s: src/engine/client/client.cpp.s
@@ -1338,6 +1395,7 @@ src/engine/client/client.s: src/engine/client/client.cpp.s
 # target to generate assembly for a file
 src/engine/client/client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/client.cpp.s
 .PHONY : src/engine/client/client.cpp.s
 
 src/engine/client/demoedit.o: src/engine/client/demoedit.cpp.o
@@ -1346,6 +1404,7 @@ src/engine/client/demoedit.o: src/engine/client/demoedit.cpp.o
 # target to build an object file
 src/engine/client/demoedit.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/demoedit.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/demoedit.cpp.o
 .PHONY : src/engine/client/demoedit.cpp.o
 
 src/engine/client/demoedit.i: src/engine/client/demoedit.cpp.i
@@ -1354,6 +1413,7 @@ src/engine/client/demoedit.i: src/engine/client/demoedit.cpp.i
 # target to preprocess a source file
 src/engine/client/demoedit.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/demoedit.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/demoedit.cpp.i
 .PHONY : src/engine/client/demoedit.cpp.i
 
 src/engine/client/demoedit.s: src/engine/client/demoedit.cpp.s
@@ -1362,6 +1422,7 @@ src/engine/client/demoedit.s: src/engine/client/demoedit.cpp.s
 # target to generate assembly for a file
 src/engine/client/demoedit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/demoedit.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/demoedit.cpp.s
 .PHONY : src/engine/client/demoedit.cpp.s
 
 src/engine/client/discord.o: src/engine/client/discord.cpp.o
@@ -1370,6 +1431,7 @@ src/engine/client/discord.o: src/engine/client/discord.cpp.o
 # target to build an object file
 src/engine/client/discord.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/discord.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/discord.cpp.o
 .PHONY : src/engine/client/discord.cpp.o
 
 src/engine/client/discord.i: src/engine/client/discord.cpp.i
@@ -1378,6 +1440,7 @@ src/engine/client/discord.i: src/engine/client/discord.cpp.i
 # target to preprocess a source file
 src/engine/client/discord.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/discord.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/discord.cpp.i
 .PHONY : src/engine/client/discord.cpp.i
 
 src/engine/client/discord.s: src/engine/client/discord.cpp.s
@@ -1386,6 +1449,7 @@ src/engine/client/discord.s: src/engine/client/discord.cpp.s
 # target to generate assembly for a file
 src/engine/client/discord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/discord.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/discord.cpp.s
 .PHONY : src/engine/client/discord.cpp.s
 
 src/engine/client/favorites.o: src/engine/client/favorites.cpp.o
@@ -1394,6 +1458,7 @@ src/engine/client/favorites.o: src/engine/client/favorites.cpp.o
 # target to build an object file
 src/engine/client/favorites.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/favorites.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/favorites.cpp.o
 .PHONY : src/engine/client/favorites.cpp.o
 
 src/engine/client/favorites.i: src/engine/client/favorites.cpp.i
@@ -1402,6 +1467,7 @@ src/engine/client/favorites.i: src/engine/client/favorites.cpp.i
 # target to preprocess a source file
 src/engine/client/favorites.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/favorites.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/favorites.cpp.i
 .PHONY : src/engine/client/favorites.cpp.i
 
 src/engine/client/favorites.s: src/engine/client/favorites.cpp.s
@@ -1410,6 +1476,7 @@ src/engine/client/favorites.s: src/engine/client/favorites.cpp.s
 # target to generate assembly for a file
 src/engine/client/favorites.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/favorites.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/favorites.cpp.s
 .PHONY : src/engine/client/favorites.cpp.s
 
 src/engine/client/friends.o: src/engine/client/friends.cpp.o
@@ -1418,6 +1485,7 @@ src/engine/client/friends.o: src/engine/client/friends.cpp.o
 # target to build an object file
 src/engine/client/friends.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/friends.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/friends.cpp.o
 .PHONY : src/engine/client/friends.cpp.o
 
 src/engine/client/friends.i: src/engine/client/friends.cpp.i
@@ -1426,6 +1494,7 @@ src/engine/client/friends.i: src/engine/client/friends.cpp.i
 # target to preprocess a source file
 src/engine/client/friends.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/friends.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/friends.cpp.i
 .PHONY : src/engine/client/friends.cpp.i
 
 src/engine/client/friends.s: src/engine/client/friends.cpp.s
@@ -1434,6 +1503,7 @@ src/engine/client/friends.s: src/engine/client/friends.cpp.s
 # target to generate assembly for a file
 src/engine/client/friends.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/friends.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/friends.cpp.s
 .PHONY : src/engine/client/friends.cpp.s
 
 src/engine/client/ghost.o: src/engine/client/ghost.cpp.o
@@ -1442,6 +1512,7 @@ src/engine/client/ghost.o: src/engine/client/ghost.cpp.o
 # target to build an object file
 src/engine/client/ghost.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/ghost.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/ghost.cpp.o
 .PHONY : src/engine/client/ghost.cpp.o
 
 src/engine/client/ghost.i: src/engine/client/ghost.cpp.i
@@ -1450,6 +1521,7 @@ src/engine/client/ghost.i: src/engine/client/ghost.cpp.i
 # target to preprocess a source file
 src/engine/client/ghost.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/ghost.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/ghost.cpp.i
 .PHONY : src/engine/client/ghost.cpp.i
 
 src/engine/client/ghost.s: src/engine/client/ghost.cpp.s
@@ -1458,6 +1530,7 @@ src/engine/client/ghost.s: src/engine/client/ghost.cpp.s
 # target to generate assembly for a file
 src/engine/client/ghost.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/ghost.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/ghost.cpp.s
 .PHONY : src/engine/client/ghost.cpp.s
 
 src/engine/client/graph.o: src/engine/client/graph.cpp.o
@@ -1466,6 +1539,7 @@ src/engine/client/graph.o: src/engine/client/graph.cpp.o
 # target to build an object file
 src/engine/client/graph.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graph.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graph.cpp.o
 .PHONY : src/engine/client/graph.cpp.o
 
 src/engine/client/graph.i: src/engine/client/graph.cpp.i
@@ -1474,6 +1548,7 @@ src/engine/client/graph.i: src/engine/client/graph.cpp.i
 # target to preprocess a source file
 src/engine/client/graph.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graph.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graph.cpp.i
 .PHONY : src/engine/client/graph.cpp.i
 
 src/engine/client/graph.s: src/engine/client/graph.cpp.s
@@ -1482,6 +1557,7 @@ src/engine/client/graph.s: src/engine/client/graph.cpp.s
 # target to generate assembly for a file
 src/engine/client/graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graph.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graph.cpp.s
 .PHONY : src/engine/client/graph.cpp.s
 
 src/engine/client/graphics_threaded.o: src/engine/client/graphics_threaded.cpp.o
@@ -1490,6 +1566,7 @@ src/engine/client/graphics_threaded.o: src/engine/client/graphics_threaded.cpp.o
 # target to build an object file
 src/engine/client/graphics_threaded.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graphics_threaded.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graphics_threaded.cpp.o
 .PHONY : src/engine/client/graphics_threaded.cpp.o
 
 src/engine/client/graphics_threaded.i: src/engine/client/graphics_threaded.cpp.i
@@ -1498,6 +1575,7 @@ src/engine/client/graphics_threaded.i: src/engine/client/graphics_threaded.cpp.i
 # target to preprocess a source file
 src/engine/client/graphics_threaded.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graphics_threaded.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graphics_threaded.cpp.i
 .PHONY : src/engine/client/graphics_threaded.cpp.i
 
 src/engine/client/graphics_threaded.s: src/engine/client/graphics_threaded.cpp.s
@@ -1506,6 +1584,7 @@ src/engine/client/graphics_threaded.s: src/engine/client/graphics_threaded.cpp.s
 # target to generate assembly for a file
 src/engine/client/graphics_threaded.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/graphics_threaded.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/graphics_threaded.cpp.s
 .PHONY : src/engine/client/graphics_threaded.cpp.s
 
 src/engine/client/input.o: src/engine/client/input.cpp.o
@@ -1514,6 +1593,7 @@ src/engine/client/input.o: src/engine/client/input.cpp.o
 # target to build an object file
 src/engine/client/input.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/input.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/input.cpp.o
 .PHONY : src/engine/client/input.cpp.o
 
 src/engine/client/input.i: src/engine/client/input.cpp.i
@@ -1522,6 +1602,7 @@ src/engine/client/input.i: src/engine/client/input.cpp.i
 # target to preprocess a source file
 src/engine/client/input.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/input.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/input.cpp.i
 .PHONY : src/engine/client/input.cpp.i
 
 src/engine/client/input.s: src/engine/client/input.cpp.s
@@ -1530,6 +1611,7 @@ src/engine/client/input.s: src/engine/client/input.cpp.s
 # target to generate assembly for a file
 src/engine/client/input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/input.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/input.cpp.s
 .PHONY : src/engine/client/input.cpp.s
 
 src/engine/client/keynames.o: src/engine/client/keynames.cpp.o
@@ -1538,6 +1620,7 @@ src/engine/client/keynames.o: src/engine/client/keynames.cpp.o
 # target to build an object file
 src/engine/client/keynames.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/keynames.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/keynames.cpp.o
 .PHONY : src/engine/client/keynames.cpp.o
 
 src/engine/client/keynames.i: src/engine/client/keynames.cpp.i
@@ -1546,6 +1629,7 @@ src/engine/client/keynames.i: src/engine/client/keynames.cpp.i
 # target to preprocess a source file
 src/engine/client/keynames.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/keynames.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/keynames.cpp.i
 .PHONY : src/engine/client/keynames.cpp.i
 
 src/engine/client/keynames.s: src/engine/client/keynames.cpp.s
@@ -1554,6 +1638,7 @@ src/engine/client/keynames.s: src/engine/client/keynames.cpp.s
 # target to generate assembly for a file
 src/engine/client/keynames.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/keynames.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/keynames.cpp.s
 .PHONY : src/engine/client/keynames.cpp.s
 
 src/engine/client/notifications.o: src/engine/client/notifications.cpp.o
@@ -1562,6 +1647,7 @@ src/engine/client/notifications.o: src/engine/client/notifications.cpp.o
 # target to build an object file
 src/engine/client/notifications.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/notifications.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/notifications.cpp.o
 .PHONY : src/engine/client/notifications.cpp.o
 
 src/engine/client/notifications.i: src/engine/client/notifications.cpp.i
@@ -1570,6 +1656,7 @@ src/engine/client/notifications.i: src/engine/client/notifications.cpp.i
 # target to preprocess a source file
 src/engine/client/notifications.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/notifications.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/notifications.cpp.i
 .PHONY : src/engine/client/notifications.cpp.i
 
 src/engine/client/notifications.s: src/engine/client/notifications.cpp.s
@@ -1578,6 +1665,7 @@ src/engine/client/notifications.s: src/engine/client/notifications.cpp.s
 # target to generate assembly for a file
 src/engine/client/notifications.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/notifications.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/notifications.cpp.s
 .PHONY : src/engine/client/notifications.cpp.s
 
 src/engine/client/serverbrowser.o: src/engine/client/serverbrowser.cpp.o
@@ -1586,6 +1674,7 @@ src/engine/client/serverbrowser.o: src/engine/client/serverbrowser.cpp.o
 # target to build an object file
 src/engine/client/serverbrowser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser.cpp.o
 .PHONY : src/engine/client/serverbrowser.cpp.o
 
 src/engine/client/serverbrowser.i: src/engine/client/serverbrowser.cpp.i
@@ -1594,6 +1683,7 @@ src/engine/client/serverbrowser.i: src/engine/client/serverbrowser.cpp.i
 # target to preprocess a source file
 src/engine/client/serverbrowser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser.cpp.i
 .PHONY : src/engine/client/serverbrowser.cpp.i
 
 src/engine/client/serverbrowser.s: src/engine/client/serverbrowser.cpp.s
@@ -1602,6 +1692,7 @@ src/engine/client/serverbrowser.s: src/engine/client/serverbrowser.cpp.s
 # target to generate assembly for a file
 src/engine/client/serverbrowser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser.cpp.s
 .PHONY : src/engine/client/serverbrowser.cpp.s
 
 src/engine/client/serverbrowser_http.o: src/engine/client/serverbrowser_http.cpp.o
@@ -1610,6 +1701,7 @@ src/engine/client/serverbrowser_http.o: src/engine/client/serverbrowser_http.cpp
 # target to build an object file
 src/engine/client/serverbrowser_http.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_http.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_http.cpp.o
 .PHONY : src/engine/client/serverbrowser_http.cpp.o
 
 src/engine/client/serverbrowser_http.i: src/engine/client/serverbrowser_http.cpp.i
@@ -1618,6 +1710,7 @@ src/engine/client/serverbrowser_http.i: src/engine/client/serverbrowser_http.cpp
 # target to preprocess a source file
 src/engine/client/serverbrowser_http.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_http.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_http.cpp.i
 .PHONY : src/engine/client/serverbrowser_http.cpp.i
 
 src/engine/client/serverbrowser_http.s: src/engine/client/serverbrowser_http.cpp.s
@@ -1626,6 +1719,7 @@ src/engine/client/serverbrowser_http.s: src/engine/client/serverbrowser_http.cpp
 # target to generate assembly for a file
 src/engine/client/serverbrowser_http.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_http.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_http.cpp.s
 .PHONY : src/engine/client/serverbrowser_http.cpp.s
 
 src/engine/client/serverbrowser_ping_cache.o: src/engine/client/serverbrowser_ping_cache.cpp.o
@@ -1634,6 +1728,7 @@ src/engine/client/serverbrowser_ping_cache.o: src/engine/client/serverbrowser_pi
 # target to build an object file
 src/engine/client/serverbrowser_ping_cache.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_ping_cache.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_ping_cache.cpp.o
 .PHONY : src/engine/client/serverbrowser_ping_cache.cpp.o
 
 src/engine/client/serverbrowser_ping_cache.i: src/engine/client/serverbrowser_ping_cache.cpp.i
@@ -1642,6 +1737,7 @@ src/engine/client/serverbrowser_ping_cache.i: src/engine/client/serverbrowser_pi
 # target to preprocess a source file
 src/engine/client/serverbrowser_ping_cache.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_ping_cache.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_ping_cache.cpp.i
 .PHONY : src/engine/client/serverbrowser_ping_cache.cpp.i
 
 src/engine/client/serverbrowser_ping_cache.s: src/engine/client/serverbrowser_ping_cache.cpp.s
@@ -1650,6 +1746,7 @@ src/engine/client/serverbrowser_ping_cache.s: src/engine/client/serverbrowser_pi
 # target to generate assembly for a file
 src/engine/client/serverbrowser_ping_cache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/serverbrowser_ping_cache.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/serverbrowser_ping_cache.cpp.s
 .PHONY : src/engine/client/serverbrowser_ping_cache.cpp.s
 
 src/engine/client/sixup_translate_system.o: src/engine/client/sixup_translate_system.cpp.o
@@ -1658,6 +1755,7 @@ src/engine/client/sixup_translate_system.o: src/engine/client/sixup_translate_sy
 # target to build an object file
 src/engine/client/sixup_translate_system.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sixup_translate_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sixup_translate_system.cpp.o
 .PHONY : src/engine/client/sixup_translate_system.cpp.o
 
 src/engine/client/sixup_translate_system.i: src/engine/client/sixup_translate_system.cpp.i
@@ -1666,6 +1764,7 @@ src/engine/client/sixup_translate_system.i: src/engine/client/sixup_translate_sy
 # target to preprocess a source file
 src/engine/client/sixup_translate_system.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sixup_translate_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sixup_translate_system.cpp.i
 .PHONY : src/engine/client/sixup_translate_system.cpp.i
 
 src/engine/client/sixup_translate_system.s: src/engine/client/sixup_translate_system.cpp.s
@@ -1674,6 +1773,7 @@ src/engine/client/sixup_translate_system.s: src/engine/client/sixup_translate_sy
 # target to generate assembly for a file
 src/engine/client/sixup_translate_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sixup_translate_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sixup_translate_system.cpp.s
 .PHONY : src/engine/client/sixup_translate_system.cpp.s
 
 src/engine/client/smooth_time.o: src/engine/client/smooth_time.cpp.o
@@ -1682,6 +1782,7 @@ src/engine/client/smooth_time.o: src/engine/client/smooth_time.cpp.o
 # target to build an object file
 src/engine/client/smooth_time.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/smooth_time.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/smooth_time.cpp.o
 .PHONY : src/engine/client/smooth_time.cpp.o
 
 src/engine/client/smooth_time.i: src/engine/client/smooth_time.cpp.i
@@ -1690,6 +1791,7 @@ src/engine/client/smooth_time.i: src/engine/client/smooth_time.cpp.i
 # target to preprocess a source file
 src/engine/client/smooth_time.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/smooth_time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/smooth_time.cpp.i
 .PHONY : src/engine/client/smooth_time.cpp.i
 
 src/engine/client/smooth_time.s: src/engine/client/smooth_time.cpp.s
@@ -1698,6 +1800,7 @@ src/engine/client/smooth_time.s: src/engine/client/smooth_time.cpp.s
 # target to generate assembly for a file
 src/engine/client/smooth_time.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/smooth_time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/smooth_time.cpp.s
 .PHONY : src/engine/client/smooth_time.cpp.s
 
 src/engine/client/sound.o: src/engine/client/sound.cpp.o
@@ -1706,6 +1809,7 @@ src/engine/client/sound.o: src/engine/client/sound.cpp.o
 # target to build an object file
 src/engine/client/sound.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sound.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sound.cpp.o
 .PHONY : src/engine/client/sound.cpp.o
 
 src/engine/client/sound.i: src/engine/client/sound.cpp.i
@@ -1714,6 +1818,7 @@ src/engine/client/sound.i: src/engine/client/sound.cpp.i
 # target to preprocess a source file
 src/engine/client/sound.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sound.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sound.cpp.i
 .PHONY : src/engine/client/sound.cpp.i
 
 src/engine/client/sound.s: src/engine/client/sound.cpp.s
@@ -1722,6 +1827,7 @@ src/engine/client/sound.s: src/engine/client/sound.cpp.s
 # target to generate assembly for a file
 src/engine/client/sound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sound.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sound.cpp.s
 .PHONY : src/engine/client/sound.cpp.s
 
 src/engine/client/sqlite.o: src/engine/client/sqlite.cpp.o
@@ -1730,6 +1836,7 @@ src/engine/client/sqlite.o: src/engine/client/sqlite.cpp.o
 # target to build an object file
 src/engine/client/sqlite.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sqlite.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sqlite.cpp.o
 .PHONY : src/engine/client/sqlite.cpp.o
 
 src/engine/client/sqlite.i: src/engine/client/sqlite.cpp.i
@@ -1738,6 +1845,7 @@ src/engine/client/sqlite.i: src/engine/client/sqlite.cpp.i
 # target to preprocess a source file
 src/engine/client/sqlite.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sqlite.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sqlite.cpp.i
 .PHONY : src/engine/client/sqlite.cpp.i
 
 src/engine/client/sqlite.s: src/engine/client/sqlite.cpp.s
@@ -1746,6 +1854,7 @@ src/engine/client/sqlite.s: src/engine/client/sqlite.cpp.s
 # target to generate assembly for a file
 src/engine/client/sqlite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/sqlite.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/sqlite.cpp.s
 .PHONY : src/engine/client/sqlite.cpp.s
 
 src/engine/client/steam.o: src/engine/client/steam.cpp.o
@@ -1754,6 +1863,7 @@ src/engine/client/steam.o: src/engine/client/steam.cpp.o
 # target to build an object file
 src/engine/client/steam.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/steam.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/steam.cpp.o
 .PHONY : src/engine/client/steam.cpp.o
 
 src/engine/client/steam.i: src/engine/client/steam.cpp.i
@@ -1762,6 +1872,7 @@ src/engine/client/steam.i: src/engine/client/steam.cpp.i
 # target to preprocess a source file
 src/engine/client/steam.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/steam.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/steam.cpp.i
 .PHONY : src/engine/client/steam.cpp.i
 
 src/engine/client/steam.s: src/engine/client/steam.cpp.s
@@ -1770,6 +1881,7 @@ src/engine/client/steam.s: src/engine/client/steam.cpp.s
 # target to generate assembly for a file
 src/engine/client/steam.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/steam.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/steam.cpp.s
 .PHONY : src/engine/client/steam.cpp.s
 
 src/engine/client/text.o: src/engine/client/text.cpp.o
@@ -1778,6 +1890,7 @@ src/engine/client/text.o: src/engine/client/text.cpp.o
 # target to build an object file
 src/engine/client/text.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/text.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/text.cpp.o
 .PHONY : src/engine/client/text.cpp.o
 
 src/engine/client/text.i: src/engine/client/text.cpp.i
@@ -1786,6 +1899,7 @@ src/engine/client/text.i: src/engine/client/text.cpp.i
 # target to preprocess a source file
 src/engine/client/text.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/text.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/text.cpp.i
 .PHONY : src/engine/client/text.cpp.i
 
 src/engine/client/text.s: src/engine/client/text.cpp.s
@@ -1794,6 +1908,7 @@ src/engine/client/text.s: src/engine/client/text.cpp.s
 # target to generate assembly for a file
 src/engine/client/text.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/text.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/text.cpp.s
 .PHONY : src/engine/client/text.cpp.s
 
 src/engine/client/updater.o: src/engine/client/updater.cpp.o
@@ -1802,6 +1917,7 @@ src/engine/client/updater.o: src/engine/client/updater.cpp.o
 # target to build an object file
 src/engine/client/updater.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/updater.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/updater.cpp.o
 .PHONY : src/engine/client/updater.cpp.o
 
 src/engine/client/updater.i: src/engine/client/updater.cpp.i
@@ -1810,6 +1926,7 @@ src/engine/client/updater.i: src/engine/client/updater.cpp.i
 # target to preprocess a source file
 src/engine/client/updater.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/updater.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/updater.cpp.i
 .PHONY : src/engine/client/updater.cpp.i
 
 src/engine/client/updater.s: src/engine/client/updater.cpp.s
@@ -1818,6 +1935,7 @@ src/engine/client/updater.s: src/engine/client/updater.cpp.s
 # target to generate assembly for a file
 src/engine/client/updater.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/updater.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/updater.cpp.s
 .PHONY : src/engine/client/updater.cpp.s
 
 src/engine/client/video.o: src/engine/client/video.cpp.o
@@ -1826,6 +1944,7 @@ src/engine/client/video.o: src/engine/client/video.cpp.o
 # target to build an object file
 src/engine/client/video.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/video.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/video.cpp.o
 .PHONY : src/engine/client/video.cpp.o
 
 src/engine/client/video.i: src/engine/client/video.cpp.i
@@ -1834,6 +1953,7 @@ src/engine/client/video.i: src/engine/client/video.cpp.i
 # target to preprocess a source file
 src/engine/client/video.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/video.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/video.cpp.i
 .PHONY : src/engine/client/video.cpp.i
 
 src/engine/client/video.s: src/engine/client/video.cpp.s
@@ -1842,6 +1962,7 @@ src/engine/client/video.s: src/engine/client/video.cpp.s
 # target to generate assembly for a file
 src/engine/client/video.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/video.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/video.cpp.s
 .PHONY : src/engine/client/video.cpp.s
 
 src/engine/client/warning.o: src/engine/client/warning.cpp.o
@@ -1850,6 +1971,7 @@ src/engine/client/warning.o: src/engine/client/warning.cpp.o
 # target to build an object file
 src/engine/client/warning.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/warning.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/warning.cpp.o
 .PHONY : src/engine/client/warning.cpp.o
 
 src/engine/client/warning.i: src/engine/client/warning.cpp.i
@@ -1858,6 +1980,7 @@ src/engine/client/warning.i: src/engine/client/warning.cpp.i
 # target to preprocess a source file
 src/engine/client/warning.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/warning.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/warning.cpp.i
 .PHONY : src/engine/client/warning.cpp.i
 
 src/engine/client/warning.s: src/engine/client/warning.cpp.s
@@ -1866,6 +1989,7 @@ src/engine/client/warning.s: src/engine/client/warning.cpp.s
 # target to generate assembly for a file
 src/engine/client/warning.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/engine/client/warning.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/engine/client/warning.cpp.s
 .PHONY : src/engine/client/warning.cpp.s
 
 src/engine/external/json-parser/json.o: src/engine/external/json-parser/json.c.o
@@ -3410,6 +3534,7 @@ src/game/client/animstate.o: src/game/client/animstate.cpp.o
 # target to build an object file
 src/game/client/animstate.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/animstate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/animstate.cpp.o
 .PHONY : src/game/client/animstate.cpp.o
 
 src/game/client/animstate.i: src/game/client/animstate.cpp.i
@@ -3418,6 +3543,7 @@ src/game/client/animstate.i: src/game/client/animstate.cpp.i
 # target to preprocess a source file
 src/game/client/animstate.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/animstate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/animstate.cpp.i
 .PHONY : src/game/client/animstate.cpp.i
 
 src/game/client/animstate.s: src/game/client/animstate.cpp.s
@@ -3426,6 +3552,7 @@ src/game/client/animstate.s: src/game/client/animstate.cpp.s
 # target to generate assembly for a file
 src/game/client/animstate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/animstate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/animstate.cpp.s
 .PHONY : src/game/client/animstate.cpp.s
 
 src/game/client/component.o: src/game/client/component.cpp.o
@@ -3434,6 +3561,7 @@ src/game/client/component.o: src/game/client/component.cpp.o
 # target to build an object file
 src/game/client/component.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/component.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/component.cpp.o
 .PHONY : src/game/client/component.cpp.o
 
 src/game/client/component.i: src/game/client/component.cpp.i
@@ -3442,6 +3570,7 @@ src/game/client/component.i: src/game/client/component.cpp.i
 # target to preprocess a source file
 src/game/client/component.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/component.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/component.cpp.i
 .PHONY : src/game/client/component.cpp.i
 
 src/game/client/component.s: src/game/client/component.cpp.s
@@ -3450,6 +3579,7 @@ src/game/client/component.s: src/game/client/component.cpp.s
 # target to generate assembly for a file
 src/game/client/component.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/component.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/component.cpp.s
 .PHONY : src/game/client/component.cpp.s
 
 src/game/client/components/background.o: src/game/client/components/background.cpp.o
@@ -3458,6 +3588,7 @@ src/game/client/components/background.o: src/game/client/components/background.c
 # target to build an object file
 src/game/client/components/background.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/background.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/background.cpp.o
 .PHONY : src/game/client/components/background.cpp.o
 
 src/game/client/components/background.i: src/game/client/components/background.cpp.i
@@ -3466,6 +3597,7 @@ src/game/client/components/background.i: src/game/client/components/background.c
 # target to preprocess a source file
 src/game/client/components/background.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/background.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/background.cpp.i
 .PHONY : src/game/client/components/background.cpp.i
 
 src/game/client/components/background.s: src/game/client/components/background.cpp.s
@@ -3474,6 +3606,7 @@ src/game/client/components/background.s: src/game/client/components/background.c
 # target to generate assembly for a file
 src/game/client/components/background.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/background.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/background.cpp.s
 .PHONY : src/game/client/components/background.cpp.s
 
 src/game/client/components/binds.o: src/game/client/components/binds.cpp.o
@@ -3482,6 +3615,7 @@ src/game/client/components/binds.o: src/game/client/components/binds.cpp.o
 # target to build an object file
 src/game/client/components/binds.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/binds.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/binds.cpp.o
 .PHONY : src/game/client/components/binds.cpp.o
 
 src/game/client/components/binds.i: src/game/client/components/binds.cpp.i
@@ -3490,6 +3624,7 @@ src/game/client/components/binds.i: src/game/client/components/binds.cpp.i
 # target to preprocess a source file
 src/game/client/components/binds.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/binds.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/binds.cpp.i
 .PHONY : src/game/client/components/binds.cpp.i
 
 src/game/client/components/binds.s: src/game/client/components/binds.cpp.s
@@ -3498,6 +3633,7 @@ src/game/client/components/binds.s: src/game/client/components/binds.cpp.s
 # target to generate assembly for a file
 src/game/client/components/binds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/binds.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/binds.cpp.s
 .PHONY : src/game/client/components/binds.cpp.s
 
 src/game/client/components/broadcast.o: src/game/client/components/broadcast.cpp.o
@@ -3506,6 +3642,7 @@ src/game/client/components/broadcast.o: src/game/client/components/broadcast.cpp
 # target to build an object file
 src/game/client/components/broadcast.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/broadcast.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/broadcast.cpp.o
 .PHONY : src/game/client/components/broadcast.cpp.o
 
 src/game/client/components/broadcast.i: src/game/client/components/broadcast.cpp.i
@@ -3514,6 +3651,7 @@ src/game/client/components/broadcast.i: src/game/client/components/broadcast.cpp
 # target to preprocess a source file
 src/game/client/components/broadcast.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/broadcast.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/broadcast.cpp.i
 .PHONY : src/game/client/components/broadcast.cpp.i
 
 src/game/client/components/broadcast.s: src/game/client/components/broadcast.cpp.s
@@ -3522,6 +3660,7 @@ src/game/client/components/broadcast.s: src/game/client/components/broadcast.cpp
 # target to generate assembly for a file
 src/game/client/components/broadcast.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/broadcast.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/broadcast.cpp.s
 .PHONY : src/game/client/components/broadcast.cpp.s
 
 src/game/client/components/camera.o: src/game/client/components/camera.cpp.o
@@ -3530,6 +3669,7 @@ src/game/client/components/camera.o: src/game/client/components/camera.cpp.o
 # target to build an object file
 src/game/client/components/camera.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/camera.cpp.o
 .PHONY : src/game/client/components/camera.cpp.o
 
 src/game/client/components/camera.i: src/game/client/components/camera.cpp.i
@@ -3538,6 +3678,7 @@ src/game/client/components/camera.i: src/game/client/components/camera.cpp.i
 # target to preprocess a source file
 src/game/client/components/camera.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/camera.cpp.i
 .PHONY : src/game/client/components/camera.cpp.i
 
 src/game/client/components/camera.s: src/game/client/components/camera.cpp.s
@@ -3546,6 +3687,7 @@ src/game/client/components/camera.s: src/game/client/components/camera.cpp.s
 # target to generate assembly for a file
 src/game/client/components/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/camera.cpp.s
 .PHONY : src/game/client/components/camera.cpp.s
 
 src/game/client/components/chat.o: src/game/client/components/chat.cpp.o
@@ -3554,6 +3696,7 @@ src/game/client/components/chat.o: src/game/client/components/chat.cpp.o
 # target to build an object file
 src/game/client/components/chat.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/chat.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/chat.cpp.o
 .PHONY : src/game/client/components/chat.cpp.o
 
 src/game/client/components/chat.i: src/game/client/components/chat.cpp.i
@@ -3562,6 +3705,7 @@ src/game/client/components/chat.i: src/game/client/components/chat.cpp.i
 # target to preprocess a source file
 src/game/client/components/chat.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/chat.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/chat.cpp.i
 .PHONY : src/game/client/components/chat.cpp.i
 
 src/game/client/components/chat.s: src/game/client/components/chat.cpp.s
@@ -3570,6 +3714,7 @@ src/game/client/components/chat.s: src/game/client/components/chat.cpp.s
 # target to generate assembly for a file
 src/game/client/components/chat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/chat.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/chat.cpp.s
 .PHONY : src/game/client/components/chat.cpp.s
 
 src/game/client/components/console.o: src/game/client/components/console.cpp.o
@@ -3578,6 +3723,7 @@ src/game/client/components/console.o: src/game/client/components/console.cpp.o
 # target to build an object file
 src/game/client/components/console.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/console.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/console.cpp.o
 .PHONY : src/game/client/components/console.cpp.o
 
 src/game/client/components/console.i: src/game/client/components/console.cpp.i
@@ -3586,6 +3732,7 @@ src/game/client/components/console.i: src/game/client/components/console.cpp.i
 # target to preprocess a source file
 src/game/client/components/console.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/console.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/console.cpp.i
 .PHONY : src/game/client/components/console.cpp.i
 
 src/game/client/components/console.s: src/game/client/components/console.cpp.s
@@ -3594,6 +3741,7 @@ src/game/client/components/console.s: src/game/client/components/console.cpp.s
 # target to generate assembly for a file
 src/game/client/components/console.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/console.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/console.cpp.s
 .PHONY : src/game/client/components/console.cpp.s
 
 src/game/client/components/controls.o: src/game/client/components/controls.cpp.o
@@ -3602,6 +3750,7 @@ src/game/client/components/controls.o: src/game/client/components/controls.cpp.o
 # target to build an object file
 src/game/client/components/controls.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/controls.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/controls.cpp.o
 .PHONY : src/game/client/components/controls.cpp.o
 
 src/game/client/components/controls.i: src/game/client/components/controls.cpp.i
@@ -3610,6 +3759,7 @@ src/game/client/components/controls.i: src/game/client/components/controls.cpp.i
 # target to preprocess a source file
 src/game/client/components/controls.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/controls.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/controls.cpp.i
 .PHONY : src/game/client/components/controls.cpp.i
 
 src/game/client/components/controls.s: src/game/client/components/controls.cpp.s
@@ -3618,6 +3768,7 @@ src/game/client/components/controls.s: src/game/client/components/controls.cpp.s
 # target to generate assembly for a file
 src/game/client/components/controls.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/controls.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/controls.cpp.s
 .PHONY : src/game/client/components/controls.cpp.s
 
 src/game/client/components/countryflags.o: src/game/client/components/countryflags.cpp.o
@@ -3626,6 +3777,7 @@ src/game/client/components/countryflags.o: src/game/client/components/countryfla
 # target to build an object file
 src/game/client/components/countryflags.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/countryflags.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/countryflags.cpp.o
 .PHONY : src/game/client/components/countryflags.cpp.o
 
 src/game/client/components/countryflags.i: src/game/client/components/countryflags.cpp.i
@@ -3634,6 +3786,7 @@ src/game/client/components/countryflags.i: src/game/client/components/countryfla
 # target to preprocess a source file
 src/game/client/components/countryflags.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/countryflags.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/countryflags.cpp.i
 .PHONY : src/game/client/components/countryflags.cpp.i
 
 src/game/client/components/countryflags.s: src/game/client/components/countryflags.cpp.s
@@ -3642,6 +3795,7 @@ src/game/client/components/countryflags.s: src/game/client/components/countryfla
 # target to generate assembly for a file
 src/game/client/components/countryflags.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/countryflags.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/countryflags.cpp.s
 .PHONY : src/game/client/components/countryflags.cpp.s
 
 src/game/client/components/damageind.o: src/game/client/components/damageind.cpp.o
@@ -3650,6 +3804,7 @@ src/game/client/components/damageind.o: src/game/client/components/damageind.cpp
 # target to build an object file
 src/game/client/components/damageind.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/damageind.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/damageind.cpp.o
 .PHONY : src/game/client/components/damageind.cpp.o
 
 src/game/client/components/damageind.i: src/game/client/components/damageind.cpp.i
@@ -3658,6 +3813,7 @@ src/game/client/components/damageind.i: src/game/client/components/damageind.cpp
 # target to preprocess a source file
 src/game/client/components/damageind.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/damageind.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/damageind.cpp.i
 .PHONY : src/game/client/components/damageind.cpp.i
 
 src/game/client/components/damageind.s: src/game/client/components/damageind.cpp.s
@@ -3666,6 +3822,7 @@ src/game/client/components/damageind.s: src/game/client/components/damageind.cpp
 # target to generate assembly for a file
 src/game/client/components/damageind.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/damageind.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/damageind.cpp.s
 .PHONY : src/game/client/components/damageind.cpp.s
 
 src/game/client/components/debughud.o: src/game/client/components/debughud.cpp.o
@@ -3674,6 +3831,7 @@ src/game/client/components/debughud.o: src/game/client/components/debughud.cpp.o
 # target to build an object file
 src/game/client/components/debughud.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/debughud.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/debughud.cpp.o
 .PHONY : src/game/client/components/debughud.cpp.o
 
 src/game/client/components/debughud.i: src/game/client/components/debughud.cpp.i
@@ -3682,6 +3840,7 @@ src/game/client/components/debughud.i: src/game/client/components/debughud.cpp.i
 # target to preprocess a source file
 src/game/client/components/debughud.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/debughud.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/debughud.cpp.i
 .PHONY : src/game/client/components/debughud.cpp.i
 
 src/game/client/components/debughud.s: src/game/client/components/debughud.cpp.s
@@ -3690,7 +3849,32 @@ src/game/client/components/debughud.s: src/game/client/components/debughud.cpp.s
 # target to generate assembly for a file
 src/game/client/components/debughud.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/debughud.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/debughud.cpp.s
 .PHONY : src/game/client/components/debughud.cpp.s
+
+src/game/client/components/dummyCamera.o: src/game/client/components/dummyCamera.cpp.o
+.PHONY : src/game/client/components/dummyCamera.o
+
+# target to build an object file
+src/game/client/components/dummyCamera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/dummyCamera.cpp.o
+.PHONY : src/game/client/components/dummyCamera.cpp.o
+
+src/game/client/components/dummyCamera.i: src/game/client/components/dummyCamera.cpp.i
+.PHONY : src/game/client/components/dummyCamera.i
+
+# target to preprocess a source file
+src/game/client/components/dummyCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/dummyCamera.cpp.i
+.PHONY : src/game/client/components/dummyCamera.cpp.i
+
+src/game/client/components/dummyCamera.s: src/game/client/components/dummyCamera.cpp.s
+.PHONY : src/game/client/components/dummyCamera.s
+
+# target to generate assembly for a file
+src/game/client/components/dummyCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/dummyCamera.cpp.s
+.PHONY : src/game/client/components/dummyCamera.cpp.s
 
 src/game/client/components/effects.o: src/game/client/components/effects.cpp.o
 .PHONY : src/game/client/components/effects.o
@@ -3698,6 +3882,7 @@ src/game/client/components/effects.o: src/game/client/components/effects.cpp.o
 # target to build an object file
 src/game/client/components/effects.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/effects.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/effects.cpp.o
 .PHONY : src/game/client/components/effects.cpp.o
 
 src/game/client/components/effects.i: src/game/client/components/effects.cpp.i
@@ -3706,6 +3891,7 @@ src/game/client/components/effects.i: src/game/client/components/effects.cpp.i
 # target to preprocess a source file
 src/game/client/components/effects.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/effects.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/effects.cpp.i
 .PHONY : src/game/client/components/effects.cpp.i
 
 src/game/client/components/effects.s: src/game/client/components/effects.cpp.s
@@ -3714,6 +3900,7 @@ src/game/client/components/effects.s: src/game/client/components/effects.cpp.s
 # target to generate assembly for a file
 src/game/client/components/effects.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/effects.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/effects.cpp.s
 .PHONY : src/game/client/components/effects.cpp.s
 
 src/game/client/components/emoticon.o: src/game/client/components/emoticon.cpp.o
@@ -3722,6 +3909,7 @@ src/game/client/components/emoticon.o: src/game/client/components/emoticon.cpp.o
 # target to build an object file
 src/game/client/components/emoticon.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/emoticon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/emoticon.cpp.o
 .PHONY : src/game/client/components/emoticon.cpp.o
 
 src/game/client/components/emoticon.i: src/game/client/components/emoticon.cpp.i
@@ -3730,6 +3918,7 @@ src/game/client/components/emoticon.i: src/game/client/components/emoticon.cpp.i
 # target to preprocess a source file
 src/game/client/components/emoticon.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/emoticon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/emoticon.cpp.i
 .PHONY : src/game/client/components/emoticon.cpp.i
 
 src/game/client/components/emoticon.s: src/game/client/components/emoticon.cpp.s
@@ -3738,6 +3927,7 @@ src/game/client/components/emoticon.s: src/game/client/components/emoticon.cpp.s
 # target to generate assembly for a file
 src/game/client/components/emoticon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/emoticon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/emoticon.cpp.s
 .PHONY : src/game/client/components/emoticon.cpp.s
 
 src/game/client/components/flow.o: src/game/client/components/flow.cpp.o
@@ -3746,6 +3936,7 @@ src/game/client/components/flow.o: src/game/client/components/flow.cpp.o
 # target to build an object file
 src/game/client/components/flow.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/flow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/flow.cpp.o
 .PHONY : src/game/client/components/flow.cpp.o
 
 src/game/client/components/flow.i: src/game/client/components/flow.cpp.i
@@ -3754,6 +3945,7 @@ src/game/client/components/flow.i: src/game/client/components/flow.cpp.i
 # target to preprocess a source file
 src/game/client/components/flow.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/flow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/flow.cpp.i
 .PHONY : src/game/client/components/flow.cpp.i
 
 src/game/client/components/flow.s: src/game/client/components/flow.cpp.s
@@ -3762,6 +3954,7 @@ src/game/client/components/flow.s: src/game/client/components/flow.cpp.s
 # target to generate assembly for a file
 src/game/client/components/flow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/flow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/flow.cpp.s
 .PHONY : src/game/client/components/flow.cpp.s
 
 src/game/client/components/freezebars.o: src/game/client/components/freezebars.cpp.o
@@ -3770,6 +3963,7 @@ src/game/client/components/freezebars.o: src/game/client/components/freezebars.c
 # target to build an object file
 src/game/client/components/freezebars.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/freezebars.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/freezebars.cpp.o
 .PHONY : src/game/client/components/freezebars.cpp.o
 
 src/game/client/components/freezebars.i: src/game/client/components/freezebars.cpp.i
@@ -3778,6 +3972,7 @@ src/game/client/components/freezebars.i: src/game/client/components/freezebars.c
 # target to preprocess a source file
 src/game/client/components/freezebars.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/freezebars.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/freezebars.cpp.i
 .PHONY : src/game/client/components/freezebars.cpp.i
 
 src/game/client/components/freezebars.s: src/game/client/components/freezebars.cpp.s
@@ -3786,6 +3981,7 @@ src/game/client/components/freezebars.s: src/game/client/components/freezebars.c
 # target to generate assembly for a file
 src/game/client/components/freezebars.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/freezebars.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/freezebars.cpp.s
 .PHONY : src/game/client/components/freezebars.cpp.s
 
 src/game/client/components/ghost.o: src/game/client/components/ghost.cpp.o
@@ -3794,6 +3990,7 @@ src/game/client/components/ghost.o: src/game/client/components/ghost.cpp.o
 # target to build an object file
 src/game/client/components/ghost.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/ghost.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/ghost.cpp.o
 .PHONY : src/game/client/components/ghost.cpp.o
 
 src/game/client/components/ghost.i: src/game/client/components/ghost.cpp.i
@@ -3802,6 +3999,7 @@ src/game/client/components/ghost.i: src/game/client/components/ghost.cpp.i
 # target to preprocess a source file
 src/game/client/components/ghost.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/ghost.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/ghost.cpp.i
 .PHONY : src/game/client/components/ghost.cpp.i
 
 src/game/client/components/ghost.s: src/game/client/components/ghost.cpp.s
@@ -3810,6 +4008,7 @@ src/game/client/components/ghost.s: src/game/client/components/ghost.cpp.s
 # target to generate assembly for a file
 src/game/client/components/ghost.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/ghost.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/ghost.cpp.s
 .PHONY : src/game/client/components/ghost.cpp.s
 
 src/game/client/components/hud.o: src/game/client/components/hud.cpp.o
@@ -3818,6 +4017,7 @@ src/game/client/components/hud.o: src/game/client/components/hud.cpp.o
 # target to build an object file
 src/game/client/components/hud.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/hud.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/hud.cpp.o
 .PHONY : src/game/client/components/hud.cpp.o
 
 src/game/client/components/hud.i: src/game/client/components/hud.cpp.i
@@ -3826,6 +4026,7 @@ src/game/client/components/hud.i: src/game/client/components/hud.cpp.i
 # target to preprocess a source file
 src/game/client/components/hud.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/hud.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/hud.cpp.i
 .PHONY : src/game/client/components/hud.cpp.i
 
 src/game/client/components/hud.s: src/game/client/components/hud.cpp.s
@@ -3834,6 +4035,7 @@ src/game/client/components/hud.s: src/game/client/components/hud.cpp.s
 # target to generate assembly for a file
 src/game/client/components/hud.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/hud.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/hud.cpp.s
 .PHONY : src/game/client/components/hud.cpp.s
 
 src/game/client/components/infomessages.o: src/game/client/components/infomessages.cpp.o
@@ -3842,6 +4044,7 @@ src/game/client/components/infomessages.o: src/game/client/components/infomessag
 # target to build an object file
 src/game/client/components/infomessages.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/infomessages.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/infomessages.cpp.o
 .PHONY : src/game/client/components/infomessages.cpp.o
 
 src/game/client/components/infomessages.i: src/game/client/components/infomessages.cpp.i
@@ -3850,6 +4053,7 @@ src/game/client/components/infomessages.i: src/game/client/components/infomessag
 # target to preprocess a source file
 src/game/client/components/infomessages.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/infomessages.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/infomessages.cpp.i
 .PHONY : src/game/client/components/infomessages.cpp.i
 
 src/game/client/components/infomessages.s: src/game/client/components/infomessages.cpp.s
@@ -3858,6 +4062,7 @@ src/game/client/components/infomessages.s: src/game/client/components/infomessag
 # target to generate assembly for a file
 src/game/client/components/infomessages.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/infomessages.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/infomessages.cpp.s
 .PHONY : src/game/client/components/infomessages.cpp.s
 
 src/game/client/components/items.o: src/game/client/components/items.cpp.o
@@ -3866,6 +4071,7 @@ src/game/client/components/items.o: src/game/client/components/items.cpp.o
 # target to build an object file
 src/game/client/components/items.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/items.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/items.cpp.o
 .PHONY : src/game/client/components/items.cpp.o
 
 src/game/client/components/items.i: src/game/client/components/items.cpp.i
@@ -3874,6 +4080,7 @@ src/game/client/components/items.i: src/game/client/components/items.cpp.i
 # target to preprocess a source file
 src/game/client/components/items.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/items.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/items.cpp.i
 .PHONY : src/game/client/components/items.cpp.i
 
 src/game/client/components/items.s: src/game/client/components/items.cpp.s
@@ -3882,6 +4089,7 @@ src/game/client/components/items.s: src/game/client/components/items.cpp.s
 # target to generate assembly for a file
 src/game/client/components/items.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/items.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/items.cpp.s
 .PHONY : src/game/client/components/items.cpp.s
 
 src/game/client/components/mapimages.o: src/game/client/components/mapimages.cpp.o
@@ -3890,6 +4098,7 @@ src/game/client/components/mapimages.o: src/game/client/components/mapimages.cpp
 # target to build an object file
 src/game/client/components/mapimages.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapimages.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapimages.cpp.o
 .PHONY : src/game/client/components/mapimages.cpp.o
 
 src/game/client/components/mapimages.i: src/game/client/components/mapimages.cpp.i
@@ -3898,6 +4107,7 @@ src/game/client/components/mapimages.i: src/game/client/components/mapimages.cpp
 # target to preprocess a source file
 src/game/client/components/mapimages.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapimages.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapimages.cpp.i
 .PHONY : src/game/client/components/mapimages.cpp.i
 
 src/game/client/components/mapimages.s: src/game/client/components/mapimages.cpp.s
@@ -3906,6 +4116,7 @@ src/game/client/components/mapimages.s: src/game/client/components/mapimages.cpp
 # target to generate assembly for a file
 src/game/client/components/mapimages.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapimages.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapimages.cpp.s
 .PHONY : src/game/client/components/mapimages.cpp.s
 
 src/game/client/components/maplayers.o: src/game/client/components/maplayers.cpp.o
@@ -3914,6 +4125,7 @@ src/game/client/components/maplayers.o: src/game/client/components/maplayers.cpp
 # target to build an object file
 src/game/client/components/maplayers.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/maplayers.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/maplayers.cpp.o
 .PHONY : src/game/client/components/maplayers.cpp.o
 
 src/game/client/components/maplayers.i: src/game/client/components/maplayers.cpp.i
@@ -3922,6 +4134,7 @@ src/game/client/components/maplayers.i: src/game/client/components/maplayers.cpp
 # target to preprocess a source file
 src/game/client/components/maplayers.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/maplayers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/maplayers.cpp.i
 .PHONY : src/game/client/components/maplayers.cpp.i
 
 src/game/client/components/maplayers.s: src/game/client/components/maplayers.cpp.s
@@ -3930,6 +4143,7 @@ src/game/client/components/maplayers.s: src/game/client/components/maplayers.cpp
 # target to generate assembly for a file
 src/game/client/components/maplayers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/maplayers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/maplayers.cpp.s
 .PHONY : src/game/client/components/maplayers.cpp.s
 
 src/game/client/components/mapsounds.o: src/game/client/components/mapsounds.cpp.o
@@ -3938,6 +4152,7 @@ src/game/client/components/mapsounds.o: src/game/client/components/mapsounds.cpp
 # target to build an object file
 src/game/client/components/mapsounds.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapsounds.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapsounds.cpp.o
 .PHONY : src/game/client/components/mapsounds.cpp.o
 
 src/game/client/components/mapsounds.i: src/game/client/components/mapsounds.cpp.i
@@ -3946,6 +4161,7 @@ src/game/client/components/mapsounds.i: src/game/client/components/mapsounds.cpp
 # target to preprocess a source file
 src/game/client/components/mapsounds.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapsounds.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapsounds.cpp.i
 .PHONY : src/game/client/components/mapsounds.cpp.i
 
 src/game/client/components/mapsounds.s: src/game/client/components/mapsounds.cpp.s
@@ -3954,6 +4170,7 @@ src/game/client/components/mapsounds.s: src/game/client/components/mapsounds.cpp
 # target to generate assembly for a file
 src/game/client/components/mapsounds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/mapsounds.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/mapsounds.cpp.s
 .PHONY : src/game/client/components/mapsounds.cpp.s
 
 src/game/client/components/menu_background.o: src/game/client/components/menu_background.cpp.o
@@ -3962,6 +4179,7 @@ src/game/client/components/menu_background.o: src/game/client/components/menu_ba
 # target to build an object file
 src/game/client/components/menu_background.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menu_background.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menu_background.cpp.o
 .PHONY : src/game/client/components/menu_background.cpp.o
 
 src/game/client/components/menu_background.i: src/game/client/components/menu_background.cpp.i
@@ -3970,6 +4188,7 @@ src/game/client/components/menu_background.i: src/game/client/components/menu_ba
 # target to preprocess a source file
 src/game/client/components/menu_background.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menu_background.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menu_background.cpp.i
 .PHONY : src/game/client/components/menu_background.cpp.i
 
 src/game/client/components/menu_background.s: src/game/client/components/menu_background.cpp.s
@@ -3978,6 +4197,7 @@ src/game/client/components/menu_background.s: src/game/client/components/menu_ba
 # target to generate assembly for a file
 src/game/client/components/menu_background.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menu_background.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menu_background.cpp.s
 .PHONY : src/game/client/components/menu_background.cpp.s
 
 src/game/client/components/menus.o: src/game/client/components/menus.cpp.o
@@ -3986,6 +4206,7 @@ src/game/client/components/menus.o: src/game/client/components/menus.cpp.o
 # target to build an object file
 src/game/client/components/menus.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus.cpp.o
 .PHONY : src/game/client/components/menus.cpp.o
 
 src/game/client/components/menus.i: src/game/client/components/menus.cpp.i
@@ -3994,6 +4215,7 @@ src/game/client/components/menus.i: src/game/client/components/menus.cpp.i
 # target to preprocess a source file
 src/game/client/components/menus.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus.cpp.i
 .PHONY : src/game/client/components/menus.cpp.i
 
 src/game/client/components/menus.s: src/game/client/components/menus.cpp.s
@@ -4002,6 +4224,7 @@ src/game/client/components/menus.s: src/game/client/components/menus.cpp.s
 # target to generate assembly for a file
 src/game/client/components/menus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus.cpp.s
 .PHONY : src/game/client/components/menus.cpp.s
 
 src/game/client/components/menus_browser.o: src/game/client/components/menus_browser.cpp.o
@@ -4010,6 +4233,7 @@ src/game/client/components/menus_browser.o: src/game/client/components/menus_bro
 # target to build an object file
 src/game/client/components/menus_browser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_browser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_browser.cpp.o
 .PHONY : src/game/client/components/menus_browser.cpp.o
 
 src/game/client/components/menus_browser.i: src/game/client/components/menus_browser.cpp.i
@@ -4018,6 +4242,7 @@ src/game/client/components/menus_browser.i: src/game/client/components/menus_bro
 # target to preprocess a source file
 src/game/client/components/menus_browser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_browser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_browser.cpp.i
 .PHONY : src/game/client/components/menus_browser.cpp.i
 
 src/game/client/components/menus_browser.s: src/game/client/components/menus_browser.cpp.s
@@ -4026,6 +4251,7 @@ src/game/client/components/menus_browser.s: src/game/client/components/menus_bro
 # target to generate assembly for a file
 src/game/client/components/menus_browser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_browser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_browser.cpp.s
 .PHONY : src/game/client/components/menus_browser.cpp.s
 
 src/game/client/components/menus_demo.o: src/game/client/components/menus_demo.cpp.o
@@ -4034,6 +4260,7 @@ src/game/client/components/menus_demo.o: src/game/client/components/menus_demo.c
 # target to build an object file
 src/game/client/components/menus_demo.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_demo.cpp.o
 .PHONY : src/game/client/components/menus_demo.cpp.o
 
 src/game/client/components/menus_demo.i: src/game/client/components/menus_demo.cpp.i
@@ -4042,6 +4269,7 @@ src/game/client/components/menus_demo.i: src/game/client/components/menus_demo.c
 # target to preprocess a source file
 src/game/client/components/menus_demo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_demo.cpp.i
 .PHONY : src/game/client/components/menus_demo.cpp.i
 
 src/game/client/components/menus_demo.s: src/game/client/components/menus_demo.cpp.s
@@ -4050,6 +4278,7 @@ src/game/client/components/menus_demo.s: src/game/client/components/menus_demo.c
 # target to generate assembly for a file
 src/game/client/components/menus_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_demo.cpp.s
 .PHONY : src/game/client/components/menus_demo.cpp.s
 
 src/game/client/components/menus_ingame.o: src/game/client/components/menus_ingame.cpp.o
@@ -4058,6 +4287,7 @@ src/game/client/components/menus_ingame.o: src/game/client/components/menus_inga
 # target to build an object file
 src/game/client/components/menus_ingame.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_ingame.cpp.o
 .PHONY : src/game/client/components/menus_ingame.cpp.o
 
 src/game/client/components/menus_ingame.i: src/game/client/components/menus_ingame.cpp.i
@@ -4066,6 +4296,7 @@ src/game/client/components/menus_ingame.i: src/game/client/components/menus_inga
 # target to preprocess a source file
 src/game/client/components/menus_ingame.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_ingame.cpp.i
 .PHONY : src/game/client/components/menus_ingame.cpp.i
 
 src/game/client/components/menus_ingame.s: src/game/client/components/menus_ingame.cpp.s
@@ -4074,6 +4305,7 @@ src/game/client/components/menus_ingame.s: src/game/client/components/menus_inga
 # target to generate assembly for a file
 src/game/client/components/menus_ingame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_ingame.cpp.s
 .PHONY : src/game/client/components/menus_ingame.cpp.s
 
 src/game/client/components/menus_settings.o: src/game/client/components/menus_settings.cpp.o
@@ -4082,6 +4314,7 @@ src/game/client/components/menus_settings.o: src/game/client/components/menus_se
 # target to build an object file
 src/game/client/components/menus_settings.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings.cpp.o
 .PHONY : src/game/client/components/menus_settings.cpp.o
 
 src/game/client/components/menus_settings.i: src/game/client/components/menus_settings.cpp.i
@@ -4090,6 +4323,7 @@ src/game/client/components/menus_settings.i: src/game/client/components/menus_se
 # target to preprocess a source file
 src/game/client/components/menus_settings.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings.cpp.i
 .PHONY : src/game/client/components/menus_settings.cpp.i
 
 src/game/client/components/menus_settings.s: src/game/client/components/menus_settings.cpp.s
@@ -4098,6 +4332,7 @@ src/game/client/components/menus_settings.s: src/game/client/components/menus_se
 # target to generate assembly for a file
 src/game/client/components/menus_settings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings.cpp.s
 .PHONY : src/game/client/components/menus_settings.cpp.s
 
 src/game/client/components/menus_settings7.o: src/game/client/components/menus_settings7.cpp.o
@@ -4106,6 +4341,7 @@ src/game/client/components/menus_settings7.o: src/game/client/components/menus_s
 # target to build an object file
 src/game/client/components/menus_settings7.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings7.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings7.cpp.o
 .PHONY : src/game/client/components/menus_settings7.cpp.o
 
 src/game/client/components/menus_settings7.i: src/game/client/components/menus_settings7.cpp.i
@@ -4114,6 +4350,7 @@ src/game/client/components/menus_settings7.i: src/game/client/components/menus_s
 # target to preprocess a source file
 src/game/client/components/menus_settings7.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings7.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings7.cpp.i
 .PHONY : src/game/client/components/menus_settings7.cpp.i
 
 src/game/client/components/menus_settings7.s: src/game/client/components/menus_settings7.cpp.s
@@ -4122,6 +4359,7 @@ src/game/client/components/menus_settings7.s: src/game/client/components/menus_s
 # target to generate assembly for a file
 src/game/client/components/menus_settings7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings7.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings7.cpp.s
 .PHONY : src/game/client/components/menus_settings7.cpp.s
 
 src/game/client/components/menus_settings_assets.o: src/game/client/components/menus_settings_assets.cpp.o
@@ -4130,6 +4368,7 @@ src/game/client/components/menus_settings_assets.o: src/game/client/components/m
 # target to build an object file
 src/game/client/components/menus_settings_assets.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings_assets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings_assets.cpp.o
 .PHONY : src/game/client/components/menus_settings_assets.cpp.o
 
 src/game/client/components/menus_settings_assets.i: src/game/client/components/menus_settings_assets.cpp.i
@@ -4138,6 +4377,7 @@ src/game/client/components/menus_settings_assets.i: src/game/client/components/m
 # target to preprocess a source file
 src/game/client/components/menus_settings_assets.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings_assets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings_assets.cpp.i
 .PHONY : src/game/client/components/menus_settings_assets.cpp.i
 
 src/game/client/components/menus_settings_assets.s: src/game/client/components/menus_settings_assets.cpp.s
@@ -4146,6 +4386,7 @@ src/game/client/components/menus_settings_assets.s: src/game/client/components/m
 # target to generate assembly for a file
 src/game/client/components/menus_settings_assets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_settings_assets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_settings_assets.cpp.s
 .PHONY : src/game/client/components/menus_settings_assets.cpp.s
 
 src/game/client/components/menus_start.o: src/game/client/components/menus_start.cpp.o
@@ -4154,6 +4395,7 @@ src/game/client/components/menus_start.o: src/game/client/components/menus_start
 # target to build an object file
 src/game/client/components/menus_start.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_start.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_start.cpp.o
 .PHONY : src/game/client/components/menus_start.cpp.o
 
 src/game/client/components/menus_start.i: src/game/client/components/menus_start.cpp.i
@@ -4162,6 +4404,7 @@ src/game/client/components/menus_start.i: src/game/client/components/menus_start
 # target to preprocess a source file
 src/game/client/components/menus_start.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_start.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_start.cpp.i
 .PHONY : src/game/client/components/menus_start.cpp.i
 
 src/game/client/components/menus_start.s: src/game/client/components/menus_start.cpp.s
@@ -4170,6 +4413,7 @@ src/game/client/components/menus_start.s: src/game/client/components/menus_start
 # target to generate assembly for a file
 src/game/client/components/menus_start.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/menus_start.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/menus_start.cpp.s
 .PHONY : src/game/client/components/menus_start.cpp.s
 
 src/game/client/components/motd.o: src/game/client/components/motd.cpp.o
@@ -4178,6 +4422,7 @@ src/game/client/components/motd.o: src/game/client/components/motd.cpp.o
 # target to build an object file
 src/game/client/components/motd.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/motd.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/motd.cpp.o
 .PHONY : src/game/client/components/motd.cpp.o
 
 src/game/client/components/motd.i: src/game/client/components/motd.cpp.i
@@ -4186,6 +4431,7 @@ src/game/client/components/motd.i: src/game/client/components/motd.cpp.i
 # target to preprocess a source file
 src/game/client/components/motd.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/motd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/motd.cpp.i
 .PHONY : src/game/client/components/motd.cpp.i
 
 src/game/client/components/motd.s: src/game/client/components/motd.cpp.s
@@ -4194,6 +4440,7 @@ src/game/client/components/motd.s: src/game/client/components/motd.cpp.s
 # target to generate assembly for a file
 src/game/client/components/motd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/motd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/motd.cpp.s
 .PHONY : src/game/client/components/motd.cpp.s
 
 src/game/client/components/nameplates.o: src/game/client/components/nameplates.cpp.o
@@ -4202,6 +4449,7 @@ src/game/client/components/nameplates.o: src/game/client/components/nameplates.c
 # target to build an object file
 src/game/client/components/nameplates.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/nameplates.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/nameplates.cpp.o
 .PHONY : src/game/client/components/nameplates.cpp.o
 
 src/game/client/components/nameplates.i: src/game/client/components/nameplates.cpp.i
@@ -4210,6 +4458,7 @@ src/game/client/components/nameplates.i: src/game/client/components/nameplates.c
 # target to preprocess a source file
 src/game/client/components/nameplates.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/nameplates.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/nameplates.cpp.i
 .PHONY : src/game/client/components/nameplates.cpp.i
 
 src/game/client/components/nameplates.s: src/game/client/components/nameplates.cpp.s
@@ -4218,6 +4467,7 @@ src/game/client/components/nameplates.s: src/game/client/components/nameplates.c
 # target to generate assembly for a file
 src/game/client/components/nameplates.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/nameplates.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/nameplates.cpp.s
 .PHONY : src/game/client/components/nameplates.cpp.s
 
 src/game/client/components/particles.o: src/game/client/components/particles.cpp.o
@@ -4226,6 +4476,7 @@ src/game/client/components/particles.o: src/game/client/components/particles.cpp
 # target to build an object file
 src/game/client/components/particles.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/particles.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/particles.cpp.o
 .PHONY : src/game/client/components/particles.cpp.o
 
 src/game/client/components/particles.i: src/game/client/components/particles.cpp.i
@@ -4234,6 +4485,7 @@ src/game/client/components/particles.i: src/game/client/components/particles.cpp
 # target to preprocess a source file
 src/game/client/components/particles.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/particles.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/particles.cpp.i
 .PHONY : src/game/client/components/particles.cpp.i
 
 src/game/client/components/particles.s: src/game/client/components/particles.cpp.s
@@ -4242,6 +4494,7 @@ src/game/client/components/particles.s: src/game/client/components/particles.cpp
 # target to generate assembly for a file
 src/game/client/components/particles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/particles.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/particles.cpp.s
 .PHONY : src/game/client/components/particles.cpp.s
 
 src/game/client/components/players.o: src/game/client/components/players.cpp.o
@@ -4250,6 +4503,7 @@ src/game/client/components/players.o: src/game/client/components/players.cpp.o
 # target to build an object file
 src/game/client/components/players.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/players.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/players.cpp.o
 .PHONY : src/game/client/components/players.cpp.o
 
 src/game/client/components/players.i: src/game/client/components/players.cpp.i
@@ -4258,6 +4512,7 @@ src/game/client/components/players.i: src/game/client/components/players.cpp.i
 # target to preprocess a source file
 src/game/client/components/players.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/players.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/players.cpp.i
 .PHONY : src/game/client/components/players.cpp.i
 
 src/game/client/components/players.s: src/game/client/components/players.cpp.s
@@ -4266,6 +4521,7 @@ src/game/client/components/players.s: src/game/client/components/players.cpp.s
 # target to generate assembly for a file
 src/game/client/components/players.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/players.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/players.cpp.s
 .PHONY : src/game/client/components/players.cpp.s
 
 src/game/client/components/race_demo.o: src/game/client/components/race_demo.cpp.o
@@ -4274,6 +4530,7 @@ src/game/client/components/race_demo.o: src/game/client/components/race_demo.cpp
 # target to build an object file
 src/game/client/components/race_demo.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/race_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/race_demo.cpp.o
 .PHONY : src/game/client/components/race_demo.cpp.o
 
 src/game/client/components/race_demo.i: src/game/client/components/race_demo.cpp.i
@@ -4282,6 +4539,7 @@ src/game/client/components/race_demo.i: src/game/client/components/race_demo.cpp
 # target to preprocess a source file
 src/game/client/components/race_demo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/race_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/race_demo.cpp.i
 .PHONY : src/game/client/components/race_demo.cpp.i
 
 src/game/client/components/race_demo.s: src/game/client/components/race_demo.cpp.s
@@ -4290,6 +4548,7 @@ src/game/client/components/race_demo.s: src/game/client/components/race_demo.cpp
 # target to generate assembly for a file
 src/game/client/components/race_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/race_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/race_demo.cpp.s
 .PHONY : src/game/client/components/race_demo.cpp.s
 
 src/game/client/components/scoreboard.o: src/game/client/components/scoreboard.cpp.o
@@ -4298,6 +4557,7 @@ src/game/client/components/scoreboard.o: src/game/client/components/scoreboard.c
 # target to build an object file
 src/game/client/components/scoreboard.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/scoreboard.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/scoreboard.cpp.o
 .PHONY : src/game/client/components/scoreboard.cpp.o
 
 src/game/client/components/scoreboard.i: src/game/client/components/scoreboard.cpp.i
@@ -4306,6 +4566,7 @@ src/game/client/components/scoreboard.i: src/game/client/components/scoreboard.c
 # target to preprocess a source file
 src/game/client/components/scoreboard.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/scoreboard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/scoreboard.cpp.i
 .PHONY : src/game/client/components/scoreboard.cpp.i
 
 src/game/client/components/scoreboard.s: src/game/client/components/scoreboard.cpp.s
@@ -4314,6 +4575,7 @@ src/game/client/components/scoreboard.s: src/game/client/components/scoreboard.c
 # target to generate assembly for a file
 src/game/client/components/scoreboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/scoreboard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/scoreboard.cpp.s
 .PHONY : src/game/client/components/scoreboard.cpp.s
 
 src/game/client/components/skins.o: src/game/client/components/skins.cpp.o
@@ -4322,6 +4584,7 @@ src/game/client/components/skins.o: src/game/client/components/skins.cpp.o
 # target to build an object file
 src/game/client/components/skins.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins.cpp.o
 .PHONY : src/game/client/components/skins.cpp.o
 
 src/game/client/components/skins.i: src/game/client/components/skins.cpp.i
@@ -4330,6 +4593,7 @@ src/game/client/components/skins.i: src/game/client/components/skins.cpp.i
 # target to preprocess a source file
 src/game/client/components/skins.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins.cpp.i
 .PHONY : src/game/client/components/skins.cpp.i
 
 src/game/client/components/skins.s: src/game/client/components/skins.cpp.s
@@ -4338,6 +4602,7 @@ src/game/client/components/skins.s: src/game/client/components/skins.cpp.s
 # target to generate assembly for a file
 src/game/client/components/skins.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins.cpp.s
 .PHONY : src/game/client/components/skins.cpp.s
 
 src/game/client/components/skins7.o: src/game/client/components/skins7.cpp.o
@@ -4346,6 +4611,7 @@ src/game/client/components/skins7.o: src/game/client/components/skins7.cpp.o
 # target to build an object file
 src/game/client/components/skins7.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins7.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins7.cpp.o
 .PHONY : src/game/client/components/skins7.cpp.o
 
 src/game/client/components/skins7.i: src/game/client/components/skins7.cpp.i
@@ -4354,6 +4620,7 @@ src/game/client/components/skins7.i: src/game/client/components/skins7.cpp.i
 # target to preprocess a source file
 src/game/client/components/skins7.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins7.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins7.cpp.i
 .PHONY : src/game/client/components/skins7.cpp.i
 
 src/game/client/components/skins7.s: src/game/client/components/skins7.cpp.s
@@ -4362,6 +4629,7 @@ src/game/client/components/skins7.s: src/game/client/components/skins7.cpp.s
 # target to generate assembly for a file
 src/game/client/components/skins7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/skins7.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/skins7.cpp.s
 .PHONY : src/game/client/components/skins7.cpp.s
 
 src/game/client/components/sounds.o: src/game/client/components/sounds.cpp.o
@@ -4370,6 +4638,7 @@ src/game/client/components/sounds.o: src/game/client/components/sounds.cpp.o
 # target to build an object file
 src/game/client/components/sounds.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/sounds.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/sounds.cpp.o
 .PHONY : src/game/client/components/sounds.cpp.o
 
 src/game/client/components/sounds.i: src/game/client/components/sounds.cpp.i
@@ -4378,6 +4647,7 @@ src/game/client/components/sounds.i: src/game/client/components/sounds.cpp.i
 # target to preprocess a source file
 src/game/client/components/sounds.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/sounds.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/sounds.cpp.i
 .PHONY : src/game/client/components/sounds.cpp.i
 
 src/game/client/components/sounds.s: src/game/client/components/sounds.cpp.s
@@ -4386,6 +4656,7 @@ src/game/client/components/sounds.s: src/game/client/components/sounds.cpp.s
 # target to generate assembly for a file
 src/game/client/components/sounds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/sounds.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/sounds.cpp.s
 .PHONY : src/game/client/components/sounds.cpp.s
 
 src/game/client/components/spectator.o: src/game/client/components/spectator.cpp.o
@@ -4394,6 +4665,7 @@ src/game/client/components/spectator.o: src/game/client/components/spectator.cpp
 # target to build an object file
 src/game/client/components/spectator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/spectator.cpp.o
 .PHONY : src/game/client/components/spectator.cpp.o
 
 src/game/client/components/spectator.i: src/game/client/components/spectator.cpp.i
@@ -4402,6 +4674,7 @@ src/game/client/components/spectator.i: src/game/client/components/spectator.cpp
 # target to preprocess a source file
 src/game/client/components/spectator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/spectator.cpp.i
 .PHONY : src/game/client/components/spectator.cpp.i
 
 src/game/client/components/spectator.s: src/game/client/components/spectator.cpp.s
@@ -4410,6 +4683,7 @@ src/game/client/components/spectator.s: src/game/client/components/spectator.cpp
 # target to generate assembly for a file
 src/game/client/components/spectator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/spectator.cpp.s
 .PHONY : src/game/client/components/spectator.cpp.s
 
 src/game/client/components/statboard.o: src/game/client/components/statboard.cpp.o
@@ -4418,6 +4692,7 @@ src/game/client/components/statboard.o: src/game/client/components/statboard.cpp
 # target to build an object file
 src/game/client/components/statboard.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/statboard.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/statboard.cpp.o
 .PHONY : src/game/client/components/statboard.cpp.o
 
 src/game/client/components/statboard.i: src/game/client/components/statboard.cpp.i
@@ -4426,6 +4701,7 @@ src/game/client/components/statboard.i: src/game/client/components/statboard.cpp
 # target to preprocess a source file
 src/game/client/components/statboard.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/statboard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/statboard.cpp.i
 .PHONY : src/game/client/components/statboard.cpp.i
 
 src/game/client/components/statboard.s: src/game/client/components/statboard.cpp.s
@@ -4434,6 +4710,7 @@ src/game/client/components/statboard.s: src/game/client/components/statboard.cpp
 # target to generate assembly for a file
 src/game/client/components/statboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/statboard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/statboard.cpp.s
 .PHONY : src/game/client/components/statboard.cpp.s
 
 src/game/client/components/tooltips.o: src/game/client/components/tooltips.cpp.o
@@ -4442,6 +4719,7 @@ src/game/client/components/tooltips.o: src/game/client/components/tooltips.cpp.o
 # target to build an object file
 src/game/client/components/tooltips.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/tooltips.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/tooltips.cpp.o
 .PHONY : src/game/client/components/tooltips.cpp.o
 
 src/game/client/components/tooltips.i: src/game/client/components/tooltips.cpp.i
@@ -4450,6 +4728,7 @@ src/game/client/components/tooltips.i: src/game/client/components/tooltips.cpp.i
 # target to preprocess a source file
 src/game/client/components/tooltips.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/tooltips.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/tooltips.cpp.i
 .PHONY : src/game/client/components/tooltips.cpp.i
 
 src/game/client/components/tooltips.s: src/game/client/components/tooltips.cpp.s
@@ -4458,6 +4737,7 @@ src/game/client/components/tooltips.s: src/game/client/components/tooltips.cpp.s
 # target to generate assembly for a file
 src/game/client/components/tooltips.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/tooltips.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/tooltips.cpp.s
 .PHONY : src/game/client/components/tooltips.cpp.s
 
 src/game/client/components/touch_controls.o: src/game/client/components/touch_controls.cpp.o
@@ -4466,6 +4746,7 @@ src/game/client/components/touch_controls.o: src/game/client/components/touch_co
 # target to build an object file
 src/game/client/components/touch_controls.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/touch_controls.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/touch_controls.cpp.o
 .PHONY : src/game/client/components/touch_controls.cpp.o
 
 src/game/client/components/touch_controls.i: src/game/client/components/touch_controls.cpp.i
@@ -4474,6 +4755,7 @@ src/game/client/components/touch_controls.i: src/game/client/components/touch_co
 # target to preprocess a source file
 src/game/client/components/touch_controls.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/touch_controls.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/touch_controls.cpp.i
 .PHONY : src/game/client/components/touch_controls.cpp.i
 
 src/game/client/components/touch_controls.s: src/game/client/components/touch_controls.cpp.s
@@ -4482,6 +4764,7 @@ src/game/client/components/touch_controls.s: src/game/client/components/touch_co
 # target to generate assembly for a file
 src/game/client/components/touch_controls.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/touch_controls.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/touch_controls.cpp.s
 .PHONY : src/game/client/components/touch_controls.cpp.s
 
 src/game/client/components/voting.o: src/game/client/components/voting.cpp.o
@@ -4490,6 +4773,7 @@ src/game/client/components/voting.o: src/game/client/components/voting.cpp.o
 # target to build an object file
 src/game/client/components/voting.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/voting.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/voting.cpp.o
 .PHONY : src/game/client/components/voting.cpp.o
 
 src/game/client/components/voting.i: src/game/client/components/voting.cpp.i
@@ -4498,6 +4782,7 @@ src/game/client/components/voting.i: src/game/client/components/voting.cpp.i
 # target to preprocess a source file
 src/game/client/components/voting.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/voting.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/voting.cpp.i
 .PHONY : src/game/client/components/voting.cpp.i
 
 src/game/client/components/voting.s: src/game/client/components/voting.cpp.s
@@ -4506,6 +4791,7 @@ src/game/client/components/voting.s: src/game/client/components/voting.cpp.s
 # target to generate assembly for a file
 src/game/client/components/voting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/components/voting.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/components/voting.cpp.s
 .PHONY : src/game/client/components/voting.cpp.s
 
 src/game/client/gameclient.o: src/game/client/gameclient.cpp.o
@@ -4532,12 +4818,37 @@ src/game/client/gameclient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/gameclient.cpp.s
 .PHONY : src/game/client/gameclient.cpp.s
 
+src/game/client/gameclient_alt.o: src/game/client/gameclient_alt.cpp.o
+.PHONY : src/game/client/gameclient_alt.o
+
+# target to build an object file
+src/game/client/gameclient_alt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/gameclient_alt.cpp.o
+.PHONY : src/game/client/gameclient_alt.cpp.o
+
+src/game/client/gameclient_alt.i: src/game/client/gameclient_alt.cpp.i
+.PHONY : src/game/client/gameclient_alt.i
+
+# target to preprocess a source file
+src/game/client/gameclient_alt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/gameclient_alt.cpp.i
+.PHONY : src/game/client/gameclient_alt.cpp.i
+
+src/game/client/gameclient_alt.s: src/game/client/gameclient_alt.cpp.s
+.PHONY : src/game/client/gameclient_alt.s
+
+# target to generate assembly for a file
+src/game/client/gameclient_alt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/gameclient_alt.cpp.s
+.PHONY : src/game/client/gameclient_alt.cpp.s
+
 src/game/client/laser_data.o: src/game/client/laser_data.cpp.o
 .PHONY : src/game/client/laser_data.o
 
 # target to build an object file
 src/game/client/laser_data.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/laser_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/laser_data.cpp.o
 .PHONY : src/game/client/laser_data.cpp.o
 
 src/game/client/laser_data.i: src/game/client/laser_data.cpp.i
@@ -4546,6 +4857,7 @@ src/game/client/laser_data.i: src/game/client/laser_data.cpp.i
 # target to preprocess a source file
 src/game/client/laser_data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/laser_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/laser_data.cpp.i
 .PHONY : src/game/client/laser_data.cpp.i
 
 src/game/client/laser_data.s: src/game/client/laser_data.cpp.s
@@ -4554,6 +4866,7 @@ src/game/client/laser_data.s: src/game/client/laser_data.cpp.s
 # target to generate assembly for a file
 src/game/client/laser_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/laser_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/laser_data.cpp.s
 .PHONY : src/game/client/laser_data.cpp.s
 
 src/game/client/lineinput.o: src/game/client/lineinput.cpp.o
@@ -4562,6 +4875,7 @@ src/game/client/lineinput.o: src/game/client/lineinput.cpp.o
 # target to build an object file
 src/game/client/lineinput.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/lineinput.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/lineinput.cpp.o
 .PHONY : src/game/client/lineinput.cpp.o
 
 src/game/client/lineinput.i: src/game/client/lineinput.cpp.i
@@ -4570,6 +4884,7 @@ src/game/client/lineinput.i: src/game/client/lineinput.cpp.i
 # target to preprocess a source file
 src/game/client/lineinput.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/lineinput.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/lineinput.cpp.i
 .PHONY : src/game/client/lineinput.cpp.i
 
 src/game/client/lineinput.s: src/game/client/lineinput.cpp.s
@@ -4578,6 +4893,7 @@ src/game/client/lineinput.s: src/game/client/lineinput.cpp.s
 # target to generate assembly for a file
 src/game/client/lineinput.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/lineinput.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/lineinput.cpp.s
 .PHONY : src/game/client/lineinput.cpp.s
 
 src/game/client/pickup_data.o: src/game/client/pickup_data.cpp.o
@@ -4586,6 +4902,7 @@ src/game/client/pickup_data.o: src/game/client/pickup_data.cpp.o
 # target to build an object file
 src/game/client/pickup_data.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/pickup_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/pickup_data.cpp.o
 .PHONY : src/game/client/pickup_data.cpp.o
 
 src/game/client/pickup_data.i: src/game/client/pickup_data.cpp.i
@@ -4594,6 +4911,7 @@ src/game/client/pickup_data.i: src/game/client/pickup_data.cpp.i
 # target to preprocess a source file
 src/game/client/pickup_data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/pickup_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/pickup_data.cpp.i
 .PHONY : src/game/client/pickup_data.cpp.i
 
 src/game/client/pickup_data.s: src/game/client/pickup_data.cpp.s
@@ -4602,6 +4920,7 @@ src/game/client/pickup_data.s: src/game/client/pickup_data.cpp.s
 # target to generate assembly for a file
 src/game/client/pickup_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/pickup_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/pickup_data.cpp.s
 .PHONY : src/game/client/pickup_data.cpp.s
 
 src/game/client/prediction/entities/character.o: src/game/client/prediction/entities/character.cpp.o
@@ -4610,6 +4929,7 @@ src/game/client/prediction/entities/character.o: src/game/client/prediction/enti
 # target to build an object file
 src/game/client/prediction/entities/character.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/character.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/character.cpp.o
 .PHONY : src/game/client/prediction/entities/character.cpp.o
 
 src/game/client/prediction/entities/character.i: src/game/client/prediction/entities/character.cpp.i
@@ -4618,6 +4938,7 @@ src/game/client/prediction/entities/character.i: src/game/client/prediction/enti
 # target to preprocess a source file
 src/game/client/prediction/entities/character.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/character.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/character.cpp.i
 .PHONY : src/game/client/prediction/entities/character.cpp.i
 
 src/game/client/prediction/entities/character.s: src/game/client/prediction/entities/character.cpp.s
@@ -4626,6 +4947,7 @@ src/game/client/prediction/entities/character.s: src/game/client/prediction/enti
 # target to generate assembly for a file
 src/game/client/prediction/entities/character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/character.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/character.cpp.s
 .PHONY : src/game/client/prediction/entities/character.cpp.s
 
 src/game/client/prediction/entities/dragger.o: src/game/client/prediction/entities/dragger.cpp.o
@@ -4634,6 +4956,7 @@ src/game/client/prediction/entities/dragger.o: src/game/client/prediction/entiti
 # target to build an object file
 src/game/client/prediction/entities/dragger.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/dragger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/dragger.cpp.o
 .PHONY : src/game/client/prediction/entities/dragger.cpp.o
 
 src/game/client/prediction/entities/dragger.i: src/game/client/prediction/entities/dragger.cpp.i
@@ -4642,6 +4965,7 @@ src/game/client/prediction/entities/dragger.i: src/game/client/prediction/entiti
 # target to preprocess a source file
 src/game/client/prediction/entities/dragger.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/dragger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/dragger.cpp.i
 .PHONY : src/game/client/prediction/entities/dragger.cpp.i
 
 src/game/client/prediction/entities/dragger.s: src/game/client/prediction/entities/dragger.cpp.s
@@ -4650,6 +4974,7 @@ src/game/client/prediction/entities/dragger.s: src/game/client/prediction/entiti
 # target to generate assembly for a file
 src/game/client/prediction/entities/dragger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/dragger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/dragger.cpp.s
 .PHONY : src/game/client/prediction/entities/dragger.cpp.s
 
 src/game/client/prediction/entities/laser.o: src/game/client/prediction/entities/laser.cpp.o
@@ -4658,6 +4983,7 @@ src/game/client/prediction/entities/laser.o: src/game/client/prediction/entities
 # target to build an object file
 src/game/client/prediction/entities/laser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/laser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/laser.cpp.o
 .PHONY : src/game/client/prediction/entities/laser.cpp.o
 
 src/game/client/prediction/entities/laser.i: src/game/client/prediction/entities/laser.cpp.i
@@ -4666,6 +4992,7 @@ src/game/client/prediction/entities/laser.i: src/game/client/prediction/entities
 # target to preprocess a source file
 src/game/client/prediction/entities/laser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/laser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/laser.cpp.i
 .PHONY : src/game/client/prediction/entities/laser.cpp.i
 
 src/game/client/prediction/entities/laser.s: src/game/client/prediction/entities/laser.cpp.s
@@ -4674,6 +5001,7 @@ src/game/client/prediction/entities/laser.s: src/game/client/prediction/entities
 # target to generate assembly for a file
 src/game/client/prediction/entities/laser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/laser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/laser.cpp.s
 .PHONY : src/game/client/prediction/entities/laser.cpp.s
 
 src/game/client/prediction/entities/pickup.o: src/game/client/prediction/entities/pickup.cpp.o
@@ -4682,6 +5010,7 @@ src/game/client/prediction/entities/pickup.o: src/game/client/prediction/entitie
 # target to build an object file
 src/game/client/prediction/entities/pickup.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/pickup.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/pickup.cpp.o
 .PHONY : src/game/client/prediction/entities/pickup.cpp.o
 
 src/game/client/prediction/entities/pickup.i: src/game/client/prediction/entities/pickup.cpp.i
@@ -4690,6 +5019,7 @@ src/game/client/prediction/entities/pickup.i: src/game/client/prediction/entitie
 # target to preprocess a source file
 src/game/client/prediction/entities/pickup.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/pickup.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/pickup.cpp.i
 .PHONY : src/game/client/prediction/entities/pickup.cpp.i
 
 src/game/client/prediction/entities/pickup.s: src/game/client/prediction/entities/pickup.cpp.s
@@ -4698,6 +5028,7 @@ src/game/client/prediction/entities/pickup.s: src/game/client/prediction/entitie
 # target to generate assembly for a file
 src/game/client/prediction/entities/pickup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/pickup.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/pickup.cpp.s
 .PHONY : src/game/client/prediction/entities/pickup.cpp.s
 
 src/game/client/prediction/entities/projectile.o: src/game/client/prediction/entities/projectile.cpp.o
@@ -4706,6 +5037,7 @@ src/game/client/prediction/entities/projectile.o: src/game/client/prediction/ent
 # target to build an object file
 src/game/client/prediction/entities/projectile.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/projectile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/projectile.cpp.o
 .PHONY : src/game/client/prediction/entities/projectile.cpp.o
 
 src/game/client/prediction/entities/projectile.i: src/game/client/prediction/entities/projectile.cpp.i
@@ -4714,6 +5046,7 @@ src/game/client/prediction/entities/projectile.i: src/game/client/prediction/ent
 # target to preprocess a source file
 src/game/client/prediction/entities/projectile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/projectile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/projectile.cpp.i
 .PHONY : src/game/client/prediction/entities/projectile.cpp.i
 
 src/game/client/prediction/entities/projectile.s: src/game/client/prediction/entities/projectile.cpp.s
@@ -4722,6 +5055,7 @@ src/game/client/prediction/entities/projectile.s: src/game/client/prediction/ent
 # target to generate assembly for a file
 src/game/client/prediction/entities/projectile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entities/projectile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entities/projectile.cpp.s
 .PHONY : src/game/client/prediction/entities/projectile.cpp.s
 
 src/game/client/prediction/entity.o: src/game/client/prediction/entity.cpp.o
@@ -4730,6 +5064,7 @@ src/game/client/prediction/entity.o: src/game/client/prediction/entity.cpp.o
 # target to build an object file
 src/game/client/prediction/entity.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entity.cpp.o
 .PHONY : src/game/client/prediction/entity.cpp.o
 
 src/game/client/prediction/entity.i: src/game/client/prediction/entity.cpp.i
@@ -4738,6 +5073,7 @@ src/game/client/prediction/entity.i: src/game/client/prediction/entity.cpp.i
 # target to preprocess a source file
 src/game/client/prediction/entity.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entity.cpp.i
 .PHONY : src/game/client/prediction/entity.cpp.i
 
 src/game/client/prediction/entity.s: src/game/client/prediction/entity.cpp.s
@@ -4746,6 +5082,7 @@ src/game/client/prediction/entity.s: src/game/client/prediction/entity.cpp.s
 # target to generate assembly for a file
 src/game/client/prediction/entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/entity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/entity.cpp.s
 .PHONY : src/game/client/prediction/entity.cpp.s
 
 src/game/client/prediction/gameworld.o: src/game/client/prediction/gameworld.cpp.o
@@ -4754,6 +5091,7 @@ src/game/client/prediction/gameworld.o: src/game/client/prediction/gameworld.cpp
 # target to build an object file
 src/game/client/prediction/gameworld.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/gameworld.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/gameworld.cpp.o
 .PHONY : src/game/client/prediction/gameworld.cpp.o
 
 src/game/client/prediction/gameworld.i: src/game/client/prediction/gameworld.cpp.i
@@ -4762,6 +5100,7 @@ src/game/client/prediction/gameworld.i: src/game/client/prediction/gameworld.cpp
 # target to preprocess a source file
 src/game/client/prediction/gameworld.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/gameworld.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/gameworld.cpp.i
 .PHONY : src/game/client/prediction/gameworld.cpp.i
 
 src/game/client/prediction/gameworld.s: src/game/client/prediction/gameworld.cpp.s
@@ -4770,6 +5109,7 @@ src/game/client/prediction/gameworld.s: src/game/client/prediction/gameworld.cpp
 # target to generate assembly for a file
 src/game/client/prediction/gameworld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/prediction/gameworld.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/prediction/gameworld.cpp.s
 .PHONY : src/game/client/prediction/gameworld.cpp.s
 
 src/game/client/projectile_data.o: src/game/client/projectile_data.cpp.o
@@ -4778,6 +5118,7 @@ src/game/client/projectile_data.o: src/game/client/projectile_data.cpp.o
 # target to build an object file
 src/game/client/projectile_data.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/projectile_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/projectile_data.cpp.o
 .PHONY : src/game/client/projectile_data.cpp.o
 
 src/game/client/projectile_data.i: src/game/client/projectile_data.cpp.i
@@ -4786,6 +5127,7 @@ src/game/client/projectile_data.i: src/game/client/projectile_data.cpp.i
 # target to preprocess a source file
 src/game/client/projectile_data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/projectile_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/projectile_data.cpp.i
 .PHONY : src/game/client/projectile_data.cpp.i
 
 src/game/client/projectile_data.s: src/game/client/projectile_data.cpp.s
@@ -4794,6 +5136,7 @@ src/game/client/projectile_data.s: src/game/client/projectile_data.cpp.s
 # target to generate assembly for a file
 src/game/client/projectile_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/projectile_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/projectile_data.cpp.s
 .PHONY : src/game/client/projectile_data.cpp.s
 
 src/game/client/race.o: src/game/client/race.cpp.o
@@ -4802,6 +5145,7 @@ src/game/client/race.o: src/game/client/race.cpp.o
 # target to build an object file
 src/game/client/race.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/race.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/race.cpp.o
 .PHONY : src/game/client/race.cpp.o
 
 src/game/client/race.i: src/game/client/race.cpp.i
@@ -4810,6 +5154,7 @@ src/game/client/race.i: src/game/client/race.cpp.i
 # target to preprocess a source file
 src/game/client/race.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/race.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/race.cpp.i
 .PHONY : src/game/client/race.cpp.i
 
 src/game/client/race.s: src/game/client/race.cpp.s
@@ -4818,6 +5163,7 @@ src/game/client/race.s: src/game/client/race.cpp.s
 # target to generate assembly for a file
 src/game/client/race.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/race.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/race.cpp.s
 .PHONY : src/game/client/race.cpp.s
 
 src/game/client/render.o: src/game/client/render.cpp.o
@@ -4826,6 +5172,7 @@ src/game/client/render.o: src/game/client/render.cpp.o
 # target to build an object file
 src/game/client/render.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render.cpp.o
 .PHONY : src/game/client/render.cpp.o
 
 src/game/client/render.i: src/game/client/render.cpp.i
@@ -4834,6 +5181,7 @@ src/game/client/render.i: src/game/client/render.cpp.i
 # target to preprocess a source file
 src/game/client/render.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render.cpp.i
 .PHONY : src/game/client/render.cpp.i
 
 src/game/client/render.s: src/game/client/render.cpp.s
@@ -4842,6 +5190,7 @@ src/game/client/render.s: src/game/client/render.cpp.s
 # target to generate assembly for a file
 src/game/client/render.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render.cpp.s
 .PHONY : src/game/client/render.cpp.s
 
 src/game/client/render_map.o: src/game/client/render_map.cpp.o
@@ -4850,6 +5199,7 @@ src/game/client/render_map.o: src/game/client/render_map.cpp.o
 # target to build an object file
 src/game/client/render_map.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render_map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render_map.cpp.o
 .PHONY : src/game/client/render_map.cpp.o
 
 src/game/client/render_map.i: src/game/client/render_map.cpp.i
@@ -4858,6 +5208,7 @@ src/game/client/render_map.i: src/game/client/render_map.cpp.i
 # target to preprocess a source file
 src/game/client/render_map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render_map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render_map.cpp.i
 .PHONY : src/game/client/render_map.cpp.i
 
 src/game/client/render_map.s: src/game/client/render_map.cpp.s
@@ -4866,6 +5217,7 @@ src/game/client/render_map.s: src/game/client/render_map.cpp.s
 # target to generate assembly for a file
 src/game/client/render_map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/render_map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/render_map.cpp.s
 .PHONY : src/game/client/render_map.cpp.s
 
 src/game/client/sixup_translate_connless.o: src/game/client/sixup_translate_connless.cpp.o
@@ -4874,6 +5226,7 @@ src/game/client/sixup_translate_connless.o: src/game/client/sixup_translate_conn
 # target to build an object file
 src/game/client/sixup_translate_connless.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_connless.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_connless.cpp.o
 .PHONY : src/game/client/sixup_translate_connless.cpp.o
 
 src/game/client/sixup_translate_connless.i: src/game/client/sixup_translate_connless.cpp.i
@@ -4882,6 +5235,7 @@ src/game/client/sixup_translate_connless.i: src/game/client/sixup_translate_conn
 # target to preprocess a source file
 src/game/client/sixup_translate_connless.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_connless.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_connless.cpp.i
 .PHONY : src/game/client/sixup_translate_connless.cpp.i
 
 src/game/client/sixup_translate_connless.s: src/game/client/sixup_translate_connless.cpp.s
@@ -4890,6 +5244,7 @@ src/game/client/sixup_translate_connless.s: src/game/client/sixup_translate_conn
 # target to generate assembly for a file
 src/game/client/sixup_translate_connless.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_connless.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_connless.cpp.s
 .PHONY : src/game/client/sixup_translate_connless.cpp.s
 
 src/game/client/sixup_translate_game.o: src/game/client/sixup_translate_game.cpp.o
@@ -4898,6 +5253,7 @@ src/game/client/sixup_translate_game.o: src/game/client/sixup_translate_game.cpp
 # target to build an object file
 src/game/client/sixup_translate_game.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_game.cpp.o
 .PHONY : src/game/client/sixup_translate_game.cpp.o
 
 src/game/client/sixup_translate_game.i: src/game/client/sixup_translate_game.cpp.i
@@ -4906,6 +5262,7 @@ src/game/client/sixup_translate_game.i: src/game/client/sixup_translate_game.cpp
 # target to preprocess a source file
 src/game/client/sixup_translate_game.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_game.cpp.i
 .PHONY : src/game/client/sixup_translate_game.cpp.i
 
 src/game/client/sixup_translate_game.s: src/game/client/sixup_translate_game.cpp.s
@@ -4914,6 +5271,7 @@ src/game/client/sixup_translate_game.s: src/game/client/sixup_translate_game.cpp
 # target to generate assembly for a file
 src/game/client/sixup_translate_game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_game.cpp.s
 .PHONY : src/game/client/sixup_translate_game.cpp.s
 
 src/game/client/sixup_translate_snapshot.o: src/game/client/sixup_translate_snapshot.cpp.o
@@ -4922,6 +5280,7 @@ src/game/client/sixup_translate_snapshot.o: src/game/client/sixup_translate_snap
 # target to build an object file
 src/game/client/sixup_translate_snapshot.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_snapshot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_snapshot.cpp.o
 .PHONY : src/game/client/sixup_translate_snapshot.cpp.o
 
 src/game/client/sixup_translate_snapshot.i: src/game/client/sixup_translate_snapshot.cpp.i
@@ -4930,6 +5289,7 @@ src/game/client/sixup_translate_snapshot.i: src/game/client/sixup_translate_snap
 # target to preprocess a source file
 src/game/client/sixup_translate_snapshot.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_snapshot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_snapshot.cpp.i
 .PHONY : src/game/client/sixup_translate_snapshot.cpp.i
 
 src/game/client/sixup_translate_snapshot.s: src/game/client/sixup_translate_snapshot.cpp.s
@@ -4938,6 +5298,7 @@ src/game/client/sixup_translate_snapshot.s: src/game/client/sixup_translate_snap
 # target to generate assembly for a file
 src/game/client/sixup_translate_snapshot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/sixup_translate_snapshot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/sixup_translate_snapshot.cpp.s
 .PHONY : src/game/client/sixup_translate_snapshot.cpp.s
 
 src/game/client/ui.o: src/game/client/ui.cpp.o
@@ -4946,6 +5307,7 @@ src/game/client/ui.o: src/game/client/ui.cpp.o
 # target to build an object file
 src/game/client/ui.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui.cpp.o
 .PHONY : src/game/client/ui.cpp.o
 
 src/game/client/ui.i: src/game/client/ui.cpp.i
@@ -4954,6 +5316,7 @@ src/game/client/ui.i: src/game/client/ui.cpp.i
 # target to preprocess a source file
 src/game/client/ui.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui.cpp.i
 .PHONY : src/game/client/ui.cpp.i
 
 src/game/client/ui.s: src/game/client/ui.cpp.s
@@ -4962,6 +5325,7 @@ src/game/client/ui.s: src/game/client/ui.cpp.s
 # target to generate assembly for a file
 src/game/client/ui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui.cpp.s
 .PHONY : src/game/client/ui.cpp.s
 
 src/game/client/ui_listbox.o: src/game/client/ui_listbox.cpp.o
@@ -4970,6 +5334,7 @@ src/game/client/ui_listbox.o: src/game/client/ui_listbox.cpp.o
 # target to build an object file
 src/game/client/ui_listbox.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_listbox.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_listbox.cpp.o
 .PHONY : src/game/client/ui_listbox.cpp.o
 
 src/game/client/ui_listbox.i: src/game/client/ui_listbox.cpp.i
@@ -4978,6 +5343,7 @@ src/game/client/ui_listbox.i: src/game/client/ui_listbox.cpp.i
 # target to preprocess a source file
 src/game/client/ui_listbox.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_listbox.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_listbox.cpp.i
 .PHONY : src/game/client/ui_listbox.cpp.i
 
 src/game/client/ui_listbox.s: src/game/client/ui_listbox.cpp.s
@@ -4986,6 +5352,7 @@ src/game/client/ui_listbox.s: src/game/client/ui_listbox.cpp.s
 # target to generate assembly for a file
 src/game/client/ui_listbox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_listbox.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_listbox.cpp.s
 .PHONY : src/game/client/ui_listbox.cpp.s
 
 src/game/client/ui_rect.o: src/game/client/ui_rect.cpp.o
@@ -4994,6 +5361,7 @@ src/game/client/ui_rect.o: src/game/client/ui_rect.cpp.o
 # target to build an object file
 src/game/client/ui_rect.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_rect.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_rect.cpp.o
 .PHONY : src/game/client/ui_rect.cpp.o
 
 src/game/client/ui_rect.i: src/game/client/ui_rect.cpp.i
@@ -5002,6 +5370,7 @@ src/game/client/ui_rect.i: src/game/client/ui_rect.cpp.i
 # target to preprocess a source file
 src/game/client/ui_rect.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_rect.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_rect.cpp.i
 .PHONY : src/game/client/ui_rect.cpp.i
 
 src/game/client/ui_rect.s: src/game/client/ui_rect.cpp.s
@@ -5010,6 +5379,7 @@ src/game/client/ui_rect.s: src/game/client/ui_rect.cpp.s
 # target to generate assembly for a file
 src/game/client/ui_rect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_rect.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_rect.cpp.s
 .PHONY : src/game/client/ui_rect.cpp.s
 
 src/game/client/ui_scrollregion.o: src/game/client/ui_scrollregion.cpp.o
@@ -5018,6 +5388,7 @@ src/game/client/ui_scrollregion.o: src/game/client/ui_scrollregion.cpp.o
 # target to build an object file
 src/game/client/ui_scrollregion.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_scrollregion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_scrollregion.cpp.o
 .PHONY : src/game/client/ui_scrollregion.cpp.o
 
 src/game/client/ui_scrollregion.i: src/game/client/ui_scrollregion.cpp.i
@@ -5026,6 +5397,7 @@ src/game/client/ui_scrollregion.i: src/game/client/ui_scrollregion.cpp.i
 # target to preprocess a source file
 src/game/client/ui_scrollregion.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_scrollregion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_scrollregion.cpp.i
 .PHONY : src/game/client/ui_scrollregion.cpp.i
 
 src/game/client/ui_scrollregion.s: src/game/client/ui_scrollregion.cpp.s
@@ -5034,6 +5406,7 @@ src/game/client/ui_scrollregion.s: src/game/client/ui_scrollregion.cpp.s
 # target to generate assembly for a file
 src/game/client/ui_scrollregion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/client/ui_scrollregion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/client/ui_scrollregion.cpp.s
 .PHONY : src/game/client/ui_scrollregion.cpp.s
 
 src/game/collision.o: src/game/collision.cpp.o
@@ -5066,6 +5439,7 @@ src/game/editor/auto_map.o: src/game/editor/auto_map.cpp.o
 # target to build an object file
 src/game/editor/auto_map.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/auto_map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/auto_map.cpp.o
 .PHONY : src/game/editor/auto_map.cpp.o
 
 src/game/editor/auto_map.i: src/game/editor/auto_map.cpp.i
@@ -5074,6 +5448,7 @@ src/game/editor/auto_map.i: src/game/editor/auto_map.cpp.i
 # target to preprocess a source file
 src/game/editor/auto_map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/auto_map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/auto_map.cpp.i
 .PHONY : src/game/editor/auto_map.cpp.i
 
 src/game/editor/auto_map.s: src/game/editor/auto_map.cpp.s
@@ -5082,6 +5457,7 @@ src/game/editor/auto_map.s: src/game/editor/auto_map.cpp.s
 # target to generate assembly for a file
 src/game/editor/auto_map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/auto_map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/auto_map.cpp.s
 .PHONY : src/game/editor/auto_map.cpp.s
 
 src/game/editor/component.o: src/game/editor/component.cpp.o
@@ -5090,6 +5466,7 @@ src/game/editor/component.o: src/game/editor/component.cpp.o
 # target to build an object file
 src/game/editor/component.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/component.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/component.cpp.o
 .PHONY : src/game/editor/component.cpp.o
 
 src/game/editor/component.i: src/game/editor/component.cpp.i
@@ -5098,6 +5475,7 @@ src/game/editor/component.i: src/game/editor/component.cpp.i
 # target to preprocess a source file
 src/game/editor/component.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/component.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/component.cpp.i
 .PHONY : src/game/editor/component.cpp.i
 
 src/game/editor/component.s: src/game/editor/component.cpp.s
@@ -5106,6 +5484,7 @@ src/game/editor/component.s: src/game/editor/component.cpp.s
 # target to generate assembly for a file
 src/game/editor/component.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/component.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/component.cpp.s
 .PHONY : src/game/editor/component.cpp.s
 
 src/game/editor/editor.o: src/game/editor/editor.cpp.o
@@ -5114,6 +5493,7 @@ src/game/editor/editor.o: src/game/editor/editor.cpp.o
 # target to build an object file
 src/game/editor/editor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor.cpp.o
 .PHONY : src/game/editor/editor.cpp.o
 
 src/game/editor/editor.i: src/game/editor/editor.cpp.i
@@ -5122,6 +5502,7 @@ src/game/editor/editor.i: src/game/editor/editor.cpp.i
 # target to preprocess a source file
 src/game/editor/editor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor.cpp.i
 .PHONY : src/game/editor/editor.cpp.i
 
 src/game/editor/editor.s: src/game/editor/editor.cpp.s
@@ -5130,6 +5511,7 @@ src/game/editor/editor.s: src/game/editor/editor.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor.cpp.s
 .PHONY : src/game/editor/editor.cpp.s
 
 src/game/editor/editor_actions.o: src/game/editor/editor_actions.cpp.o
@@ -5138,6 +5520,7 @@ src/game/editor/editor_actions.o: src/game/editor/editor_actions.cpp.o
 # target to build an object file
 src/game/editor/editor_actions.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_actions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_actions.cpp.o
 .PHONY : src/game/editor/editor_actions.cpp.o
 
 src/game/editor/editor_actions.i: src/game/editor/editor_actions.cpp.i
@@ -5146,6 +5529,7 @@ src/game/editor/editor_actions.i: src/game/editor/editor_actions.cpp.i
 # target to preprocess a source file
 src/game/editor/editor_actions.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_actions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_actions.cpp.i
 .PHONY : src/game/editor/editor_actions.cpp.i
 
 src/game/editor/editor_actions.s: src/game/editor/editor_actions.cpp.s
@@ -5154,6 +5538,7 @@ src/game/editor/editor_actions.s: src/game/editor/editor_actions.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor_actions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_actions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_actions.cpp.s
 .PHONY : src/game/editor/editor_actions.cpp.s
 
 src/game/editor/editor_history.o: src/game/editor/editor_history.cpp.o
@@ -5162,6 +5547,7 @@ src/game/editor/editor_history.o: src/game/editor/editor_history.cpp.o
 # target to build an object file
 src/game/editor/editor_history.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_history.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_history.cpp.o
 .PHONY : src/game/editor/editor_history.cpp.o
 
 src/game/editor/editor_history.i: src/game/editor/editor_history.cpp.i
@@ -5170,6 +5556,7 @@ src/game/editor/editor_history.i: src/game/editor/editor_history.cpp.i
 # target to preprocess a source file
 src/game/editor/editor_history.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_history.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_history.cpp.i
 .PHONY : src/game/editor/editor_history.cpp.i
 
 src/game/editor/editor_history.s: src/game/editor/editor_history.cpp.s
@@ -5178,6 +5565,7 @@ src/game/editor/editor_history.s: src/game/editor/editor_history.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor_history.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_history.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_history.cpp.s
 .PHONY : src/game/editor/editor_history.cpp.s
 
 src/game/editor/editor_object.o: src/game/editor/editor_object.cpp.o
@@ -5186,6 +5574,7 @@ src/game/editor/editor_object.o: src/game/editor/editor_object.cpp.o
 # target to build an object file
 src/game/editor/editor_object.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_object.cpp.o
 .PHONY : src/game/editor/editor_object.cpp.o
 
 src/game/editor/editor_object.i: src/game/editor/editor_object.cpp.i
@@ -5194,6 +5583,7 @@ src/game/editor/editor_object.i: src/game/editor/editor_object.cpp.i
 # target to preprocess a source file
 src/game/editor/editor_object.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_object.cpp.i
 .PHONY : src/game/editor/editor_object.cpp.i
 
 src/game/editor/editor_object.s: src/game/editor/editor_object.cpp.s
@@ -5202,6 +5592,7 @@ src/game/editor/editor_object.s: src/game/editor/editor_object.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_object.cpp.s
 .PHONY : src/game/editor/editor_object.cpp.s
 
 src/game/editor/editor_props.o: src/game/editor/editor_props.cpp.o
@@ -5210,6 +5601,7 @@ src/game/editor/editor_props.o: src/game/editor/editor_props.cpp.o
 # target to build an object file
 src/game/editor/editor_props.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_props.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_props.cpp.o
 .PHONY : src/game/editor/editor_props.cpp.o
 
 src/game/editor/editor_props.i: src/game/editor/editor_props.cpp.i
@@ -5218,6 +5610,7 @@ src/game/editor/editor_props.i: src/game/editor/editor_props.cpp.i
 # target to preprocess a source file
 src/game/editor/editor_props.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_props.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_props.cpp.i
 .PHONY : src/game/editor/editor_props.cpp.i
 
 src/game/editor/editor_props.s: src/game/editor/editor_props.cpp.s
@@ -5226,6 +5619,7 @@ src/game/editor/editor_props.s: src/game/editor/editor_props.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor_props.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_props.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_props.cpp.s
 .PHONY : src/game/editor/editor_props.cpp.s
 
 src/game/editor/editor_server_settings.o: src/game/editor/editor_server_settings.cpp.o
@@ -5234,6 +5628,7 @@ src/game/editor/editor_server_settings.o: src/game/editor/editor_server_settings
 # target to build an object file
 src/game/editor/editor_server_settings.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_server_settings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_server_settings.cpp.o
 .PHONY : src/game/editor/editor_server_settings.cpp.o
 
 src/game/editor/editor_server_settings.i: src/game/editor/editor_server_settings.cpp.i
@@ -5242,6 +5637,7 @@ src/game/editor/editor_server_settings.i: src/game/editor/editor_server_settings
 # target to preprocess a source file
 src/game/editor/editor_server_settings.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_server_settings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_server_settings.cpp.i
 .PHONY : src/game/editor/editor_server_settings.cpp.i
 
 src/game/editor/editor_server_settings.s: src/game/editor/editor_server_settings.cpp.s
@@ -5250,6 +5646,7 @@ src/game/editor/editor_server_settings.s: src/game/editor/editor_server_settings
 # target to generate assembly for a file
 src/game/editor/editor_server_settings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_server_settings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_server_settings.cpp.s
 .PHONY : src/game/editor/editor_server_settings.cpp.s
 
 src/game/editor/editor_trackers.o: src/game/editor/editor_trackers.cpp.o
@@ -5258,6 +5655,7 @@ src/game/editor/editor_trackers.o: src/game/editor/editor_trackers.cpp.o
 # target to build an object file
 src/game/editor/editor_trackers.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_trackers.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_trackers.cpp.o
 .PHONY : src/game/editor/editor_trackers.cpp.o
 
 src/game/editor/editor_trackers.i: src/game/editor/editor_trackers.cpp.i
@@ -5266,6 +5664,7 @@ src/game/editor/editor_trackers.i: src/game/editor/editor_trackers.cpp.i
 # target to preprocess a source file
 src/game/editor/editor_trackers.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_trackers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_trackers.cpp.i
 .PHONY : src/game/editor/editor_trackers.cpp.i
 
 src/game/editor/editor_trackers.s: src/game/editor/editor_trackers.cpp.s
@@ -5274,6 +5673,7 @@ src/game/editor/editor_trackers.s: src/game/editor/editor_trackers.cpp.s
 # target to generate assembly for a file
 src/game/editor/editor_trackers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/editor_trackers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/editor_trackers.cpp.s
 .PHONY : src/game/editor/editor_trackers.cpp.s
 
 src/game/editor/explanations.o: src/game/editor/explanations.cpp.o
@@ -5282,6 +5682,7 @@ src/game/editor/explanations.o: src/game/editor/explanations.cpp.o
 # target to build an object file
 src/game/editor/explanations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/explanations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/explanations.cpp.o
 .PHONY : src/game/editor/explanations.cpp.o
 
 src/game/editor/explanations.i: src/game/editor/explanations.cpp.i
@@ -5290,6 +5691,7 @@ src/game/editor/explanations.i: src/game/editor/explanations.cpp.i
 # target to preprocess a source file
 src/game/editor/explanations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/explanations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/explanations.cpp.i
 .PHONY : src/game/editor/explanations.cpp.i
 
 src/game/editor/explanations.s: src/game/editor/explanations.cpp.s
@@ -5298,6 +5700,7 @@ src/game/editor/explanations.s: src/game/editor/explanations.cpp.s
 # target to generate assembly for a file
 src/game/editor/explanations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/explanations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/explanations.cpp.s
 .PHONY : src/game/editor/explanations.cpp.s
 
 src/game/editor/layer_selector.o: src/game/editor/layer_selector.cpp.o
@@ -5306,6 +5709,7 @@ src/game/editor/layer_selector.o: src/game/editor/layer_selector.cpp.o
 # target to build an object file
 src/game/editor/layer_selector.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/layer_selector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/layer_selector.cpp.o
 .PHONY : src/game/editor/layer_selector.cpp.o
 
 src/game/editor/layer_selector.i: src/game/editor/layer_selector.cpp.i
@@ -5314,6 +5718,7 @@ src/game/editor/layer_selector.i: src/game/editor/layer_selector.cpp.i
 # target to preprocess a source file
 src/game/editor/layer_selector.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/layer_selector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/layer_selector.cpp.i
 .PHONY : src/game/editor/layer_selector.cpp.i
 
 src/game/editor/layer_selector.s: src/game/editor/layer_selector.cpp.s
@@ -5322,6 +5727,7 @@ src/game/editor/layer_selector.s: src/game/editor/layer_selector.cpp.s
 # target to generate assembly for a file
 src/game/editor/layer_selector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/layer_selector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/layer_selector.cpp.s
 .PHONY : src/game/editor/layer_selector.cpp.s
 
 src/game/editor/map_grid.o: src/game/editor/map_grid.cpp.o
@@ -5330,6 +5736,7 @@ src/game/editor/map_grid.o: src/game/editor/map_grid.cpp.o
 # target to build an object file
 src/game/editor/map_grid.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_grid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_grid.cpp.o
 .PHONY : src/game/editor/map_grid.cpp.o
 
 src/game/editor/map_grid.i: src/game/editor/map_grid.cpp.i
@@ -5338,6 +5745,7 @@ src/game/editor/map_grid.i: src/game/editor/map_grid.cpp.i
 # target to preprocess a source file
 src/game/editor/map_grid.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_grid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_grid.cpp.i
 .PHONY : src/game/editor/map_grid.cpp.i
 
 src/game/editor/map_grid.s: src/game/editor/map_grid.cpp.s
@@ -5346,6 +5754,7 @@ src/game/editor/map_grid.s: src/game/editor/map_grid.cpp.s
 # target to generate assembly for a file
 src/game/editor/map_grid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_grid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_grid.cpp.s
 .PHONY : src/game/editor/map_grid.cpp.s
 
 src/game/editor/map_view.o: src/game/editor/map_view.cpp.o
@@ -5354,6 +5763,7 @@ src/game/editor/map_view.o: src/game/editor/map_view.cpp.o
 # target to build an object file
 src/game/editor/map_view.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_view.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_view.cpp.o
 .PHONY : src/game/editor/map_view.cpp.o
 
 src/game/editor/map_view.i: src/game/editor/map_view.cpp.i
@@ -5362,6 +5772,7 @@ src/game/editor/map_view.i: src/game/editor/map_view.cpp.i
 # target to preprocess a source file
 src/game/editor/map_view.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_view.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_view.cpp.i
 .PHONY : src/game/editor/map_view.cpp.i
 
 src/game/editor/map_view.s: src/game/editor/map_view.cpp.s
@@ -5370,6 +5781,7 @@ src/game/editor/map_view.s: src/game/editor/map_view.cpp.s
 # target to generate assembly for a file
 src/game/editor/map_view.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/map_view.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/map_view.cpp.s
 .PHONY : src/game/editor/map_view.cpp.s
 
 src/game/editor/mapitems/envelope.o: src/game/editor/mapitems/envelope.cpp.o
@@ -5378,6 +5790,7 @@ src/game/editor/mapitems/envelope.o: src/game/editor/mapitems/envelope.cpp.o
 # target to build an object file
 src/game/editor/mapitems/envelope.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/envelope.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/envelope.cpp.o
 .PHONY : src/game/editor/mapitems/envelope.cpp.o
 
 src/game/editor/mapitems/envelope.i: src/game/editor/mapitems/envelope.cpp.i
@@ -5386,6 +5799,7 @@ src/game/editor/mapitems/envelope.i: src/game/editor/mapitems/envelope.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/envelope.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/envelope.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/envelope.cpp.i
 .PHONY : src/game/editor/mapitems/envelope.cpp.i
 
 src/game/editor/mapitems/envelope.s: src/game/editor/mapitems/envelope.cpp.s
@@ -5394,6 +5808,7 @@ src/game/editor/mapitems/envelope.s: src/game/editor/mapitems/envelope.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/envelope.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/envelope.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/envelope.cpp.s
 .PHONY : src/game/editor/mapitems/envelope.cpp.s
 
 src/game/editor/mapitems/image.o: src/game/editor/mapitems/image.cpp.o
@@ -5402,6 +5817,7 @@ src/game/editor/mapitems/image.o: src/game/editor/mapitems/image.cpp.o
 # target to build an object file
 src/game/editor/mapitems/image.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/image.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/image.cpp.o
 .PHONY : src/game/editor/mapitems/image.cpp.o
 
 src/game/editor/mapitems/image.i: src/game/editor/mapitems/image.cpp.i
@@ -5410,6 +5826,7 @@ src/game/editor/mapitems/image.i: src/game/editor/mapitems/image.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/image.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/image.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/image.cpp.i
 .PHONY : src/game/editor/mapitems/image.cpp.i
 
 src/game/editor/mapitems/image.s: src/game/editor/mapitems/image.cpp.s
@@ -5418,6 +5835,7 @@ src/game/editor/mapitems/image.s: src/game/editor/mapitems/image.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/image.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/image.cpp.s
 .PHONY : src/game/editor/mapitems/image.cpp.s
 
 src/game/editor/mapitems/layer_front.o: src/game/editor/mapitems/layer_front.cpp.o
@@ -5426,6 +5844,7 @@ src/game/editor/mapitems/layer_front.o: src/game/editor/mapitems/layer_front.cpp
 # target to build an object file
 src/game/editor/mapitems/layer_front.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_front.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_front.cpp.o
 .PHONY : src/game/editor/mapitems/layer_front.cpp.o
 
 src/game/editor/mapitems/layer_front.i: src/game/editor/mapitems/layer_front.cpp.i
@@ -5434,6 +5853,7 @@ src/game/editor/mapitems/layer_front.i: src/game/editor/mapitems/layer_front.cpp
 # target to preprocess a source file
 src/game/editor/mapitems/layer_front.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_front.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_front.cpp.i
 .PHONY : src/game/editor/mapitems/layer_front.cpp.i
 
 src/game/editor/mapitems/layer_front.s: src/game/editor/mapitems/layer_front.cpp.s
@@ -5442,6 +5862,7 @@ src/game/editor/mapitems/layer_front.s: src/game/editor/mapitems/layer_front.cpp
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_front.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_front.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_front.cpp.s
 .PHONY : src/game/editor/mapitems/layer_front.cpp.s
 
 src/game/editor/mapitems/layer_game.o: src/game/editor/mapitems/layer_game.cpp.o
@@ -5450,6 +5871,7 @@ src/game/editor/mapitems/layer_game.o: src/game/editor/mapitems/layer_game.cpp.o
 # target to build an object file
 src/game/editor/mapitems/layer_game.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_game.cpp.o
 .PHONY : src/game/editor/mapitems/layer_game.cpp.o
 
 src/game/editor/mapitems/layer_game.i: src/game/editor/mapitems/layer_game.cpp.i
@@ -5458,6 +5880,7 @@ src/game/editor/mapitems/layer_game.i: src/game/editor/mapitems/layer_game.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/layer_game.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_game.cpp.i
 .PHONY : src/game/editor/mapitems/layer_game.cpp.i
 
 src/game/editor/mapitems/layer_game.s: src/game/editor/mapitems/layer_game.cpp.s
@@ -5466,6 +5889,7 @@ src/game/editor/mapitems/layer_game.s: src/game/editor/mapitems/layer_game.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_game.cpp.s
 .PHONY : src/game/editor/mapitems/layer_game.cpp.s
 
 src/game/editor/mapitems/layer_group.o: src/game/editor/mapitems/layer_group.cpp.o
@@ -5474,6 +5898,7 @@ src/game/editor/mapitems/layer_group.o: src/game/editor/mapitems/layer_group.cpp
 # target to build an object file
 src/game/editor/mapitems/layer_group.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_group.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_group.cpp.o
 .PHONY : src/game/editor/mapitems/layer_group.cpp.o
 
 src/game/editor/mapitems/layer_group.i: src/game/editor/mapitems/layer_group.cpp.i
@@ -5482,6 +5907,7 @@ src/game/editor/mapitems/layer_group.i: src/game/editor/mapitems/layer_group.cpp
 # target to preprocess a source file
 src/game/editor/mapitems/layer_group.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_group.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_group.cpp.i
 .PHONY : src/game/editor/mapitems/layer_group.cpp.i
 
 src/game/editor/mapitems/layer_group.s: src/game/editor/mapitems/layer_group.cpp.s
@@ -5490,6 +5916,7 @@ src/game/editor/mapitems/layer_group.s: src/game/editor/mapitems/layer_group.cpp
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_group.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_group.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_group.cpp.s
 .PHONY : src/game/editor/mapitems/layer_group.cpp.s
 
 src/game/editor/mapitems/layer_quads.o: src/game/editor/mapitems/layer_quads.cpp.o
@@ -5498,6 +5925,7 @@ src/game/editor/mapitems/layer_quads.o: src/game/editor/mapitems/layer_quads.cpp
 # target to build an object file
 src/game/editor/mapitems/layer_quads.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_quads.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_quads.cpp.o
 .PHONY : src/game/editor/mapitems/layer_quads.cpp.o
 
 src/game/editor/mapitems/layer_quads.i: src/game/editor/mapitems/layer_quads.cpp.i
@@ -5506,6 +5934,7 @@ src/game/editor/mapitems/layer_quads.i: src/game/editor/mapitems/layer_quads.cpp
 # target to preprocess a source file
 src/game/editor/mapitems/layer_quads.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_quads.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_quads.cpp.i
 .PHONY : src/game/editor/mapitems/layer_quads.cpp.i
 
 src/game/editor/mapitems/layer_quads.s: src/game/editor/mapitems/layer_quads.cpp.s
@@ -5514,6 +5943,7 @@ src/game/editor/mapitems/layer_quads.s: src/game/editor/mapitems/layer_quads.cpp
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_quads.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_quads.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_quads.cpp.s
 .PHONY : src/game/editor/mapitems/layer_quads.cpp.s
 
 src/game/editor/mapitems/layer_sounds.o: src/game/editor/mapitems/layer_sounds.cpp.o
@@ -5522,6 +5952,7 @@ src/game/editor/mapitems/layer_sounds.o: src/game/editor/mapitems/layer_sounds.c
 # target to build an object file
 src/game/editor/mapitems/layer_sounds.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_sounds.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_sounds.cpp.o
 .PHONY : src/game/editor/mapitems/layer_sounds.cpp.o
 
 src/game/editor/mapitems/layer_sounds.i: src/game/editor/mapitems/layer_sounds.cpp.i
@@ -5530,6 +5961,7 @@ src/game/editor/mapitems/layer_sounds.i: src/game/editor/mapitems/layer_sounds.c
 # target to preprocess a source file
 src/game/editor/mapitems/layer_sounds.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_sounds.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_sounds.cpp.i
 .PHONY : src/game/editor/mapitems/layer_sounds.cpp.i
 
 src/game/editor/mapitems/layer_sounds.s: src/game/editor/mapitems/layer_sounds.cpp.s
@@ -5538,6 +5970,7 @@ src/game/editor/mapitems/layer_sounds.s: src/game/editor/mapitems/layer_sounds.c
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_sounds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_sounds.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_sounds.cpp.s
 .PHONY : src/game/editor/mapitems/layer_sounds.cpp.s
 
 src/game/editor/mapitems/layer_speedup.o: src/game/editor/mapitems/layer_speedup.cpp.o
@@ -5546,6 +5979,7 @@ src/game/editor/mapitems/layer_speedup.o: src/game/editor/mapitems/layer_speedup
 # target to build an object file
 src/game/editor/mapitems/layer_speedup.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_speedup.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_speedup.cpp.o
 .PHONY : src/game/editor/mapitems/layer_speedup.cpp.o
 
 src/game/editor/mapitems/layer_speedup.i: src/game/editor/mapitems/layer_speedup.cpp.i
@@ -5554,6 +5988,7 @@ src/game/editor/mapitems/layer_speedup.i: src/game/editor/mapitems/layer_speedup
 # target to preprocess a source file
 src/game/editor/mapitems/layer_speedup.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_speedup.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_speedup.cpp.i
 .PHONY : src/game/editor/mapitems/layer_speedup.cpp.i
 
 src/game/editor/mapitems/layer_speedup.s: src/game/editor/mapitems/layer_speedup.cpp.s
@@ -5562,6 +5997,7 @@ src/game/editor/mapitems/layer_speedup.s: src/game/editor/mapitems/layer_speedup
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_speedup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_speedup.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_speedup.cpp.s
 .PHONY : src/game/editor/mapitems/layer_speedup.cpp.s
 
 src/game/editor/mapitems/layer_switch.o: src/game/editor/mapitems/layer_switch.cpp.o
@@ -5570,6 +6006,7 @@ src/game/editor/mapitems/layer_switch.o: src/game/editor/mapitems/layer_switch.c
 # target to build an object file
 src/game/editor/mapitems/layer_switch.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_switch.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_switch.cpp.o
 .PHONY : src/game/editor/mapitems/layer_switch.cpp.o
 
 src/game/editor/mapitems/layer_switch.i: src/game/editor/mapitems/layer_switch.cpp.i
@@ -5578,6 +6015,7 @@ src/game/editor/mapitems/layer_switch.i: src/game/editor/mapitems/layer_switch.c
 # target to preprocess a source file
 src/game/editor/mapitems/layer_switch.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_switch.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_switch.cpp.i
 .PHONY : src/game/editor/mapitems/layer_switch.cpp.i
 
 src/game/editor/mapitems/layer_switch.s: src/game/editor/mapitems/layer_switch.cpp.s
@@ -5586,6 +6024,7 @@ src/game/editor/mapitems/layer_switch.s: src/game/editor/mapitems/layer_switch.c
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_switch.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_switch.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_switch.cpp.s
 .PHONY : src/game/editor/mapitems/layer_switch.cpp.s
 
 src/game/editor/mapitems/layer_tele.o: src/game/editor/mapitems/layer_tele.cpp.o
@@ -5594,6 +6033,7 @@ src/game/editor/mapitems/layer_tele.o: src/game/editor/mapitems/layer_tele.cpp.o
 # target to build an object file
 src/game/editor/mapitems/layer_tele.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tele.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tele.cpp.o
 .PHONY : src/game/editor/mapitems/layer_tele.cpp.o
 
 src/game/editor/mapitems/layer_tele.i: src/game/editor/mapitems/layer_tele.cpp.i
@@ -5602,6 +6042,7 @@ src/game/editor/mapitems/layer_tele.i: src/game/editor/mapitems/layer_tele.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/layer_tele.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tele.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tele.cpp.i
 .PHONY : src/game/editor/mapitems/layer_tele.cpp.i
 
 src/game/editor/mapitems/layer_tele.s: src/game/editor/mapitems/layer_tele.cpp.s
@@ -5610,6 +6051,7 @@ src/game/editor/mapitems/layer_tele.s: src/game/editor/mapitems/layer_tele.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_tele.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tele.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tele.cpp.s
 .PHONY : src/game/editor/mapitems/layer_tele.cpp.s
 
 src/game/editor/mapitems/layer_tiles.o: src/game/editor/mapitems/layer_tiles.cpp.o
@@ -5618,6 +6060,7 @@ src/game/editor/mapitems/layer_tiles.o: src/game/editor/mapitems/layer_tiles.cpp
 # target to build an object file
 src/game/editor/mapitems/layer_tiles.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tiles.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tiles.cpp.o
 .PHONY : src/game/editor/mapitems/layer_tiles.cpp.o
 
 src/game/editor/mapitems/layer_tiles.i: src/game/editor/mapitems/layer_tiles.cpp.i
@@ -5626,6 +6069,7 @@ src/game/editor/mapitems/layer_tiles.i: src/game/editor/mapitems/layer_tiles.cpp
 # target to preprocess a source file
 src/game/editor/mapitems/layer_tiles.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tiles.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tiles.cpp.i
 .PHONY : src/game/editor/mapitems/layer_tiles.cpp.i
 
 src/game/editor/mapitems/layer_tiles.s: src/game/editor/mapitems/layer_tiles.cpp.s
@@ -5634,6 +6078,7 @@ src/game/editor/mapitems/layer_tiles.s: src/game/editor/mapitems/layer_tiles.cpp
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_tiles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tiles.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tiles.cpp.s
 .PHONY : src/game/editor/mapitems/layer_tiles.cpp.s
 
 src/game/editor/mapitems/layer_tune.o: src/game/editor/mapitems/layer_tune.cpp.o
@@ -5642,6 +6087,7 @@ src/game/editor/mapitems/layer_tune.o: src/game/editor/mapitems/layer_tune.cpp.o
 # target to build an object file
 src/game/editor/mapitems/layer_tune.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tune.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tune.cpp.o
 .PHONY : src/game/editor/mapitems/layer_tune.cpp.o
 
 src/game/editor/mapitems/layer_tune.i: src/game/editor/mapitems/layer_tune.cpp.i
@@ -5650,6 +6096,7 @@ src/game/editor/mapitems/layer_tune.i: src/game/editor/mapitems/layer_tune.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/layer_tune.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tune.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tune.cpp.i
 .PHONY : src/game/editor/mapitems/layer_tune.cpp.i
 
 src/game/editor/mapitems/layer_tune.s: src/game/editor/mapitems/layer_tune.cpp.s
@@ -5658,6 +6105,7 @@ src/game/editor/mapitems/layer_tune.s: src/game/editor/mapitems/layer_tune.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/layer_tune.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/layer_tune.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/layer_tune.cpp.s
 .PHONY : src/game/editor/mapitems/layer_tune.cpp.s
 
 src/game/editor/mapitems/map.o: src/game/editor/mapitems/map.cpp.o
@@ -5666,6 +6114,7 @@ src/game/editor/mapitems/map.o: src/game/editor/mapitems/map.cpp.o
 # target to build an object file
 src/game/editor/mapitems/map.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map.cpp.o
 .PHONY : src/game/editor/mapitems/map.cpp.o
 
 src/game/editor/mapitems/map.i: src/game/editor/mapitems/map.cpp.i
@@ -5674,6 +6123,7 @@ src/game/editor/mapitems/map.i: src/game/editor/mapitems/map.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map.cpp.i
 .PHONY : src/game/editor/mapitems/map.cpp.i
 
 src/game/editor/mapitems/map.s: src/game/editor/mapitems/map.cpp.s
@@ -5682,6 +6132,7 @@ src/game/editor/mapitems/map.s: src/game/editor/mapitems/map.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map.cpp.s
 .PHONY : src/game/editor/mapitems/map.cpp.s
 
 src/game/editor/mapitems/map_io.o: src/game/editor/mapitems/map_io.cpp.o
@@ -5690,6 +6141,7 @@ src/game/editor/mapitems/map_io.o: src/game/editor/mapitems/map_io.cpp.o
 # target to build an object file
 src/game/editor/mapitems/map_io.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map_io.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map_io.cpp.o
 .PHONY : src/game/editor/mapitems/map_io.cpp.o
 
 src/game/editor/mapitems/map_io.i: src/game/editor/mapitems/map_io.cpp.i
@@ -5698,6 +6150,7 @@ src/game/editor/mapitems/map_io.i: src/game/editor/mapitems/map_io.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/map_io.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map_io.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map_io.cpp.i
 .PHONY : src/game/editor/mapitems/map_io.cpp.i
 
 src/game/editor/mapitems/map_io.s: src/game/editor/mapitems/map_io.cpp.s
@@ -5706,6 +6159,7 @@ src/game/editor/mapitems/map_io.s: src/game/editor/mapitems/map_io.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/map_io.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/map_io.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/map_io.cpp.s
 .PHONY : src/game/editor/mapitems/map_io.cpp.s
 
 src/game/editor/mapitems/sound.o: src/game/editor/mapitems/sound.cpp.o
@@ -5714,6 +6168,7 @@ src/game/editor/mapitems/sound.o: src/game/editor/mapitems/sound.cpp.o
 # target to build an object file
 src/game/editor/mapitems/sound.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/sound.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/sound.cpp.o
 .PHONY : src/game/editor/mapitems/sound.cpp.o
 
 src/game/editor/mapitems/sound.i: src/game/editor/mapitems/sound.cpp.i
@@ -5722,6 +6177,7 @@ src/game/editor/mapitems/sound.i: src/game/editor/mapitems/sound.cpp.i
 # target to preprocess a source file
 src/game/editor/mapitems/sound.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/sound.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/sound.cpp.i
 .PHONY : src/game/editor/mapitems/sound.cpp.i
 
 src/game/editor/mapitems/sound.s: src/game/editor/mapitems/sound.cpp.s
@@ -5730,6 +6186,7 @@ src/game/editor/mapitems/sound.s: src/game/editor/mapitems/sound.cpp.s
 # target to generate assembly for a file
 src/game/editor/mapitems/sound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/mapitems/sound.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/mapitems/sound.cpp.s
 .PHONY : src/game/editor/mapitems/sound.cpp.s
 
 src/game/editor/popups.o: src/game/editor/popups.cpp.o
@@ -5738,6 +6195,7 @@ src/game/editor/popups.o: src/game/editor/popups.cpp.o
 # target to build an object file
 src/game/editor/popups.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/popups.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/popups.cpp.o
 .PHONY : src/game/editor/popups.cpp.o
 
 src/game/editor/popups.i: src/game/editor/popups.cpp.i
@@ -5746,6 +6204,7 @@ src/game/editor/popups.i: src/game/editor/popups.cpp.i
 # target to preprocess a source file
 src/game/editor/popups.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/popups.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/popups.cpp.i
 .PHONY : src/game/editor/popups.cpp.i
 
 src/game/editor/popups.s: src/game/editor/popups.cpp.s
@@ -5754,6 +6213,7 @@ src/game/editor/popups.s: src/game/editor/popups.cpp.s
 # target to generate assembly for a file
 src/game/editor/popups.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/popups.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/popups.cpp.s
 .PHONY : src/game/editor/popups.cpp.s
 
 src/game/editor/prompt.o: src/game/editor/prompt.cpp.o
@@ -5762,6 +6222,7 @@ src/game/editor/prompt.o: src/game/editor/prompt.cpp.o
 # target to build an object file
 src/game/editor/prompt.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/prompt.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/prompt.cpp.o
 .PHONY : src/game/editor/prompt.cpp.o
 
 src/game/editor/prompt.i: src/game/editor/prompt.cpp.i
@@ -5770,6 +6231,7 @@ src/game/editor/prompt.i: src/game/editor/prompt.cpp.i
 # target to preprocess a source file
 src/game/editor/prompt.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/prompt.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/prompt.cpp.i
 .PHONY : src/game/editor/prompt.cpp.i
 
 src/game/editor/prompt.s: src/game/editor/prompt.cpp.s
@@ -5778,6 +6240,7 @@ src/game/editor/prompt.s: src/game/editor/prompt.cpp.s
 # target to generate assembly for a file
 src/game/editor/prompt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/prompt.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/prompt.cpp.s
 .PHONY : src/game/editor/prompt.cpp.s
 
 src/game/editor/proof_mode.o: src/game/editor/proof_mode.cpp.o
@@ -5786,6 +6249,7 @@ src/game/editor/proof_mode.o: src/game/editor/proof_mode.cpp.o
 # target to build an object file
 src/game/editor/proof_mode.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/proof_mode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/proof_mode.cpp.o
 .PHONY : src/game/editor/proof_mode.cpp.o
 
 src/game/editor/proof_mode.i: src/game/editor/proof_mode.cpp.i
@@ -5794,6 +6258,7 @@ src/game/editor/proof_mode.i: src/game/editor/proof_mode.cpp.i
 # target to preprocess a source file
 src/game/editor/proof_mode.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/proof_mode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/proof_mode.cpp.i
 .PHONY : src/game/editor/proof_mode.cpp.i
 
 src/game/editor/proof_mode.s: src/game/editor/proof_mode.cpp.s
@@ -5802,6 +6267,7 @@ src/game/editor/proof_mode.s: src/game/editor/proof_mode.cpp.s
 # target to generate assembly for a file
 src/game/editor/proof_mode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/proof_mode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/proof_mode.cpp.s
 .PHONY : src/game/editor/proof_mode.cpp.s
 
 src/game/editor/quick_actions.o: src/game/editor/quick_actions.cpp.o
@@ -5810,6 +6276,7 @@ src/game/editor/quick_actions.o: src/game/editor/quick_actions.cpp.o
 # target to build an object file
 src/game/editor/quick_actions.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/quick_actions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/quick_actions.cpp.o
 .PHONY : src/game/editor/quick_actions.cpp.o
 
 src/game/editor/quick_actions.i: src/game/editor/quick_actions.cpp.i
@@ -5818,6 +6285,7 @@ src/game/editor/quick_actions.i: src/game/editor/quick_actions.cpp.i
 # target to preprocess a source file
 src/game/editor/quick_actions.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/quick_actions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/quick_actions.cpp.i
 .PHONY : src/game/editor/quick_actions.cpp.i
 
 src/game/editor/quick_actions.s: src/game/editor/quick_actions.cpp.s
@@ -5826,6 +6294,7 @@ src/game/editor/quick_actions.s: src/game/editor/quick_actions.cpp.s
 # target to generate assembly for a file
 src/game/editor/quick_actions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/quick_actions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/quick_actions.cpp.s
 .PHONY : src/game/editor/quick_actions.cpp.s
 
 src/game/editor/smooth_value.o: src/game/editor/smooth_value.cpp.o
@@ -5834,6 +6303,7 @@ src/game/editor/smooth_value.o: src/game/editor/smooth_value.cpp.o
 # target to build an object file
 src/game/editor/smooth_value.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/smooth_value.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/smooth_value.cpp.o
 .PHONY : src/game/editor/smooth_value.cpp.o
 
 src/game/editor/smooth_value.i: src/game/editor/smooth_value.cpp.i
@@ -5842,6 +6312,7 @@ src/game/editor/smooth_value.i: src/game/editor/smooth_value.cpp.i
 # target to preprocess a source file
 src/game/editor/smooth_value.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/smooth_value.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/smooth_value.cpp.i
 .PHONY : src/game/editor/smooth_value.cpp.i
 
 src/game/editor/smooth_value.s: src/game/editor/smooth_value.cpp.s
@@ -5850,6 +6321,7 @@ src/game/editor/smooth_value.s: src/game/editor/smooth_value.cpp.s
 # target to generate assembly for a file
 src/game/editor/smooth_value.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/smooth_value.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/smooth_value.cpp.s
 .PHONY : src/game/editor/smooth_value.cpp.s
 
 src/game/editor/tileart.o: src/game/editor/tileart.cpp.o
@@ -5858,6 +6330,7 @@ src/game/editor/tileart.o: src/game/editor/tileart.cpp.o
 # target to build an object file
 src/game/editor/tileart.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/tileart.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/tileart.cpp.o
 .PHONY : src/game/editor/tileart.cpp.o
 
 src/game/editor/tileart.i: src/game/editor/tileart.cpp.i
@@ -5866,6 +6339,7 @@ src/game/editor/tileart.i: src/game/editor/tileart.cpp.i
 # target to preprocess a source file
 src/game/editor/tileart.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/tileart.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/tileart.cpp.i
 .PHONY : src/game/editor/tileart.cpp.i
 
 src/game/editor/tileart.s: src/game/editor/tileart.cpp.s
@@ -5874,6 +6348,7 @@ src/game/editor/tileart.s: src/game/editor/tileart.cpp.s
 # target to generate assembly for a file
 src/game/editor/tileart.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/editor/tileart.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/editor/tileart.cpp.s
 .PHONY : src/game/editor/tileart.cpp.s
 
 src/game/gamecore.o: src/game/gamecore.cpp.o
@@ -5906,6 +6381,7 @@ src/game/generated/checksum.o: src/game/generated/checksum.cpp.o
 # target to build an object file
 src/game/generated/checksum.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/checksum.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/checksum.cpp.o
 .PHONY : src/game/generated/checksum.cpp.o
 
 src/game/generated/checksum.i: src/game/generated/checksum.cpp.i
@@ -5914,6 +6390,7 @@ src/game/generated/checksum.i: src/game/generated/checksum.cpp.i
 # target to preprocess a source file
 src/game/generated/checksum.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/checksum.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/checksum.cpp.i
 .PHONY : src/game/generated/checksum.cpp.i
 
 src/game/generated/checksum.s: src/game/generated/checksum.cpp.s
@@ -5922,6 +6399,7 @@ src/game/generated/checksum.s: src/game/generated/checksum.cpp.s
 # target to generate assembly for a file
 src/game/generated/checksum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/checksum.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/checksum.cpp.s
 .PHONY : src/game/generated/checksum.cpp.s
 
 src/game/generated/client_data.o: src/game/generated/client_data.cpp.o
@@ -5930,6 +6408,7 @@ src/game/generated/client_data.o: src/game/generated/client_data.cpp.o
 # target to build an object file
 src/game/generated/client_data.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data.cpp.o
 .PHONY : src/game/generated/client_data.cpp.o
 
 src/game/generated/client_data.i: src/game/generated/client_data.cpp.i
@@ -5938,6 +6417,7 @@ src/game/generated/client_data.i: src/game/generated/client_data.cpp.i
 # target to preprocess a source file
 src/game/generated/client_data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data.cpp.i
 .PHONY : src/game/generated/client_data.cpp.i
 
 src/game/generated/client_data.s: src/game/generated/client_data.cpp.s
@@ -5946,6 +6426,7 @@ src/game/generated/client_data.s: src/game/generated/client_data.cpp.s
 # target to generate assembly for a file
 src/game/generated/client_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data.cpp.s
 .PHONY : src/game/generated/client_data.cpp.s
 
 src/game/generated/client_data7.o: src/game/generated/client_data7.cpp.o
@@ -5954,6 +6435,7 @@ src/game/generated/client_data7.o: src/game/generated/client_data7.cpp.o
 # target to build an object file
 src/game/generated/client_data7.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data7.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data7.cpp.o
 .PHONY : src/game/generated/client_data7.cpp.o
 
 src/game/generated/client_data7.i: src/game/generated/client_data7.cpp.i
@@ -5962,6 +6444,7 @@ src/game/generated/client_data7.i: src/game/generated/client_data7.cpp.i
 # target to preprocess a source file
 src/game/generated/client_data7.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data7.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data7.cpp.i
 .PHONY : src/game/generated/client_data7.cpp.i
 
 src/game/generated/client_data7.s: src/game/generated/client_data7.cpp.s
@@ -5970,6 +6453,7 @@ src/game/generated/client_data7.s: src/game/generated/client_data7.cpp.s
 # target to generate assembly for a file
 src/game/generated/client_data7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client.dir/build.make CMakeFiles/game-client.dir/src/game/generated/client_data7.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game-client-monitor.dir/build.make CMakeFiles/game-client-monitor.dir/src/game/generated/client_data7.cpp.s
 .PHONY : src/game/generated/client_data7.cpp.s
 
 src/game/generated/git_revision.o: src/game/generated/git_revision.cpp.o
@@ -7471,6 +7955,7 @@ help:
 	@echo "... engine-gfx"
 	@echo "... engine-shared"
 	@echo "... game-client"
+	@echo "... game-client-monitor"
 	@echo "... game-server"
 	@echo "... game-shared"
 	@echo "... json"
@@ -7862,6 +8347,9 @@ help:
 	@echo "... src/game/client/components/debughud.o"
 	@echo "... src/game/client/components/debughud.i"
 	@echo "... src/game/client/components/debughud.s"
+	@echo "... src/game/client/components/dummyCamera.o"
+	@echo "... src/game/client/components/dummyCamera.i"
+	@echo "... src/game/client/components/dummyCamera.s"
 	@echo "... src/game/client/components/effects.o"
 	@echo "... src/game/client/components/effects.i"
 	@echo "... src/game/client/components/effects.s"
@@ -7967,6 +8455,9 @@ help:
 	@echo "... src/game/client/gameclient.o"
 	@echo "... src/game/client/gameclient.i"
 	@echo "... src/game/client/gameclient.s"
+	@echo "... src/game/client/gameclient_alt.o"
+	@echo "... src/game/client/gameclient_alt.i"
+	@echo "... src/game/client/gameclient_alt.s"
 	@echo "... src/game/client/laser_data.o"
 	@echo "... src/game/client/laser_data.i"
 	@echo "... src/game/client/laser_data.s"

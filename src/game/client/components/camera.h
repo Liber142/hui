@@ -91,7 +91,6 @@ public:
 
 	virtual void OnConsoleInit() override;
 	virtual void OnReset() override;
-
 	void SetView(ivec2 Pos, bool Relative = false);
 	void GotoSwitch(int Number, int Offset = -1);
 	void GotoTele(int Number, int Offset = -1);

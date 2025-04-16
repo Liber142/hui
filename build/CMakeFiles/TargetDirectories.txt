@@ -7,6 +7,7 @@
 /home/liber/game/ddnet/build/CMakeFiles/game-shared.dir
 /home/liber/game/ddnet/build/CMakeFiles/steam_api.dir
 /home/liber/game/ddnet/build/CMakeFiles/game-client.dir
+/home/liber/game/ddnet/build/CMakeFiles/game-client-monitor.dir
 /home/liber/game/ddnet/build/CMakeFiles/server-without-main.dir
 /home/liber/game/ddnet/build/CMakeFiles/game-server.dir
 /home/liber/game/ddnet/build/CMakeFiles/DDNet.dir

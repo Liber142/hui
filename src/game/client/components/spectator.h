@@ -38,7 +38,6 @@ class CSpectator : public CComponent
 	static void ConMultiView(IConsole::IResult *pResult, void *pUserData);
 
 public:
-	bool SpectateOnDummy;
 
 	CSpectator();
 	virtual int Sizeof() const override { return sizeof(*this); }
@@ -50,7 +49,6 @@ public:
 	virtual void OnRelease() override;
 	virtual void OnReset() override;
 
-	void DummySpectate();
 	void Spectate(int SpectatorId);
 	void SpectateClosest();
 

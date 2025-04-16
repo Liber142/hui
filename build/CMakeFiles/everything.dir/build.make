@@ -68,6 +68,7 @@ include CMakeFiles/everything.dir/progress.make
 
 CMakeFiles/everything: libsteam_api.a
 CMakeFiles/everything: DDNet
+CMakeFiles/everything: DDNet-monitor
 CMakeFiles/everything: DDNet-Server
 CMakeFiles/everything: config_retrieve
 CMakeFiles/everything: config_store

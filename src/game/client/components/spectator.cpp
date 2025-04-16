@@ -84,12 +84,6 @@ void CSpectator::SpectateNext(bool Reverse)
 	}
 }
 
-void CSpectator::ConDummySpectate(IConsole::IResult *pResult, void *pUserData)
-{
-	CSpectator *pSelf = (CSpectator *)pUserData;
-	pSelf->DummySpectate();
-}
-
 void CSpectator::ConKeySpectator(IConsole::IResult *pResult, void *pUserData)
 {
 	CSpectator *pSelf = (CSpectator *)pUserData;
@@ -152,7 +146,6 @@ CSpectator::CSpectator()
 
 void CSpectator::OnConsoleInit()
 {
-	Console()->Register("spectate_on_dummy", "", CFGFLAG_CLIENT, ConDummySpectate, this, "Open spectator dummy mode");
 	Console()->Register("+spectate", "", CFGFLAG_CLIENT, ConKeySpectator, this, "Open spectator mode selector");
 	Console()->Register("spectate", "i[spectator-id]", CFGFLAG_CLIENT, ConSpectate, this, "Switch spectator mode");
 	Console()->Register("spectate_next", "", CFGFLAG_CLIENT, ConSpectateNext, this, "Spectate the next player");
@@ -251,15 +244,6 @@ void CSpectator::OnRender()
 			}
 			m_WasActive = false;
 		}
-		if (SpectateOnDummy)
-		{
-			int dummyId;
-			std::ifstream inputFile("file.txt");
-			inputFile >> dummyId;
-			inputFile.close();
-			Spectate(dummyId);
-		}
-		return;
 	}
 
 	if(!m_pClient->m_Snap.m_SpecInfo.m_Active && Client()->State() != IClient::STATE_DEMOPLAYBACK)
@@ -607,13 +591,6 @@ void CSpectator::OnReset()
 	m_WasActive = false;
 	m_Active = false;
 	m_SelectedSpectatorId = NO_SELECTION;
-}
-void CSpectator::DummySpectate()
-{
-	if (SpectateOnDummy)
-		SpectateOnDummy = 0;
-	else
-		SpectateOnDummy = 1;
 }
 void CSpectator::Spectate(int SpectatorId)
 {

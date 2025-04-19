@@ -265,6 +265,7 @@ CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.o: \
  /home/liber/game/ddnet/src/engine/shared/config_variables.h \
  /home/liber/game/ddnet/src/engine/shared/localization.h \
  /home/liber/game/ddnet/src/engine/textrender.h \
+ /home/liber/game/ddnet/src/base/log.h \
  /home/liber/game/ddnet/build/src/game/generated/client_data.h \
  /home/liber/game/ddnet/build/src/game/generated/data_types.h \
  /home/liber/game/ddnet/build/src/game/generated/protocol.h \

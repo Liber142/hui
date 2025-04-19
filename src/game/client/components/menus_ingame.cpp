@@ -12,6 +12,7 @@
 #include <engine/shared/config.h>
 #include <engine/shared/localization.h>
 #include <engine/textrender.h>
+#include <base/log.h>
 
 #include <game/generated/client_data.h>
 #include <game/generated/protocol.h>
@@ -25,6 +26,7 @@
 #include <game/client/ui_listbox.h>
 #include <game/client/ui_scrollregion.h>
 #include <game/localization.h>
+#include <cstdlib>
 
 #include "menus.h"
 #include "motd.h"
@@ -106,6 +108,50 @@ void CMenus::RenderGame(CUIRect MainView)
 		}
 	}
 
+	if (Client()->DummyConnected())
+	{
+		ButtonBar.VSplitRight(5.0f, &ButtonBar, nullptr);
+		ButtonBar.VSplitRight(140.0f, &ButtonBar, &Button);
+		static CButtonContainer s_DummyMonitor;
+
+		if (DoButton_Menu(&s_DummyMonitor, Localize("Dummy monitor"), 0, &Button))
+		{
+			// 1. Получаем полный путь к исполняемому файлу
+			char aBuf[IO_MAX_PATH_LENGTH];
+			Storage()->GetBinaryPath("DDNet-monitor", aBuf, sizeof(aBuf));
+
+				// 2. Проверяем существование файла
+			if(fs_is_file(aBuf))
+			{
+				// 3. Подготавливаем аргументы
+				const char* ppArguments[] = {
+					aBuf,       // полный путь к исполняемому файлу
+					"-window",  // пример параметра
+					NULL
+				};
+
+				// 4. Запускаем процесс (используем правильный тип)
+				PROCESS pProcess = shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments, 2);
+
+				// 5. Проверяем результат (используем правильное значение ошибки)
+				if(pProcess == -1) // или другое значение, используемое в вашей системе для ошибки
+				{
+					Client()->AddWarning(SWarning(Localize("Failed to start dummy monitor")));
+					dbg_msg("client", "Failed to execute DDNet-monitor");
+				}
+				else
+				{
+					dbg_msg("client", "Successfully executed DDNet-monitor at: %s", aBuf);
+				}
+			}
+			else
+			{
+				Client()->AddWarning(SWarning(Localize("Dummy monitor executable not found")));
+				dbg_msg("client", "DDNet-monitor executable not found at: %s", aBuf);
+			}
+		}
+	}
+
 	ButtonBar.VSplitRight(5.0f, &ButtonBar, nullptr);
 	ButtonBar.VSplitRight(140.0f, &ButtonBar, &Button);
 	static CButtonContainer s_DemoButton;
@@ -117,6 +163,8 @@ void CMenus::RenderGame(CUIRect MainView)
 		else
 			Client()->DemoRecorder(RECORDER_MANUAL)->Stop(IDemoRecorder::EStopMode::KEEP_FILE);
 	}
+
+
 
 	bool Paused = false;
 	bool Spec = false;

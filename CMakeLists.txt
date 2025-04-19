@@ -2528,6 +2528,12 @@ if(CLIENT)
     src/game/generated/client_data7.cpp
     src/game/generated/client_data7.h
   )
+  list(REMOVE_ITEM GAME_CLIENT
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.h"
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h"
+)
   set(CLIENT_SRC ${ENGINE_CLIENT} ${PLATFORM_CLIENT} ${GAME_CLIENT} ${GAME_EDITOR} ${GAME_GENERATED_CLIENT})
 
   set(DEPS_CLIENT ${DEPS} ${GLEW_DEP} ${WAVPACK_DEP})
@@ -2556,14 +2562,15 @@ if(CLIENT)
   )
 
   set(CLIENT_ALT_SRC ${CLIENT_SRC})
-list(REMOVE_ITEM CLIENT_ALT_SRC "${PROJECT_SOURCE_DIR}/src/game/client/gameclient.cpp")
+list(REMOVE_ITEM CLIENT_ALT_SRC
+  "${PROJECT_SOURCE_DIR}/src/game/client/gameclient.cpp"
+  "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h")
 list(APPEND CLIENT_ALT_SRC
     "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.cpp"
     "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h"
     "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.cpp"
     "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.h"
 )
-
   if(DISCORD)
     if(NOT DISCORD_DYNAMIC)
       list(APPEND LIBS_CLIENT discord-shared)

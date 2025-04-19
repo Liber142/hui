@@ -132,7 +132,6 @@ class CGameClient : public IGameClient
 {
 public:
 	// all components
-	CDummyCamera m_DummyCamera;
 	CInfoMessages m_InfoMessages;
 	CCamera m_Camera;
 	CChat m_Chat;
@@ -910,6 +909,9 @@ private:
 	};
 
 	SMultiView m_MultiView;
+
+public:
+	CDummyCamera m_DummyCamera;
 };
 
 ColorRGBA CalculateNameColor(ColorHSLA TextColorHSL);

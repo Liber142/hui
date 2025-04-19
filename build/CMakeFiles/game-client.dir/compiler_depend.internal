@@ -4681,11 +4681,14 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/bits/allocator.h
  /usr/include/c++/13/bits/atomic_base.h
  /usr/include/c++/13/bits/atomic_lockfree_defines.h
+ /usr/include/c++/13/bits/basic_ios.h
+ /usr/include/c++/13/bits/basic_ios.tcc
  /usr/include/c++/13/bits/basic_string.h
  /usr/include/c++/13/bits/basic_string.tcc
  /usr/include/c++/13/bits/char_traits.h
  /usr/include/c++/13/bits/charconv.h
  /usr/include/c++/13/bits/chrono.h
+ /usr/include/c++/13/bits/codecvt.h
  /usr/include/c++/13/bits/concept_check.h
  /usr/include/c++/13/bits/cpp_type_traits.h
  /usr/include/c++/13/bits/cxxabi_forced.h
@@ -4698,12 +4701,19 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/bits/exception_ptr.h
  /usr/include/c++/13/bits/forward_list.h
  /usr/include/c++/13/bits/forward_list.tcc
+ /usr/include/c++/13/bits/fstream.tcc
  /usr/include/c++/13/bits/functexcept.h
  /usr/include/c++/13/bits/functional_hash.h
  /usr/include/c++/13/bits/hash_bytes.h
  /usr/include/c++/13/bits/hashtable.h
  /usr/include/c++/13/bits/hashtable_policy.h
  /usr/include/c++/13/bits/invoke.h
+ /usr/include/c++/13/bits/ios_base.h
+ /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/locale_classes.h
+ /usr/include/c++/13/bits/locale_classes.tcc
+ /usr/include/c++/13/bits/locale_facets.h
+ /usr/include/c++/13/bits/locale_facets.tcc
  /usr/include/c++/13/bits/localefwd.h
  /usr/include/c++/13/bits/memory_resource.h
  /usr/include/c++/13/bits/memoryfwd.h
@@ -4711,6 +4721,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/bits/nested_exception.h
  /usr/include/c++/13/bits/new_allocator.h
  /usr/include/c++/13/bits/node_handle.h
+ /usr/include/c++/13/bits/ostream.tcc
  /usr/include/c++/13/bits/ostream_insert.h
  /usr/include/c++/13/bits/parse_numbers.h
  /usr/include/c++/13/bits/postypes.h
@@ -4747,6 +4758,8 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
  /usr/include/c++/13/bits/stl_vector.h
+ /usr/include/c++/13/bits/streambuf.tcc
+ /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
  /usr/include/c++/13/bits/stringfwd.h
  /usr/include/c++/13/bits/this_thread_sleep.h
@@ -4776,6 +4789,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/cstring
  /usr/include/c++/13/ctime
  /usr/include/c++/13/cwchar
+ /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
  /usr/include/c++/13/debug/debug.h
  /usr/include/c++/13/deque
@@ -4788,15 +4802,19 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/ext/string_conversions.h
  /usr/include/c++/13/ext/type_traits.h
  /usr/include/c++/13/forward_list
+ /usr/include/c++/13/fstream
  /usr/include/c++/13/functional
  /usr/include/c++/13/initializer_list
+ /usr/include/c++/13/ios
  /usr/include/c++/13/iosfwd
+ /usr/include/c++/13/istream
  /usr/include/c++/13/limits
  /usr/include/c++/13/math.h
  /usr/include/c++/13/memory
  /usr/include/c++/13/mutex
  /usr/include/c++/13/new
  /usr/include/c++/13/optional
+ /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/execution_defs.h
  /usr/include/c++/13/pstl/glue_algorithm_defs.h
  /usr/include/c++/13/pstl/glue_memory_defs.h
@@ -4804,9 +4822,12 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/c++/13/ratio
  /usr/include/c++/13/set
  /usr/include/c++/13/stack
+ /usr/include/c++/13/stdexcept
  /usr/include/c++/13/stdlib.h
+ /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
+ /usr/include/c++/13/system_error
  /usr/include/c++/13/thread
  /usr/include/c++/13/tr1/bessel_function.tcc
  /usr/include/c++/13/tr1/beta_function.tcc
@@ -4857,6 +4878,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/strings.h
  /usr/include/time.h
  /usr/include/wchar.h
+ /usr/include/wctype.h
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h
  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
  /usr/include/x86_64-linux-gnu/asm/errno.h
@@ -4955,13 +4977,18 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h
  /usr/include/x86_64-linux-gnu/bits/wchar2.h
+ /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h
@@ -23491,6 +23518,7 @@ CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.o
  /home/liber/game/ddnet/src/base/hash.h
  /home/liber/game/ddnet/src/base/hash_ctxt.h
  /home/liber/game/ddnet/src/base/lock.h
+ /home/liber/game/ddnet/src/base/log.h
  /home/liber/game/ddnet/src/base/math.h
  /home/liber/game/ddnet/src/base/system.h
  /home/liber/game/ddnet/src/base/types.h
@@ -29788,14 +29816,11 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/bits/allocator.h
  /usr/include/c++/13/bits/atomic_base.h
  /usr/include/c++/13/bits/atomic_lockfree_defines.h
- /usr/include/c++/13/bits/basic_ios.h
- /usr/include/c++/13/bits/basic_ios.tcc
  /usr/include/c++/13/bits/basic_string.h
  /usr/include/c++/13/bits/basic_string.tcc
  /usr/include/c++/13/bits/char_traits.h
  /usr/include/c++/13/bits/charconv.h
  /usr/include/c++/13/bits/chrono.h
- /usr/include/c++/13/bits/codecvt.h
  /usr/include/c++/13/bits/concept_check.h
  /usr/include/c++/13/bits/cpp_type_traits.h
  /usr/include/c++/13/bits/cxxabi_forced.h
@@ -29808,20 +29833,13 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/bits/exception_ptr.h
  /usr/include/c++/13/bits/forward_list.h
  /usr/include/c++/13/bits/forward_list.tcc
- /usr/include/c++/13/bits/fstream.tcc
  /usr/include/c++/13/bits/functexcept.h
  /usr/include/c++/13/bits/functional_hash.h
  /usr/include/c++/13/bits/hash_bytes.h
  /usr/include/c++/13/bits/hashtable.h
  /usr/include/c++/13/bits/hashtable_policy.h
  /usr/include/c++/13/bits/invoke.h
- /usr/include/c++/13/bits/ios_base.h
- /usr/include/c++/13/bits/istream.tcc
  /usr/include/c++/13/bits/list.tcc
- /usr/include/c++/13/bits/locale_classes.h
- /usr/include/c++/13/bits/locale_classes.tcc
- /usr/include/c++/13/bits/locale_facets.h
- /usr/include/c++/13/bits/locale_facets.tcc
  /usr/include/c++/13/bits/localefwd.h
  /usr/include/c++/13/bits/memory_resource.h
  /usr/include/c++/13/bits/memoryfwd.h
@@ -29829,7 +29847,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/bits/nested_exception.h
  /usr/include/c++/13/bits/new_allocator.h
  /usr/include/c++/13/bits/node_handle.h
- /usr/include/c++/13/bits/ostream.tcc
  /usr/include/c++/13/bits/ostream_insert.h
  /usr/include/c++/13/bits/parse_numbers.h
  /usr/include/c++/13/bits/postypes.h
@@ -29867,8 +29884,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
  /usr/include/c++/13/bits/stl_vector.h
- /usr/include/c++/13/bits/streambuf.tcc
- /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
  /usr/include/c++/13/bits/stringfwd.h
  /usr/include/c++/13/bits/uniform_int_dist.h
@@ -29897,7 +29912,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/cstring
  /usr/include/c++/13/ctime
  /usr/include/c++/13/cwchar
- /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
  /usr/include/c++/13/debug/debug.h
  /usr/include/c++/13/deque
@@ -29910,12 +29924,9 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/ext/string_conversions.h
  /usr/include/c++/13/ext/type_traits.h
  /usr/include/c++/13/forward_list
- /usr/include/c++/13/fstream
  /usr/include/c++/13/functional
  /usr/include/c++/13/initializer_list
- /usr/include/c++/13/ios
  /usr/include/c++/13/iosfwd
- /usr/include/c++/13/istream
  /usr/include/c++/13/limits
  /usr/include/c++/13/list
  /usr/include/c++/13/map
@@ -29923,18 +29934,14 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/c++/13/mutex
  /usr/include/c++/13/new
  /usr/include/c++/13/optional
- /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/execution_defs.h
  /usr/include/c++/13/pstl/glue_algorithm_defs.h
  /usr/include/c++/13/pstl/glue_memory_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/ratio
  /usr/include/c++/13/set
- /usr/include/c++/13/stdexcept
- /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
- /usr/include/c++/13/system_error
  /usr/include/c++/13/tr1/bessel_function.tcc
  /usr/include/c++/13/tr1/beta_function.tcc
  /usr/include/c++/13/tr1/ell_integral.tcc
@@ -29982,7 +29989,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/strings.h
  /usr/include/time.h
  /usr/include/wchar.h
- /usr/include/wctype.h
  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
  /usr/include/x86_64-linux-gnu/asm/errno.h
  /usr/include/x86_64-linux-gnu/asm/posix_types.h
@@ -30076,17 +30082,12 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h
  /usr/include/x86_64-linux-gnu/bits/wchar2.h
- /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h

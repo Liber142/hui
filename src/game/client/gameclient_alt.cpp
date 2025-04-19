@@ -42,6 +42,9 @@
 #include <game/generated/protocol7.h>
 #include <game/generated/protocolglue.h>
 
+#include <SDL.h>
+#include <engine/client/sound.h>
+
 #include "components/dummyCamera.h"
 #include "components/background.h"
 #include "components/binds.h"
@@ -79,6 +82,7 @@
 #include "components/voting.h"
 #include "prediction/entities/character.h"
 #include "prediction/entities/projectile.h"
+
 
 using namespace std::chrono_literals;
 
@@ -118,7 +122,6 @@ void CGameClient::OnConsoleInit()
 					      &m_CountryFlags,
 					      &m_MapImages,
 					      &m_Effects, // doesn't render anything, just updates effects
-					      &m_DummyCamera,
 					      &m_Binds,
 					      &m_Binds.m_SpecialBinds,
 					      &m_Controls,
@@ -157,6 +160,7 @@ void CGameClient::OnConsoleInit()
 					      &m_Tooltips,
 					      &CMenus::m_Binder,
 					      &m_GameConsole,
+					      &m_DummyCamera,
 					      &m_MenuBackground});
 
 	// build the input stack
@@ -502,9 +506,6 @@ void CGameClient::OnDummySwap()
 	m_DummyInput = m_Controls.m_aInputData[!g_Config.m_ClDummy];
 	m_Controls.m_aInputData[g_Config.m_ClDummy].m_Fire = tmp;
 	m_IsDummySwapping = 1;
-	std::ofstream file("file.txt", std::ios::trunc);
-	file <<  m_aLocalIds[!g_Config.m_ClDummy];
-	file.close();
 }
 
 int CGameClient::OnSnapInput(int *pData, bool Dummy, bool Force)

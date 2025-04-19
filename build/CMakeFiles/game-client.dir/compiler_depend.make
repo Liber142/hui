@@ -4666,11 +4666,14 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -4683,12 +4686,19 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/forward_list.h \
   /usr/include/c++/13/bits/forward_list.tcc \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
   /usr/include/c++/13/bits/hashtable.h \
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -4696,6 +4706,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -4732,6 +4743,8 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/this_thread_sleep.h \
@@ -4761,6 +4774,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/deque \
@@ -4773,15 +4787,19 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/forward_list \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/math.h \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/optional \
+  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
@@ -4789,9 +4807,12 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stack \
+  /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
+  /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
   /usr/include/c++/13/thread \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
@@ -4842,6 +4863,7 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
   /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
@@ -4940,13 +4962,18 @@ CMakeFiles/game-client.dir/src/engine/client/client.cpp.o: /home/liber/game/ddne
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
@@ -23426,6 +23453,7 @@ CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.o: /home/
   /home/liber/game/ddnet/src/base/hash.h \
   /home/liber/game/ddnet/src/base/hash_ctxt.h \
   /home/liber/game/ddnet/src/base/lock.h \
+  /home/liber/game/ddnet/src/base/log.h \
   /home/liber/game/ddnet/src/base/math.h \
   /home/liber/game/ddnet/src/base/system.h \
   /home/liber/game/ddnet/src/base/types.h \
@@ -29709,14 +29737,11 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/13/bits/basic_ios.h \
-  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
-  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -29729,20 +29754,13 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/forward_list.h \
   /usr/include/c++/13/bits/forward_list.tcc \
-  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
   /usr/include/c++/13/bits/hashtable.h \
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
-  /usr/include/c++/13/bits/ios_base.h \
-  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/list.tcc \
-  /usr/include/c++/13/bits/locale_classes.h \
-  /usr/include/c++/13/bits/locale_classes.tcc \
-  /usr/include/c++/13/bits/locale_facets.h \
-  /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -29750,7 +29768,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
-  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -29788,8 +29805,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
-  /usr/include/c++/13/bits/streambuf.tcc \
-  /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -29818,7 +29833,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
-  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/deque \
@@ -29831,12 +29845,9 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/forward_list \
-  /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
-  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
-  /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
   /usr/include/c++/13/map \
@@ -29844,18 +29855,14 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/optional \
-  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
-  /usr/include/c++/13/stdexcept \
-  /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
-  /usr/include/c++/13/system_error \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
   /usr/include/c++/13/tr1/ell_integral.tcc \
@@ -29903,7 +29910,6 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
-  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/asm/posix_types.h \
@@ -29997,17 +30003,12 @@ CMakeFiles/game-client.dir/src/game/client/components/spectator.cpp.o: /home/lib
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
@@ -52628,36 +52629,6 @@ src/game/generated/client_data.cpp:
 
 /home/liber/game/ddnet/src/game/client/components/statboard.cpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/c++/13/ios:
-
-/usr/include/c++/13/fstream:
-
-/home/liber/game/ddnet/src/game/client/ui_scrollregion.cpp:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
 /home/liber/game/ddnet/src/game/client/laser_data.cpp:
 
 /home/liber/game/ddnet/src/game/client/components/spectator.cpp:
@@ -52710,6 +52681,30 @@ src/game/generated/client_data.cpp:
 
 /home/liber/game/ddnet/src/game/client/prediction/entities/character.h:
 
+/home/liber/game/ddnet/src/game/client/components/debughud.cpp:
+
+/home/liber/game/ddnet/src/game/client/components/damageind.cpp:
+
+/home/liber/game/ddnet/src/game/client/components/controls.cpp:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/home/liber/game/ddnet/src/game/client/components/console.cpp:
+
+/home/liber/game/ddnet/src/engine/shared/csv.h:
+
+/home/liber/game/ddnet/src/game/client/components/background.cpp:
+
+/usr/include/c++/13/list:
+
+/usr/include/c++/13/bits/list.tcc:
+
+/home/liber/game/ddnet/src/game/voting.h:
+
+/home/liber/game/ddnet/src/game/tuning.h:
+
+/home/liber/game/ddnet/src/game/teamscore.h:
+
 /home/liber/game/ddnet/src/engine/gfx/image_loader.h:
 
 /usr/include/SDL2/SDL_syswm.h:
@@ -52737,8 +52732,6 @@ src/game/generated/client_data.cpp:
 /home/liber/game/ddnet/src/engine/client/video.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/home/liber/game/ddnet/src/game/teamscore.h:
 
 /home/liber/game/ddnet/src/engine/external/json-parser/json.h:
 
@@ -52783,6 +52776,8 @@ src/game/generated/protocol.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/glib-2.0/gio/gsimpleiostream.h:
 
@@ -52911,6 +52906,8 @@ src/game/generated/protocol.h:
 /home/liber/game/ddnet/src/engine/client/backend/opengles/backend_opengles3.h:
 
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:
 
@@ -53050,6 +53047,8 @@ src/game/generated/protocol.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
+/usr/include/c++/13/ios:
+
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/13/type_traits:
@@ -53057,8 +53056,6 @@ src/game/generated/protocol.h:
 /usr/include/SDL2/SDL_pixels.h:
 
 /usr/include/features-time64.h:
-
-/usr/include/c++/13/bits/list.tcc:
 
 /home/liber/game/ddnet/src/engine/client/backend/null/backend_null.cpp:
 
@@ -53139,6 +53136,12 @@ src/game/generated/protocol.h:
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
 /usr/include/glib-2.0/gio/gdataoutputstream.h:
+
+/home/liber/game/ddnet/src/game/client/components/touch_controls.cpp:
+
+/home/liber/game/ddnet/src/game/client/components/countryflags.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
@@ -53250,6 +53253,8 @@ src/game/generated/protocol.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
+/usr/include/c++/13/ostream:
+
 /usr/include/glib-2.0/gobject/gbindinggroup.h:
 
 /usr/include/glib-2.0/gio/gmemoryoutputstream.h:
@@ -53320,6 +53325,10 @@ src/game/generated/protocol.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/x86_64-linux-gnu/libavutil/samplefmt.h:
+
 /usr/include/glib-2.0/gio/gdbusserver.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/amxint8intrin.h:
@@ -53347,6 +53356,10 @@ src/game/generated/protocol.h:
 /usr/include/c++/13/bits/requires_hosted.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/home/liber/game/ddnet/src/game/client/components/binds.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /home/liber/game/ddnet/src/engine/notifications.h:
 
@@ -53390,12 +53403,6 @@ src/game/generated/protocol.h:
 
 /home/liber/game/ddnet/src/base/system.h:
 
-src/game/generated/checksum.cpp:
-
-/usr/include/c++/13/istream:
-
-/usr/include/c++/13/cmath:
-
 /home/liber/game/ddnet/src/engine/shared/protocol.h:
 
 /home/liber/game/ddnet/src/game/mapitems.h:
@@ -53423,6 +53430,12 @@ src/game/generated/checksum.cpp:
 /home/liber/game/ddnet/src/base/hash.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
+
+/home/liber/game/ddnet/src/game/mapitems_ex_types.h:
+
+/usr/include/c++/13/iterator:
+
+/usr/include/SDL2/SDL_surface.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
@@ -53550,10 +53563,6 @@ src/game/generated/client_data7.h:
 
 /home/liber/game/ddnet/src/engine/console.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
 /home/liber/game/ddnet/src/engine/ghost.h:
 
 /usr/include/c++/13/tuple:
@@ -53650,10 +53659,6 @@ src/game/generated/client_data7.h:
 
 /home/liber/game/ddnet/src/engine/client/ghost.h:
 
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/signal.h:
@@ -53677,12 +53682,6 @@ src/game/generated/protocolglue.h:
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/x86_64-linux-gnu/libavutil/opt.h:
-
-/usr/include/wctype.h:
-
-/home/liber/game/ddnet/src/engine/client/sqlite.cpp:
-
-/usr/include/c++/13/mutex:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
@@ -53752,6 +53751,8 @@ src/game/generated/protocolglue.h:
 
 /usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /home/liber/game/ddnet/src/game/client/components/freezebars.h:
@@ -53759,6 +53760,8 @@ src/game/generated/protocolglue.h:
 /home/liber/game/ddnet/src/engine/client/serverbrowser.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqintrin.h:
+
+/usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/locale.h:
 
@@ -53803,8 +53806,6 @@ src/game/generated/protocolglue.h:
 /usr/include/c++/13/functional:
 
 /usr/include/c++/13/bits/std_thread.h:
-
-/home/liber/game/ddnet/src/engine/shared/csv.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -53882,10 +53883,6 @@ src/game/generated/protocolglue.h:
 
 /usr/include/c++/13/debug/debug.h:
 
-/usr/include/x86_64-linux-gnu/libavutil/samplefmt.h:
-
-/usr/include/c++/13/bits/stl_list.h:
-
 /usr/include/glib-2.0/gio/gaction.h:
 
 /usr/include/x86_64-linux-gnu/libavutil/macros.h:
@@ -53895,8 +53892,6 @@ src/game/generated/protocolglue.h:
 /home/liber/game/ddnet/src/engine/shared/protocol_ex.h:
 
 /usr/include/ogg/config_types.h:
-
-/home/liber/game/ddnet/src/game/voting.h:
 
 /home/liber/game/ddnet/src/engine/client/client.h:
 
@@ -54058,8 +54053,6 @@ src/game/generated/protocolglue.h:
 
 /home/liber/game/ddnet/src/engine/shared/teehistorian_ex_chunks.h:
 
-/home/liber/game/ddnet/src/game/client/components/debughud.cpp:
-
 /usr/include/x86_64-linux-gnu/libswresample/swresample.h:
 
 /home/liber/game/ddnet/src/engine/shared/translation_context.h:
@@ -54074,13 +54067,13 @@ src/game/generated/protocolglue.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/usr/include/c++/13/bits/istream.tcc:
-
-/home/liber/game/ddnet/src/engine/textrender.h:
-
 /home/liber/game/ddnet/src/engine/updater.h:
 
 /home/liber/game/ddnet/src/rust-bridge/engine/shared/rust_version.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/deque.tcc:
 
@@ -54089,6 +54082,24 @@ src/game/generated/protocolglue.h:
 /usr/include/c++/13/bits/forward_list.h:
 
 /usr/include/c++/13/bits/forward_list.tcc:
+
+/home/liber/game/ddnet/src/game/version.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/home/liber/game/ddnet/src/engine/textrender.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/liber/game/ddnet/src/engine/discord.h:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
 
 /home/liber/game/ddnet/src/game/editor/mapitems/layer_tele.h:
 
@@ -54100,11 +54111,25 @@ src/game/generated/protocolglue.h:
 
 /home/liber/game/ddnet/src/engine/client/warning.cpp:
 
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/home/liber/game/ddnet/src/game/client/ui_scrollregion.cpp:
+
+/usr/include/c++/13/cwctype:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/c++/13/forward_list:
 
 /usr/include/glib-2.0/gio/gapplicationcommandline.h:
+
+/usr/include/c++/13/fstream:
+
+src/game/generated/checksum.cpp:
+
+/usr/include/c++/13/cmath:
+
+/usr/include/c++/13/istream:
 
 /usr/include/linux/limits.h:
 
@@ -54112,7 +54137,17 @@ src/game/generated/protocolglue.h:
 
 /usr/include/openssl/md5.h:
 
+/home/liber/game/ddnet/src/engine/client/sqlite.cpp:
+
+/usr/include/c++/13/mutex:
+
+/usr/include/wctype.h:
+
+/home/liber/game/ddnet/src/game/client/components/background.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -54126,9 +54161,17 @@ src/game/generated/protocolglue.h:
 
 /home/liber/game/ddnet/src/game/client/components/race_demo.h:
 
-/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
+/usr/include/glib-2.0/gio/gthreadedsocketservice.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:
 
 /usr/include/x86_64-linux-gnu/libavcodec/codec.h:
 
@@ -54269,8 +54312,6 @@ src/game/generated/data_types.h:
 /home/liber/game/ddnet/src/game/editor/mapitems/layer_game.cpp:
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h:
-
-/home/liber/game/ddnet/src/game/client/components/controls.cpp:
 
 /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h:
 
@@ -54440,8 +54481,6 @@ src/game/generated/data_types.h:
 
 /usr/include/glib-2.0/gio/gio-autocleanups.h:
 
-/home/liber/game/ddnet/src/game/client/components/background.h:
-
 /home/liber/game/ddnet/src/base/tl/threading.h:
 
 /usr/include/GLES3/gl3platform.h:
@@ -54576,8 +54615,6 @@ src/game/generated/data_types.h:
 
 /usr/include/glib-2.0/gio/gtcpconnection.h:
 
-/usr/include/glib-2.0/gio/gthreadedsocketservice.h:
-
 /usr/include/glib-2.0/gio/gtlsbackend.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
@@ -54605,6 +54642,10 @@ src/game/generated/data_types.h:
 /home/liber/game/ddnet/src/steam/steam_api_flat.h:
 
 /usr/include/glib-2.0/glib/deprecated/gmain.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/glib-2.0/gio/gunixsocketaddress.h:
 
 /usr/include/glib-2.0/gio/gzlibcompressor.h:
 
@@ -55005,43 +55046,3 @@ src/game/generated/data_types.h:
 /home/liber/game/ddnet/src/game/mapbugs_list.h:
 
 /home/liber/game/ddnet/src/game/prng.h:
-
-/home/liber/game/ddnet/src/game/tuning.h:
-
-/usr/include/c++/13/list:
-
-/home/liber/game/ddnet/src/game/client/components/background.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/home/liber/game/ddnet/src/game/client/components/binds.cpp:
-
-/home/liber/game/ddnet/src/game/client/components/console.cpp:
-
-/home/liber/game/ddnet/src/game/version.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/home/liber/game/ddnet/src/engine/discord.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/glib-2.0/gio/gunixsocketaddress.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/home/liber/game/ddnet/src/game/mapitems_ex_types.h:
-
-/usr/include/SDL2/SDL_surface.h:
-
-/usr/include/c++/13/iterator:
-
-/home/liber/game/ddnet/src/game/client/components/touch_controls.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/home/liber/game/ddnet/src/game/client/components/countryflags.cpp:
-
-/home/liber/game/ddnet/src/game/client/components/damageind.cpp:

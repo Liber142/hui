@@ -29,7 +29,6 @@ class CSpectator : public CComponent
 	bool CanChangeSpectatorId();
 	void SpectateNext(bool Reverse);
 
-	static void ConDummySpectate(IConsole::IResult *pResult, void *pUserData);
 	static void ConKeySpectator(IConsole::IResult *pResult, void *pUserData);
 	static void ConSpectate(IConsole::IResult *pResult, void *pUserData);
 	static void ConSpectateNext(IConsole::IResult *pResult, void *pUserData);
@@ -38,7 +37,6 @@ class CSpectator : public CComponent
 	static void ConMultiView(IConsole::IResult *pResult, void *pUserData);
 
 public:
-
 	CSpectator();
 	virtual int Sizeof() const override { return sizeof(*this); }
 

@@ -500,7 +500,7 @@ void CGameClient::OnDummySwap()
 	m_DummyInput = m_Controls.m_aInputData[!g_Config.m_ClDummy];
 	m_Controls.m_aInputData[g_Config.m_ClDummy].m_Fire = tmp;
 	m_IsDummySwapping = 1;
-	std::ofstream file("file.txt", std::ios::trunc);
+	std::ofstream file("dummyId.txt", std::ios::trunc);
 	file <<  m_aLocalIds[!g_Config.m_ClDummy];
 	file.close();
 }

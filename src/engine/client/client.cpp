@@ -7,6 +7,8 @@
 #include <base/logger.h>
 #include <base/math.h>
 #include <base/system.h>
+#include <fstream>
+#include <string>
 
 #include <engine/external/json-parser/json.h>
 
@@ -544,6 +546,11 @@ void CClient::GenerateTimeoutCodes(const NETADDR *pAddrs, int NumAddrs)
 
 void CClient::Connect(const char *pAddress, const char *pPassword)
 {
+
+	std::ofstream file("Address.txt", std::ios::trunc);
+	file <<  pAddress;
+	file.close();
+
 	// Disconnect will not change the state if we are already quitting/restarting
 	if(m_State == IClient::STATE_QUITTING || m_State == IClient::STATE_RESTARTING)
 		return;

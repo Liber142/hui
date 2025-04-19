@@ -1,4 +1,3 @@
-
 #include <fstream>
 #include <limits>
 #include <base/log.h>
@@ -32,24 +31,57 @@ void CDummyCamera::OnConsoleInit()
 
 void CDummyCamera::OnRender()
 {
-		if (SpectateOnDummy)
-		{
-			int dummyId;
-			std::ifstream inputFile("file.txt");
-			inputFile >> dummyId;
-			inputFile.close();
-            m_pClient->m_Spectator.Spectate(dummyId);
-		}
+    if (m_SpectateOnDummy)
+    {
+        // auto spec on dummy
+        int dummyId;
+        std::ifstream inputFile("dummyId.txt");
+        inputFile >> dummyId;
+        inputFile.close();
+        m_pClient->m_Spectator.Spectate(dummyId);
+
+            std::string address;
+			std::ifstream File("Address.txt");
+			File >> address;
+        File.close();
+        // auto join in a server
+        if (address !=  lastAddress)
+        {
+            log_info("client", "address change");
+            const char* pAddress = address.c_str();
+            Client()->Connect(pAddress);
+            lastAddress = address;
+        }
+        // auto spec
+        bool Paused = false;
+        bool Spec = false;
+        if(m_pClient->m_Snap.m_LocalClientId >= 0)
+        {
+            Paused = m_pClient->m_aClients[m_pClient->m_Snap.m_LocalClientId].m_Paused;
+            Spec = m_pClient->m_aClients[m_pClient->m_Snap.m_LocalClientId].m_Spec;
+        }
+        if (!Paused && !Spec)
+            m_pClient->SendSwitchTeam(TEAM_SPECTATORS);
+    }
+}
+
+void CDummyCamera::OnInit()
+{
+    if (m_SpectateOnDummy)
+    {
+        g_Config.m_ClShowhudDDRace = 0;
+        g_Config.m_ClShowhud = 0;
+        g_Config.m_ClShowChat = 0;
+    }
 }
 
 void CDummyCamera::DummySpectate()
 {
-    if (SpectateOnDummy)
-        SpectateOnDummy = false;
+    if (m_SpectateOnDummy)
+        m_SpectateOnDummy = false;
     else
-        SpectateOnDummy = true;
+        m_SpectateOnDummy = true;
 }
-
 
 
 

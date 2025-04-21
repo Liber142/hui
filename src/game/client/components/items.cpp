@@ -379,6 +379,8 @@ void CItems::OnRender()
 
 	bool UsePredicted = GameClient()->Predict() && GameClient()->AntiPingGunfire();
 	auto &aSwitchers = GameClient()->Switchers();
+	if(aSwitchers.empty())  // Добавьте эту проверку
+    return;
 	if(UsePredicted)
 	{
 		for(auto *pProj = (CProjectile *)GameClient()->m_PrevPredictedWorld.FindFirst(CGameWorld::ENTTYPE_PROJECTILE); pProj; pProj = (CProjectile *)pProj->NextEntity())

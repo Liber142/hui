@@ -132,17 +132,6 @@ void CMenus::RenderGame(CUIRect MainView)
 
 				// 4. Запускаем процесс (используем правильный тип)
 				PROCESS pProcess = shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments, 2);
-
-				// 5. Проверяем результат (используем правильное значение ошибки)
-				if(pProcess == -1) // или другое значение, используемое в вашей системе для ошибки
-				{
-					Client()->AddWarning(SWarning(Localize("Failed to start dummy monitor")));
-					dbg_msg("client", "Failed to execute DDNet-monitor");
-				}
-				else
-				{
-					dbg_msg("client", "Successfully executed DDNet-monitor at: %s", aBuf);
-				}
 			}
 			else
 			{

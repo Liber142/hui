@@ -2330,6 +2330,8 @@ if(CLIENT)
     component.h
     components/background.cpp
     components/background.h
+    components/dummyCamera.cpp
+    components/dummyCamera.h
     components/binds.cpp
     components/binds.h
     components/broadcast.cpp
@@ -2411,6 +2413,8 @@ if(CLIENT)
     components/voting.h
     gameclient.cpp
     gameclient.h
+    gameclient_alt.cpp
+    gameclient_alt.h
     laser_data.cpp
     laser_data.h
     lineinput.cpp

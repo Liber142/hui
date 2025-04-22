@@ -455,7 +455,7 @@ bool CSound::DecodeWV(CSample &Sample, const void *pData, unsigned DataSize) con
 	Callback.read_bytes = ReadData;
 	WavpackContext *pContext = WavpackOpenFileInputEx(&Callback, (void *)1, 0, aError, 0, 0);
 #else
-	WavpackContext *pContext;                             // = WavpackOpenFileInput(ReadDataOld, aError);
+	WavpackContext *pContext = WavpackOpenFileInput(ReadDataOld, aError);
 #endif
 	if(pContext)
 	{

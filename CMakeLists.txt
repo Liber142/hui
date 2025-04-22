@@ -170,6 +170,7 @@ endif()
 
 set(SERVER_EXECUTABLE DDNet-Server CACHE STRING "Name of the built server executable")
 set(CLIENT_EXECUTABLE DDNet CACHE STRING "Name of the build client executable")
+set(CLIENT_AlT_EXECUTABLE DDNet-monitor CACHE STRING "Name of the build client executable")
 
 ########################################################################
 # Compiler flags
@@ -2707,8 +2708,7 @@ else()
   )
 endif()
 set_property(TARGET game-client-monitor
-    PROPERTY OUTPUT_NAME "DDNet-monitor"
-)
+    PROPERTY OUTPUT_NAME ${CLIENT_AlT_EXECUTABLE})
 target_link_libraries(game-client-monitor ${LIBS_CLIENT})
 
 if(MSVC)

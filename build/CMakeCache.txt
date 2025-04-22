@@ -44,6 +44,9 @@ AVUTIL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libavutil.so
 CLIENT:BOOL=ON
 
 //Name of the build client executable
+CLIENT_AlT_EXECUTABLE:STRING=DDNet-monitor
+
+//Name of the build client executable
 CLIENT_EXECUTABLE:STRING=DDNet
 
 //Path to a program.

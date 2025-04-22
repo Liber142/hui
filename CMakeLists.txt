@@ -2348,6 +2348,8 @@ if(CLIENT)
     components/damageind.h
     components/debughud.cpp
     components/debughud.h
+    components/dummyCamera.cpp
+    components/dummyCamera.h
     components/effects.cpp
     components/effects.h
     components/emoticon.cpp
@@ -2411,6 +2413,8 @@ if(CLIENT)
     components/voting.h
     gameclient.cpp
     gameclient.h
+    gameclient_alt.cpp
+    gameclient_alt.h
     laser_data.cpp
     laser_data.h
     lineinput.cpp
@@ -2450,7 +2454,7 @@ if(CLIENT)
     ui_rect.h
     ui_scrollregion.cpp
     ui_scrollregion.h
-  )
+)
   set_src(GAME_EDITOR GLOB_RECURSE src/game/editor
     auto_map.cpp
     auto_map.h

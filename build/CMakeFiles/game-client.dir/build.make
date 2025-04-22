@@ -345,6 +345,8 @@ src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/componen
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/damageind.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/debughud.cpp
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/debughud.h
+src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/dummyCamera.cpp
+src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/dummyCamera.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/effects.cpp
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/effects.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/emoticon.cpp
@@ -408,6 +410,8 @@ src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/componen
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/components/voting.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/gameclient.cpp
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/gameclient.h
+src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/gameclient_alt.cpp
+src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/gameclient_alt.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/laser_data.cpp
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/laser_data.h
 src/game/generated/checksum.cpp: /home/liber/game/ddnet/src/game/client/lineinput.cpp

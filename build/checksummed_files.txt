@@ -274,6 +274,8 @@
 /home/liber/game/ddnet/src/game/client/components/damageind.h
 /home/liber/game/ddnet/src/game/client/components/debughud.cpp
 /home/liber/game/ddnet/src/game/client/components/debughud.h
+/home/liber/game/ddnet/src/game/client/components/dummyCamera.cpp
+/home/liber/game/ddnet/src/game/client/components/dummyCamera.h
 /home/liber/game/ddnet/src/game/client/components/effects.cpp
 /home/liber/game/ddnet/src/game/client/components/effects.h
 /home/liber/game/ddnet/src/game/client/components/emoticon.cpp
@@ -337,6 +339,8 @@
 /home/liber/game/ddnet/src/game/client/components/voting.h
 /home/liber/game/ddnet/src/game/client/gameclient.cpp
 /home/liber/game/ddnet/src/game/client/gameclient.h
+/home/liber/game/ddnet/src/game/client/gameclient_alt.cpp
+/home/liber/game/ddnet/src/game/client/gameclient_alt.h
 /home/liber/game/ddnet/src/game/client/laser_data.cpp
 /home/liber/game/ddnet/src/game/client/laser_data.h
 /home/liber/game/ddnet/src/game/client/lineinput.cpp

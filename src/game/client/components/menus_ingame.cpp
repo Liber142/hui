@@ -131,7 +131,7 @@ void CMenus::RenderGame(CUIRect MainView)
 				};
 
 				// 4. Запускаем процесс (используем правильный тип)
-				PROCESS pProcess = shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments, 2);z
+				PROCESS pProcess = shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments, 2);
 			}
 			else
 			{

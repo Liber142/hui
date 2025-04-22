@@ -2330,8 +2330,6 @@ if(CLIENT)
     component.h
     components/background.cpp
     components/background.h
-    components/dummyCamera.cpp
-    components/dummyCamera.h
     components/binds.cpp
     components/binds.h
     components/broadcast.cpp
@@ -2350,6 +2348,8 @@ if(CLIENT)
     components/damageind.h
     components/debughud.cpp
     components/debughud.h
+    components/dummyCamera.cpp
+    components/dummyCamera.h
     components/effects.cpp
     components/effects.h
     components/emoticon.cpp
@@ -2454,7 +2454,7 @@ if(CLIENT)
     ui_rect.h
     ui_scrollregion.cpp
     ui_scrollregion.h
-  )
+)
   set_src(GAME_EDITOR GLOB_RECURSE src/game/editor
     auto_map.cpp
     auto_map.h
@@ -2532,6 +2532,12 @@ if(CLIENT)
     src/game/generated/client_data7.cpp
     src/game/generated/client_data7.h
   )
+  list(REMOVE_ITEM GAME_CLIENT
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.h"
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h"
+)
   set(CLIENT_SRC ${ENGINE_CLIENT} ${PLATFORM_CLIENT} ${GAME_CLIENT} ${GAME_EDITOR} ${GAME_GENERATED_CLIENT})
 
   set(DEPS_CLIENT ${DEPS} ${GLEW_DEP} ${WAVPACK_DEP})
@@ -2559,6 +2565,16 @@ if(CLIENT)
     ${LIBS}
   )
 
+  set(CLIENT_ALT_SRC ${CLIENT_SRC})
+list(REMOVE_ITEM CLIENT_ALT_SRC
+  "${PROJECT_SOURCE_DIR}/src/game/client/gameclient.cpp"
+  "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h")
+list(APPEND CLIENT_ALT_SRC
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/gameclient_alt.h"
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.cpp"
+    "${PROJECT_SOURCE_DIR}/src/game/client/components/dummyCamera.h"
+)
   if(DISCORD)
     if(NOT DISCORD_DYNAMIC)
       list(APPEND LIBS_CLIENT discord-shared)
@@ -2666,6 +2682,78 @@ if(CLIENT)
 
   list(APPEND TARGETS_OWN game-client)
   list(APPEND TARGETS_LINK game-client)
+
+  if(TARGET_OS STREQUAL "android")
+  add_library(game-client-monitor SHARED
+    ${CLIENT_ALT_SRC}
+    ${CLIENT_ICON}
+    ${CLIENT_MANIFEST}
+    ${DEPS_CLIENT}
+    $<TARGET_OBJECTS:engine-gfx>
+    $<TARGET_OBJECTS:engine-shared>
+    $<TARGET_OBJECTS:game-shared>
+    $<TARGET_OBJECTS:rust-bridge-shared>
+  )
+else()
+  add_executable(game-client-monitor WIN32
+    ${CLIENT_ALT_SRC}
+    ${CLIENT_ICON}
+    ${CLIENT_MANIFEST}
+    ${DEPS_CLIENT}
+    $<TARGET_OBJECTS:engine-gfx>
+    $<TARGET_OBJECTS:engine-shared>
+    $<TARGET_OBJECTS:game-shared>
+    $<TARGET_OBJECTS:rust-bridge-shared>
+  )
+endif()
+set_property(TARGET game-client-monitor
+    PROPERTY OUTPUT_NAME "DDNet-monitor"
+)
+target_link_libraries(game-client-monitor ${LIBS_CLIENT})
+
+if(MSVC)
+  target_link_options(game-client-monitor PRIVATE /ENTRY:mainCRTStartup)
+endif()
+
+# Скопируйте все настройки include directories и определения из основного клиента
+target_include_directories(game-client-monitor SYSTEM PRIVATE
+  ${FREETYPE_INCLUDE_DIRS}
+  ${GLEW_INCLUDE_DIRS}
+  ${OGG_INCLUDE_DIRS}
+  ${OPUSFILE_INCLUDE_DIRS}
+  ${OPUS_INCLUDE_DIRS}
+  ${PNG_INCLUDE_DIRS}
+  ${SDL2_INCLUDE_DIRS}
+  ${WAVPACK_INCLUDE_DIRS}
+  ${FFMPEG_INCLUDE_DIRS}
+  ${DISCORDSDK_INCLUDE_DIRS}
+  ${VULKAN_INCLUDE_DIRS}
+  ${PLATFORM_CLIENT_INCLUDE_DIRS}
+)
+
+if(STEAMAPI_KIND STREQUAL SHARED OR DISCORD_DYNAMIC)
+  set_own_rpath(game-client-monitor)
+endif()
+
+if(WAVPACK_OPEN_FILE_INPUT_EX)
+  target_compile_definitions(game-client-monitor PRIVATE CONF_WAVPACK_OPEN_FILE_INPUT_EX)
+endif()
+
+if(WAVPACK_CLOSE_FILE)
+  target_compile_definitions(game-client-monitor PRIVATE CONF_WAVPACK_CLOSE_FILE)
+endif()
+
+if(GLEW_BUNDLED)
+  target_compile_definitions(game-client-monitor PRIVATE CONF_GLEW_HAS_CONTEXT_INIT)
+endif()
+
+if(VULKAN)
+  target_compile_definitions(game-client-monitor PRIVATE CONF_BACKEND_VULKAN)
+endif()
+
+list(APPEND TARGETS_OWN game-client-monitor)
+list(APPEND TARGETS_LINK game-client-monitor)
+
 endif()
 
 

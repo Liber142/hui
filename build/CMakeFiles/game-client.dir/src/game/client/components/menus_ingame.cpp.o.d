@@ -406,4 +406,13 @@ CMakeFiles/game-client.dir/src/game/client/components/menus_ingame.cpp.o: \
  /home/liber/game/ddnet/src/game/client/components/menus.h \
  /home/liber/game/ddnet/src/game/client/components/motd.h \
  /home/liber/game/ddnet/src/game/client/components/voting.h \
- /home/liber/game/ddnet/src/game/client/components/ghost.h
+ /home/liber/game/ddnet/src/game/client/components/ghost.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h

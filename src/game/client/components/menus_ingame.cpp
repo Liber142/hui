@@ -37,6 +37,7 @@
 #include <engine/storage.h>
 
 #include <chrono>
+#include <sys/stat.h>
 
 using namespace FontIcons;
 using namespace std::chrono_literals;
@@ -116,29 +117,48 @@ void CMenus::RenderGame(CUIRect MainView)
 
 		if (DoButton_Menu(&s_DummyMonitor, Localize("Dummy monitor"), 0, &Button))
 		{
-			// 1. Получаем полный путь к исполняемому файлу
 			char aBuf[IO_MAX_PATH_LENGTH];
-			Storage()->GetBinaryPath("DDNet-monitor", aBuf, sizeof(aBuf));
 
-				// 2. Проверяем существование файла
-			if(fs_is_file(aBuf))
-			{
-				// 3. Подготавливаем аргументы
-				const char* ppArguments[] = {
-					aBuf,       // полный путь к исполняемому файлу
-					"-window",  // пример параметра
-					NULL
-				};
+			// 1. Получаем правильное имя файла для ОС
+			#if defined(CONF_FAMILY_WINDOWS)
+				Storage()->GetBinaryPath("DDNet-monitor.exe", aBuf, sizeof(aBuf));
+			#else
+				Storage()->GetBinaryPath("DDNet-monitor", aBuf, sizeof(aBuf));
+				// Устанавливаем права на исполнение (если нужно)
+				if (fs_is_file(aBuf))
+				{
+					chmod(aBuf, 0755);
+				}
+			#endif
 
-				 shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments, 2);
-			}
-			else
+		// 2. Проверяем существование файла
+        if (fs_is_file(aBuf))
+        {
+            // 3. Подготавливаем аргументы
+            std::vector<const char*> ppArguments =
 			{
-				Client()->AddWarning(SWarning(Localize("Dummy monitor executable not found")));
-				dbg_msg("client", "DDNet-monitor executable not found at: %s", aBuf);
-			}
-		}
-	}
+                aBuf,
+                "-window",
+                nullptr
+            };
+
+            // 4. Запускаем
+            if (!shell_execute(aBuf, EShellExecuteWindowState::FOREGROUND, ppArguments.data(), ppArguments.size() - 1))
+            {
+                Client()->AddWarning(SWarning(Localize("Failed to launch Dummy monitor")));
+            }
+        }
+        else
+        {
+            char aError[256];
+            str_format(aError, sizeof(aError),
+                "Dummy monitor not found at: %s\n",
+                aBuf);
+            Client()->AddWarning(SWarning(aError));
+            dbg_msg("client", "%s", aError);
+        }
+    }
+}
 
 	ButtonBar.VSplitRight(5.0f, &ButtonBar, nullptr);
 	ButtonBar.VSplitRight(140.0f, &ButtonBar, &Button);

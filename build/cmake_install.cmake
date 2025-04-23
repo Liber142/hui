@@ -695,6 +695,26 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "portable")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "portable")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64" TYPE EXECUTABLE FILES "/home/liber/game/ddnet/build/DDNet-monitor")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-monitor")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "portable")
+  include("/home/liber/game/ddnet/build/CMakeFiles/game-client-monitor.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "portable")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-Server" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/DDNet-19.1-linux_x86_64/DDNet-Server")
     file(RPATH_CHECK

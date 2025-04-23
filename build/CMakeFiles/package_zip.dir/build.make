@@ -69,6 +69,7 @@ include CMakeFiles/package_zip.dir/progress.make
 CMakeFiles/package_zip: DDNet-19.1-linux_x86_64.zip
 
 DDNet-19.1-linux_x86_64.zip: DDNet
+DDNet-19.1-linux_x86_64.zip: DDNet-monitor
 DDNet-19.1-linux_x86_64.zip: DDNet-Server
 DDNet-19.1-linux_x86_64.zip: config_retrieve
 DDNet-19.1-linux_x86_64.zip: config_store
@@ -124,6 +125,7 @@ DDNet-19.1-linux_x86_64.zip: map_extract
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/data/shader/vulkan/quad_push_textured.vert.spv pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/data/shader/vulkan/quad_push_textured.vert.spv
 	/usr/bin/cmake -E copy_directory /home/liber/game/ddnet/data pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/data
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/DDNet pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
+	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/DDNet-monitor pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/DDNet-Server pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/config_retrieve pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/config_store pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
@@ -134,6 +136,7 @@ DDNet-19.1-linux_x86_64.zip: map_extract
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/map_diff pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
 	/usr/bin/cmake -E copy /home/liber/game/ddnet/build/map_extract pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/
 	strip -s pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/DDNet
+	strip -s pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/DDNet-monitor
 	strip -s pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/DDNet-Server
 	strip -s pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/config_retrieve
 	strip -s pack_DDNet-19.1-linux_x86_64_zip/DDNet-19.1-linux_x86_64/config_store

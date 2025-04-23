@@ -9,9 +9,9 @@
 0d0cde666f0b1ab1f649e6bead0cbd77 CMakeFiles/run_rust_tests
 11f014a0afc121d3eb8aa41a12db56a5 CMakeFiles/rust_engine_shared_target
 11f014a0afc121d3eb8aa41a12db56a5 CMakeFiles/tools
-652ff607ffe3b9a8466dfc17455cd8f9 DDNet-19.1-linux_x86_64.tar.gz
-b4ae8840a64f6c949a703b14f42ddbfa DDNet-19.1-linux_x86_64.tar.xz
-cf20c8f620a7e002fc1b17a9dd3e57e2 DDNet-19.1-linux_x86_64.zip
+41c78cbc6170b3e8be3115c2f4b07fe4 DDNet-19.1-linux_x86_64.tar.gz
+73c7be7297245e9583cd226cd9d10df1 DDNet-19.1-linux_x86_64.tar.xz
+53bd13ff93cddc69625a68f0d32ed713 DDNet-19.1-linux_x86_64.zip
 098c11a727a7b5e42bef341fa7381e60 release/libddnet_engine_shared.a
 84b25ddc5dc359baf3e9f90952824a3e src/game/generated/checksum.cpp
 817cbceb1b0b11fc4629d526a3da6e8f src/game/generated/client_data.cpp

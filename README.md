@@ -14,6 +14,7 @@ If you want to learn about the source code, you can check the [Development](http
 
 Cloning
 -------
+Сосал?
 
 To clone this repository with full history and external libraries (~350 MB):
 
